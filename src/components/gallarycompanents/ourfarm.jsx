@@ -3,7 +3,7 @@ import '../../style/ourfarms.css';
 import Contact from '../contact/contact'; // Ensure the path is correct
 import Footer from '../footage/footage';
 import Heading from '../Home/headings';
-import imagescover from '../../asset/img/CoverImages/Fcover.jpg'; // Ensure the path is correct
+import imagescover from '../../asset/img/CoverImages/Fcover.webp'; // Ensure the path is correct
 import { motion } from 'framer-motion';
 
 // Function to import all images from a directory
@@ -16,7 +16,7 @@ const importAll = (r) => {
 };
 
 // Import images from the directory
-const images = importAll(require.context('../../asset/img/Farms', false, /\.(jpg|jpeg|png)$/));
+const images = importAll(require.context('../../asset/img/Farms', false, /\.(webp|jpg|jpeg|png)$/));
 
 // Calculate the total number of images dynamically
 const totalItems = Object.keys(images).length;
@@ -64,12 +64,12 @@ const Ourfarm = () => {
                         className="farm-card"
                         key={index}
                         initial={{ opacity: 0, y: 50 }} // Initial state
-                        animate={visibleSections[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate on scroll
+                        animate={visibleSections[index] ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }} // Animate on scroll
                         transition={{ duration: 0.5 }} // Duration of the animation
                     >
                         <img 
                             src={images[Object.keys(images)[index]]} 
-                            alt=""
+                            alt="Our-Farms-Images"
                         />
                     </motion.div>
                 ))}

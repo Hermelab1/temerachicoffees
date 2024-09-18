@@ -1,9 +1,9 @@
-const img1 = require('../../asset/img/Blog/photo_2024-07-28_18-10-06.jpg');
-const img2 = require('../../asset/img/Blog/bowlingcoffee.jpg');
-const img3 = require('../../asset/img/Blog/from.jpg');
-const img4 = require('../../asset/img/Blog/chart.jpeg')
-const img5 = require('../../asset/img/Blog/Festival.jpg')
-const img6 = require('../../asset/img/Blog/farmers.jpg')
+const img1 = require('../../asset/img/Blog/photo_2024-07-28_18-10-06.webp');
+const img2 = require('../../asset/img/Blog/bowlingcoffee.webp');
+const img3 = require('../../asset/img/Blog/from.webp');
+const img4 = require('../../asset/img/Blog/chart.webp')
+const img5 = require('../../asset/img/Blog/Festival.webp')
+const img6 = require('../../asset/img/Blog/farmers.webp')
 
 export const blogs = [
     {

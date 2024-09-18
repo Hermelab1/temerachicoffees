@@ -1,5 +1,5 @@
-const img1 = require('../../asset/img/CoffeType/Products - Copy (2).jpg');
-const img2 = require('../../asset/img/CoffeType/Products.jpg');
+const img1 = require('../../asset/img/CoffeType/Products - Copy (2).webp');
+const img2 = require('../../asset/img/CoffeType/Products.webp');
 
 export const Coffeetype = [
     {

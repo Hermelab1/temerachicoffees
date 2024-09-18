@@ -1,7 +1,7 @@
 // Import necessary libraries and components
 import React, { useRef, useState } from 'react';
 import '../../style/detail.css';
-import img from '../../asset/img/CoverImages/Bcover.jpg';
+import img from '../../asset/img/CoverImages/Bcover.webp';
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
 import emailjs from '@emailjs/browser';

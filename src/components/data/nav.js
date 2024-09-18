@@ -8,12 +8,12 @@ export const nav = [
         path:"#",
         submenu: [
             {
-                text: "Our Farms",
-                path: "/ourfarm", // Corrected path
-            },
-            {
                 text: "Events",
                 path: "/events", // Corrected path
+            },
+            {
+                text: "Our Farms",
+                path: "/ourfarm", // Corrected path
             },
             {
                 text: "Training",

@@ -1,13 +1,13 @@
-const img1 = require('../../asset/img/GallaryImages/GallaryPage/1.jpg');
-const img2 = require('../../asset/img/GallaryImages/GallaryPage/2.jpeg');
+const img1 = require('../../asset/img/GallaryImages/GallaryPage/1.webp');
+const img2 = require('../../asset/img/GallaryImages/GallaryPage/2.webp');
 const img3 = require('../../asset/img/GallaryImages/GallaryPage/3.webp');
 const img4 = require('../../asset/img/GallaryImages/GallaryPage/4.webp');
 const img5 = require('../../asset/img/GallaryImages/GallaryPage/5.webp');
 const img6 = require('../../asset/img/GallaryImages/GallaryPage/6.webp');
 const img7 = require('../../asset/img/GallaryImages/GallaryPage/7.webp');
-const img8 = require('../../asset/img/GallaryImages/GallaryPage/8.jpeg');
-const img9 = require('../../asset/img/GallaryImages/GallaryPage/9.jpg');
-const img10 = require('../../asset/img/GallaryImages/GallaryPage/10.jpg');
+const img8 = require('../../asset/img/GallaryImages/GallaryPage/8.webp');
+const img9 = require('../../asset/img/GallaryImages/GallaryPage/9.webp');
+const img10 = require('../../asset/img/GallaryImages/GallaryPage/10.webp');
 
 export const coffeeprocess =[
     {

@@ -4,7 +4,7 @@ import { Coffeetype } from '../data/Coffetype';
 import Heading from '../Home/headings';
 import Contactus from '../contact/contact';
 import Footer from '../footage/footage';
-import CoverIma from '../../asset/img/CoverImages/Ocover.jpg';
+import CoverIma from '../../asset/img/CoverImages/Ocover.webp';
 import '../../style/sample.css';
 import { motion } from 'framer-motion';
 
