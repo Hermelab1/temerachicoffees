@@ -1,0 +1,103 @@
+.blog-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of blog posts for responsiveness */
+    justify-content: left; /* Center blog posts inside the container */
+    align-items: flex-start; /* Align items to the start */
+    width: 80%; /* Full width of the container based on the parent */
+    max-width: 1200px; /* Optional: Set a max-width for better readability */
+    margin: 20px auto; /* Center on the page */
+}
+
+/* Blog details */
+.blog-details {
+
+    border: 2px solid rgb(218, 218, 218);
+    width: 350px; /* Fixed width for the blog cards */
+    height: 500px; /* Fixed height for the blog cards (to ensure they are square) */
+    background-color: white; /* Added background color for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; 
+    margin: 10px; /* Use uniform margin for better spacing */
+    display: flex; /* Enable flexbox for children */
+    flex-direction: column; /* Stack child elements vertically */
+    position: relative; /* For absolutely positioned children */
+}
+
+/* Media section */
+.blog-container .media {
+
+    width: 100%; /* Full width media container */
+    height: 500px; /* Fixed height for media */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+    display: flex; /* Flex for centering */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center the content */
+}
+
+.blog-container .media img{
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Full height of the media container */
+    border-radius: 0; /* No border-radius */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+/* Details section */
+.details {
+    padding: 15px; /* Inner padding */
+    flex-grow: 1; /* Allow details section to take up remaining space */
+}
+
+.details h3 {
+    font-size: 1.2em; /* Adjust heading size */
+    margin-bottom: 5px; /* Spacing below heading */
+}
+
+.details p {
+ 
+    line-height: 1.5; /* Line spacing */
+}
+
+/* Blog Status Links */
+.blog-status .status {
+    display: inline-block; /* Inline block for links */
+    margin: 10px 0; /* Margin around links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Styled links */
+}
+
+.blog-status .status:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Likes section */
+.likes {
+    position: absolute; /* Positioned at the bottom */
+    bottom: 10px; /* Space from bottom */
+    right: 10px; /* Space from right */
+    display: flex; /* Use flexbox to align items */
+    gap: 10px; /* Space between icons */
+    font-size: 1.5rem;
+    color: rgb(215, 215, 215);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .blog-details {
+        width: calc(50% - 20px); /* 2 cards in a row on tablets, adjust for margins */
+        height: 300px; /* Maintain square shape */
+    }
+}
+
+@media (max-width: 640px) {
+    .blog-details {
+        width: calc(100% - 10px); /* 1 card in a row on mobile devices, adjust for margins */
+        height: 450px; /* Maintain square shape */
+    }
+
+    .details h3 {
+        font-size: 1.1em; /* Adjust heading size for mobile */
+    }
+
+    .details p {
+        font-size: 0.85em; /* Adjust paragraph font size for mobile */
+    }
+}

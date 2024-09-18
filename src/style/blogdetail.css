@@ -1,0 +1,101 @@
+/* BlogDetail.css */
+
+.blog-detail-container {
+  display: flex;
+  flex-direction: column; /* Stack the blog detail and other blogs vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%; 
+}
+
+.blog-detail-container .titles {
+ align-items: first baseline;
+  text-align: left; /* Align text to the left */
+}
+
+.blog-detail-container .titles h2 {
+  font-size: 20px; /* Adjust font size as needed */
+  margin: 0; /* Reset margin if necessary */
+  color: #b9b9b9; /* Optional: Change text color */
+}
+.blogsd {
+  border: 2px solid rgb(224, 222, 222);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevent overflow */
+  width: 75%; /* Full width for blog details */
+  padding: 50px; /* Add padding */
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Space below blog detail */
+}
+
+.media {
+  margin-bottom: 20px; /* Space below media */
+}
+
+.blog-detail-container h2 {
+  font-family: "Cardo", serif; /* Use the Google font */
+  font-size: 2em; /* Larger font for titles */
+  margin: 10px 0; /* Margin above and below */
+}
+
+.media video,
+.media img {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 50vh; /* Maintain maximum height */
+  object-fit: cover;
+}
+.blog-date {
+  color: #888; /* Slightly grey color for the date */
+  font-size: 0.9em; /* Smaller text */
+  margin: 5px 0; /* Margin around date */
+}
+
+.status {
+  display: inline-block;
+  margin-top: 10px; /* Space above the link */
+  text-decoration: none;
+  color: blue; /* Change this for a better hover effect */
+}
+
+.likes {
+  margin-top: 10px; /* Space above likes */
+}
+
+.likes i {
+  margin-right: 8px; /* Space between icons */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .blog-detail-container {
+      padding: 15px; /* Less padding on smaller screens */
+  }
+
+  .blogsd {
+      padding: 15px; /* Less padding in content area */
+  }
+
+  h2 {
+      font-size: 1.8em; /* Slightly smaller title */
+  }
+
+  h3 {
+      font-size: 1.5em; /* Slightly smaller headlines */
+  }
+}
+
+@media (max-width: 480px) {
+  .blogsd {
+    width: 98%;
+  }
+  h3 {
+      font-size: 1.3em; /* Smaller headlines for mobile */
+  }
+
+  p {
+      font-size: 0.9em; /* Smaller text for mobile */
+  }
+}

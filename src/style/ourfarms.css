@@ -1,0 +1,79 @@
+/* OurFarm.css */
+.farm-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center cards in the container */
+    margin: 40px; /* Margin around the container for spacing */
+}
+
+.farm-card {
+    position: relative; /* Set position to relative */
+    background-color: #fff; /* White background for cards */
+    border: 2px solid #c2c2c2; /* Dark border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+    margin: 10px; /* Space between the cards */
+    overflow: hidden; /* Ensure content does not overflow */
+    width: 300px; /* Fixed width for the cards */
+    max-height: 400px; /* Set a max height for cards */
+    text-align: center; /* Center the content */
+    transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.farm-card img {
+    width: 100%; /* Make images responsive to card width */
+    height: 400px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area, preserving aspect ratio */
+}
+
+.farm-container .farm-card:hover {
+    transform: scale(2); 
+    width: 400px;
+    object-fit: cover;/* Slight zoom-in effect on hover */
+    z-index: 1; /* Bring card to the front */
+}
+
+.farm-card:hover img {
+    transform: scale(1.1); /* Scale image slightly on hover */
+}
+
+.overlay {
+    position: absolute; /* Position overlay absolutely relative to card */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+    opacity: 0; /* Start with overlay hidden */
+    display: flex; /* Flexbox to center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color: white; /* White text color */
+    font-size: 1.2em; /* Font size for text */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.farm-card:hover .overlay {
+    text-align: center; /* Center text */
+    align-items: center;
+    justify-content: center;
+    display: block;
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay h3, .overlay p {
+    font-family: "Gupter", serif;
+    margin: 10px; /* Remove any default margin */
+    padding: 0 10px; /* Add some horizontal padding */
+
+}
+
+.overlay h3 {
+     /* Font for titles */
+    font-size: 1.5rem; /* Slightly larger size for titles */
+    letter-spacing: 5px;
+}
+
+.overlay p {
+    font-family: "Gupter", serif; /* Font for paragraphs */
+    font-size: 1rem;/* Font size for paragraphs */
+}

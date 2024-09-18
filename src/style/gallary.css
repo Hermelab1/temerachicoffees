@@ -1,0 +1,71 @@
+/* Gallery Container Styles */
+.gallery {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: #f8f9fa; 
+}
+.gallery .heading p {
+  color: #3e1c08;
+}
+
+/* Swapers/Slider Container Styles */
+.swapers { 
+  display: flex; /* Use flexbox to center the items inside */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  height: auto;
+  padding-bottom: 10px;
+}
+
+/* Slide Item Styles */
+.slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+  flex: 1 1 30%; /* Flex property for responsive behavior */
+  max-width: 500px; /* Limit max width for large screens */
+  height: auto; /* Set a fixed height for equal size */
+
+}
+
+/* Image Styles */
+.circular-image {
+  width: 300px; /* Width for the circular image */
+  height: 300px; /* Height for the circular image */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Maintain aspect ratio */
+  transition: transform 0.3s;
+  border: 2px solid #ccc; /* Optional: Border around the image */
+  margin: 10px;
+}
+
+/* Hover Effects for Slide Items */
+.slide-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.slide-item:hover .circular-image {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Text Content Styles */
+.text-content h2 {
+  font-size: 25px; 
+  margin-bottom: 50px; /* Font size for title */
+  color: #3e1c08;
+  font-weight: 150; /* Dark color for text */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  .slide-item {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
+}
+

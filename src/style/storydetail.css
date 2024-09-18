@@ -1,0 +1,213 @@
+.ourstorydetail .ourhistory {
+    margin-left: 10%;
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    display: flex;
+    gap: 0;
+    color: #26542F;
+    overflow: hidden;
+}
+.ourstorydetail .ourhistory .about-text {
+    margin: 20px 5%;
+    width: 40%;
+    line-height: 2rem;
+    padding: 0 50px;
+}
+.ourstorydetail .ourhistory .about-text p::first-letter {
+    font-family: "Gupter", serif;
+    color: 176756;
+    font-weight: 450; 
+    font-size: 150px; 
+    float: left; 
+    line-height: 80px; 
+    margin-top: -4px; 
+}
+
+.ourstorydetail .ourhistory .images {
+    width: 50%;
+    height: 85%;
+    transform: translateX(-5px);
+}
+
+.ourstorydetail .ourhistory .images img {
+    width: 100%;
+    height: 80vh;
+}
+
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+
+.leders {
+
+    background-color: #f8f9fa; 
+    display: flex; /* Ensure child elements align properly */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+/* Add some padding for spacing */
+}
+.leders .heading p,
+.teammembers .heading p {
+    color: #3e1c08;
+    border: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+.leders .our {
+
+    width: 60%;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px; /* Space between founder sections */
+}
+
+.leders .imagesF {
+
+    width: 100%; /* Increased width */
+    display: flex;
+}
+
+.leders .imagesF img {  
+
+    width: 100%; /* Maintain full width of the container */
+    height: 50vh; /* Adjust height automatically to maintain aspect ratio */
+    max-height: 100vh; /* Maximum height, but should preserve aspect ratio */
+    object-fit: cover; /* Ensure image covers the area neatly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Added shadow effect */
+    /* Optional: add rounded corners */
+}
+
+.teammembers .card {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.teammembers .card1 {
+    position: relative; /* Make this position relative to allow positioning of children */
+    width: 20%;
+    height: 60vh;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content does not overflow card */
+}
+
+.teammembers .card1 img {
+    width: 100%; 
+    height: 100%; /* Make the image fill the card height */
+    object-fit: cover; 
+    /* Ensure the image covers the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+    /* Optional: add rounded corners */
+}
+
+.teammembers .card1 .cont {
+    position: absolute; /* Position it absolutely within the card */
+    bottom: 0; /* Align it to the bottom */
+    left: 0;
+    right: 0;
+    padding: 0.2rem; /* Add some padding */
+    background-color: rgba(62, 28, 8, 0.8); /* Semi-transparent background color */
+    color: #ffffff; /* Change text color to white for contrast */
+    text-align: center;
+}
+
+.teammembers .card1 p {
+    color: #fff; /* Set paragraph text color to white */
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .ourstorydetail .ourhistory {
+        flex-direction: column;
+        margin-left: 5%;
+        height: auto; /* Allow auto height */
+    }
+  
+    .ourstorydetail .ourhistory .about-text {
+        width: 90%; /* Full width on smaller screens */
+        padding: 0; /* Remove additional padding */
+    }
+  
+    .ourstorydetail .ourhistory .images {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .leders .our {
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center; /* Center align */
+    }
+
+    .leders .imagesF {
+        width: 90%;
+    }
+
+
+    
+
+    .teammembers .card1 {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .ourstorydetail .ourhistory {
+        width: 100%;
+        margin: 0;
+        height: auto; /* Allow auto height */
+    }
+
+    .ourstorydetail .ourhistory p{
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+    .leders {
+        padding: 0;
+    }
+    .leders .our {
+        width: 100%;
+        padding: 3px;
+        gap: 0;
+
+    }
+
+    .leders .our p{
+        line-height: 1.5;
+
+    }
+    .leders .imagesF img {
+        width: 100;
+        height: 60vh; /* Relative image height for smaller devices */
+    }
+  
+    .teammembers .card {
+
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .teammembers .card1 {
+        width: 90%; /* Full width */
+    }
+}
