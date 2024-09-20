@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; 
 import 'swiper/swiper-bundle.css';
-import { tr } from 'framer-motion/client';
+
 
 // Function to import all images from a directory
 const importAll = (r) => {
