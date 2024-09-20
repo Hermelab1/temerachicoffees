@@ -1,35 +1,33 @@
 .ourstory {
   background: url(../asset/img/BgDrowings/CoffeeDrawing.png.svg) no-repeat;
   height: 90vh;
-  padding: 20px;
-  align-items: center;
-
-}
-
-.ourstory .container {
-
+  width: 80%;
   display: flex;
-  flex-direction: row; /* Ensure the text and images are side by side */
-  width: 100%;
-  height: auto; /* Ensure the container takes full width */
-  justify-content: space-between;
-  overflow: hidden; /* Distribute space between text and image */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
-
+.ourstory .container {
+  display: flex;
+  width: 100%;   
+  height: 70vh;
+}
 .ourstory .heading p{
   color: #3e1c08;
-
+  margin: 0;
+  padding: 0;
 }
 .about-text {
+  padding: 20px;
   color: #176756;
-  font-size: 1.1rem;
-  margin-top: 3%; /* Margin from the top */
-  margin-left: 15%; /* Margin from the left */
-  width: 27%; /* Adjusted width */
+  margin: 0 auto; 
+  width: 35%; /* Adjusted width */
   text-align: justify; /* Justify text */
-
 }
-
+.about-text p{
+  font-size: 1.1rem;
+}
 .ourstory .about-text p::first-letter {
   font-family: "Gupter", serif;
   color: 176756; /* Color of the first letter */
@@ -41,31 +39,31 @@
 }
 
 .images {
-  margin-top: 2%;
+
   display: flex;
-  flex-direction: row; /* Display images side by side */
+  flex-direction:row; /* Display images side by side */
   gap: 15px; /* Space between images */
   width: 50%;
-  height: 100%; /* Adjust to the width of the container */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .images img {
-
-  flex: 1; /* Allow images to grow equally */
-  height: 50vh; /* Set height to 100% of the parent container */
+  height: 60vh; /* Set height to 100% of the parent container */
   object-fit: cover; /* Ensure images cover their container without distortion */
-  max-width: 45%;
-  transform: translateX(-20px); /* Initial position */
+  max-width: 40%;
+  transform: translateX(100%); /* Initial position off the right side */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
-  animation: topToBottom 3s ease-in forwards; /* Updated animation name */
+  animation: rightToLeft 3s ease-in forwards; /* Updated animation name */
 }
 
-@keyframes topToBottom {
+@keyframes rightToLeft {
   from {
-    transform: translateY(-300px) translateX(-20px); /* Start from above the visible area */
+    transform: translateX(100%); /* Start from off the right side */
   }
   to {
-    transform: translateY(0px) translateX(-20px); /* End at the final position */
+    transform: translateX(0px); /* End at the final position */
   }
 }
 
@@ -113,37 +111,12 @@
 @media (max-width: 480px) {
   .ourstory {
     height: auto;
-    margin-bottom: 10px;
-  }
-
-  .about-text {
-    margin-top: 0%; /* Margin from the top */
-    margin-bottom: 10px;
-  }
-  .about-text button{
-    margin-top: 10px;
-  }
-  .about-text p{
-    font-size: 17px;
- /* Reduce font size for very small screens */
-  }
-
-  .ourstory .about-text p::first-letter {
-    font-size: 100px; /* Reduce first letter size */
-  }
-  .images {
-    text-align: center;    
-    display: block;
-    gap: 10px;    
-  } 
-  .images img {
-    margin-top: 0;
-    margin-right: 0;
-    padding: 0;
-    margin-left: 10%;
-    margin-bottom: 0%;
     width: 100%;
-    height: 50vh;
-
   }
+  .about-text {
+    padding: 0;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
 }

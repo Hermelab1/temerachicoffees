@@ -5,21 +5,8 @@ export const nav = [
     },
     {
         text: "Gallery",
-        path:"#",
-        submenu: [
-            {
-                text: "Events",
-                path: "/events", // Corrected path
-            },
-            {
-                text: "Our Farms",
-                path: "/ourfarm", // Corrected path
-            },
-            {
-                text: "Training",
-                path: "/training", // Corrected path
-            }
-        ]
+        path:"/events",
+        
     },
     {
         text: "Blog",

@@ -1,51 +1,81 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import '../../style/contact.css';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const form = useRef();
+  const [setStatusMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_w6blv2o', 'template_whcj7rk', form.current, 'Puv041KtiA_TZduH2') // Use the correct public key here.
+      .then(
+        () => {
+          setStatusMessage('SUCCESS! Email sent.');
+        },
+        (error) => {
+          console.error('Email send failed:', error);
+          setStatusMessage(`FAILED: ${error.text}`);
+        },
+      );
+
+    e.target.reset();
+  };
   return (
     <section className='contact'>
-      <div className='container'>
-        <div className='contact-info'>
-          <iframe 
-            className='map'
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.715384400312!2d38.749434774858365!3d8.998315491061783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8790d04dc671%3A0x230d68b301aa52e3!2zVEVNRVJBQ0hJIENPRkZFRSDhibDhiJjhiKvhjK0g4Ymh4YqT!5e0!3m2!1sam!2set!4v1721947464502!5m2!1sam!2set" 
-            width="700" 
-            height="1000" 
-            style={{ width: '100%', height: '500px', border: 0  }}
-            allowFullScreen 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps location of our office">
-          </iframe>
+    <div className='container'>
+      <div className="contactusform">
+        <form ref={form} onSubmit={sendEmail} className='form-group'>
+        <input type="text" name="user_name" placeholder='Full Name' required />
+          <input type="text" name="user_name" placeholder='Company Name' required />
+          <input type="text" name="user_name" placeholder='Website' required />         
+          <input type="email" name="user_email" placeholder='Email' required />
+          <input type="text" name="subject" placeholder='Subject' required />
+          <textarea name="message" cols="10" rows="3" placeholder='Leave your message here' required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        {/*statusMessage && <p>{statusMessage}</p>*/}
+      </div>
+      
+      <div className="divider"></div> {/* Vertical line added here */}
+      
+      <div className='icons-p'>
+        <p>
+          <b>HEAD OFFICE:</b><br />
+          Kirkos Sub City Woreda 11 House No. 195/A<br />
+          Addis Ababa, Ethiopia<br />
+          Tell: +251911245503<br />
+          <b>Warehouse:</b><br />
+          Hirut Processing Factory<br />
+          Alem Gena, Sheger Oromia, ETHIOPIA<br />
+          Email: info@temerachicoffeeexport.com<br />
+          <b>Business Partner</b><br />
+          Asia/Japan<br />
+          Selam Store Trading LLC<br />
+          4-32-4 Asakusa, Taito-ku Tokyo<br />
+          Japan<br />
+        </p>
+      </div>
+      
+      <div className="divider"></div> {/* Another vertical line can be added here if needed */}
+      
+      <div className="links">
+        <div className="titles">
+          <h3>Reach us</h3>
         </div>
-        <div className='address'>
-          <div className='icons-p'>
-
-            <p> <b>HEAD OFFICE:</b><br />
-            Kirkos Sub City Woreda 11 House No. 195/A<br />
-            Addis Ababa, Ethiopia<br />
-            Tell: +251911245503<br />
-            <b>Warehouse:</b><br />
-            Guji Coffee Export and Processing Factory<br />
-            Furi, Sheger Oromia , ETHIOPIA<br />
-            Email: info@temerachicoffeeexport.com<br />
-            <b>Business Partner </b><br />
-            Asia/ Japan<br />
-            Selam Store Trading LLC<br />
-            4-32-4 Asakusa,Taito-ku  Tokyo<br />
-            Japan<br />
-
-
-            </p>
-          </div>
-          <div className="button flex">
-            <button className='btn1'>
-              Contact Us
-            </button>
-          </div>
+        <div className="link">             
+          <a href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2FTemerachixoffeeexport"><i className="fa-brands fa-facebook"></i></a>
+          <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="/"><i className="fa-brands fa-instagram"></i></a>
+          
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
   );
 };
 

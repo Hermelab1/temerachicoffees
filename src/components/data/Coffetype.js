@@ -9,7 +9,7 @@ export const Coffeetype = [
         description: "One of the fine Ethiopian coffee variety produced in the Gedeb district that is in the Gedeo Zone, of the Southern Nations, Nationalities and Peoples’ Regional State (SNNPR). Floral notes are also quite distinguished together with lemon or even bergamot and sometimes a touch of tropical fruits. The profile can also refer to tea-like character or flavors or very mild spices depending on the processing type. The general taste of the coffee is active, bright, sharp and the acidity is relatively balanced and contributes to the refreshing taste.", // Corrected path to match routes
         catagory:[
             {
-                imgs: img1,
+
                 titles:"Natural",
                 grades:[
                     {
@@ -32,7 +32,6 @@ export const Coffeetype = [
                 ]
             },
             {
-                imgs: img2,
                 titles:"Washed",
                 grades:[
                     {

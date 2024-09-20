@@ -3,19 +3,20 @@ header {
     height: 8vh;
     box-shadow: 0 5px 30px rgba(0, 22, 84, 0.1);
     padding: 5px 0;
-    position: sticky;
+    position: absolute;
+    width: 100%;
     top: 0;
     z-index: 999;
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space between items */
     align-items: center; /* Center items vertically */
+    opacity: 0.8;
 }
-
 header img {
-    width: 70%; /* Use percentages for responsive width */
+    margin-left: 25%;
+    width: 85%; /* Use percentages for responsive width */
     max-width: 200px; /* Ensure it doesn't get too big */
 }
-
 header .submenu {
     background-color: #fff;
     position: absolute;
@@ -26,24 +27,24 @@ header .submenu {
     border-radius: 10px;
     padding: 10px;
 }
-
 header .submenu a {
     margin: 10px;
     padding: 15px;
     line-height:30px;
 }
-
+.links{
+    display: flex;
+    gap: 15px;
+}
 header a {
     transition: transform 0.2s;
     margin-left: 60px; /* Change padding to margin for more consistent spacing */
     font-weight: 500;
     font-size: 1.2rem;
 }
-
 header a:hover {
     text-decoration: underline;
 }
-
 header span {
     padding: 0 6px;
     background-color: #27ae60;
@@ -52,12 +53,10 @@ header span {
     margin-right: 4px;
     font-weight: 500;
 }
-
 header h4 {
     font-weight: 500;
     margin-right: 20px;
 }
-
 header button {
     text-align: center;
     padding: 10px;
@@ -68,13 +67,9 @@ header button a{
     padding: 0;
     margin: 0;
 }
-
-
-
 header .toggle {
     display: none; /* Hidden by default */
 }
-
 .social-media .links a {
     display: flex;
     align-items: center;
@@ -82,33 +77,26 @@ header .toggle {
     padding: 5px;
     text-decoration: none;
 }
-
 .social-media .links i {
     border-radius: 50%;
     color: #80c0b2;
     font-size: 1.7rem;
-    
 }
 .social-media .links i:hover {
-
     color: #296558;
     font-size: 1.8rem;
-    
 }
-
 /* Media Query for Mobile */
 @media screen and (max-width: 980px) {
     header {
         padding: 0;
         margin: 0; /* Remove padding for mobile */
         height: 10vh;
-        
     }
     header img {
         width: 65%; /* Wider on small screens */
         margin: 0;
         padding: 0;
-
     }
     header .submenu {
         box-shadow: 0 5px 30px rgba(0, 22, 84, 0.4);
@@ -122,19 +110,15 @@ header .toggle {
     header a {
         margin-left: 30px;
     }
-    
-
     header .button {
         display: none; /* Hidden buttons */
     }
-
     .social-media {
         display: none; /* Hide social media on mobile */
     }
     header .button {
         display: none;
     }
-
     header .nav .flex {
         display: none;
     }
@@ -145,16 +129,13 @@ header .toggle {
         top: auto;
         z-index: 1000; /* Ensure it is above other content */
     }
-
     header .toggle button {
         background-color: #0b785f;
     }
-
     header .toggle button i {
         color: #fff;
         padding-left: 8px;
     }
-
     header .small {
         width: 100%;
         height: auto; /* Dynamic height */
@@ -164,7 +145,6 @@ header .toggle {
         top: 10vh;
         left: 0;
     }
-
     header li a {
         display: block; /* Full-width links on mobile */
         margin-left: 30px;

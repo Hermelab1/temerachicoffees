@@ -1,90 +1,34 @@
 /* General Styles */
 .gallary {
+    width: 80%;
     display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Align children in a column */
     align-items: center; /* Center children horizontally */
     justify-content: center; /* Center children vertically */
-    background-color: #f8f9fa;
+    flex-wrap: wrap;
+    margin: auto;
     height: auto; /* Auto height to accommodate content */
-    margin: 0 auto; /* Center the gallery itself in the viewport */
 }
 .gallary .heading p {
     color: #3e1c08;
 }
-.wrapper {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Centers items horizontally */
-    text-align: center; /* Centers text inside the wrapper */
-    width: 80%; /* Width of the wrapper */
-    margin: 2rem 2rem 0rem 2rem; /* Centers the wrapper horizontally */
-    position: relative;
-    height: 80px; /* Set height for the wrapper */
-    overflow: hidden; /* Ensures content does not overflow */
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0)); /* Gradient effect *//* Helps improve performance during animation */
-}
-@keyframes scrollleft {
-    to {
-        left: -200px; /* Adjust as needed depending on the item width */
-    }
-}
-.item {
-    border: solid rgb(255, 255, 255);
-    width: 175px;
-    height: 70px;
-    border-radius: 6px;
-    position: absolute;
-    left: 100%;
-    animation-name: scrollleft;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; /* Loop the animation */
-}
-
-/* Ensures image covers the container without distortion */
-.item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Calculate animation delay for each item for a staggered effect */
-.item1 { animation-delay: calc(30s / 3 * (3 - 1) * -1); }
-.item2 { animation-delay: calc(30s / 3 * (3 - 2) * -1); }
-.item3 { animation-delay: calc(30s / 3 * (3 - 3) * -1); }
 
 /* Testimonial Swiper Style */
 .test-containers {
-    width: 80%;
-    position: relative;
-    margin: 20px;
+    width: 100%;
+    margin-bottom: 25px;
 }
-
 .test-cards {
-    position: relative;
-    overflow: hidden;
     border: 2px solid rgb(221, 221, 221);
     background-color: #fff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
-    transition: transform 0.3s;
-}
 
-.test-cards img {
-    width: 100px;
-    max-height: 100px;
-    border: solid rgb(200, 200, 200);
-    border-radius: 50%;
-    object-fit: cover; /* keep aspect ratio */
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    background-color: rgb(12, 124, 96);
 }
-
 .iconp {
 
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -93,7 +37,10 @@
 
 }
 .iconp h2{
-    font-size: 0.8rem;
+    font-family: "Cardo", serif;
+    font-size: 1rem;
+    font-weight: 150;
+    margin: 20px auto;
 }
 
 .iconp p {

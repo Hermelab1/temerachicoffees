@@ -2,60 +2,15 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on small screens */
     margin: 20px auto; /* Center horizontally */
     gap: 60px;
 
 }
-.address {
-    margin-top: 30px;
-    width: 30%;
-    display: flex; /* Change to flex to allow for more layout control */
-    flex-direction: column; /* Keep this to stack items vertically */
-    align-items: center; /* Center content horizontally */
-}
-
-.icons-p {
-    margin-bottom: 20px; /* Add some space below the text */
-}
-
-.address .links {
-    display: flex; /* Flexbox to arrange icons in a row */
-    justify-content: center; /* Center the icons in the container */
-    gap: 10px; /* Adds space between icons */
-}
-.address .links i{
-   background-color: #1c6e49;
-   width: 40px;
-   border-radius: 100%;
-   height: 40px;
-   color: white;
-   padding: 7px;
-   /* Adds space between icons */
-}
-
-
-/* Optional: add hover effects for icons */
-.address .links i:hover {
-    background-color: #23a756;
-    color: white; /* Change color on hover (customize as needed) */
-}
-
-.ourstorydetail .mapsc {
-    background-color: #f0efef;
-    width: 100%;
-    display: flex; /* Ensure the map container is flexible */
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Add padding for spacing */
-}
-.ourstorydetail .maps{
-    margin: 0;
-    width: 100%;
-    height: 50vh; /* Make height responsive */
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.icons-p p{
+    text-align: center;
 }
 /* Contact Form Styles */
 .contactusform { /* Fixed the class name */
@@ -63,7 +18,6 @@
     max-width: 500px; /* Max width for the form */
     background-color: white; /* Ensure the form background is white */
     border-radius: 8px; /* Rounded corners for form */
-
 }
 
 .contactusform .form-group {

@@ -12,19 +12,8 @@ export const uniqetech =[
         paragraph:"We believe that our well-established and efficient export network spanning multiple countries guarantees exceptional customer service. Our proven track record ensures outstanding support and reliability across the coffee market."
     },
     {
-        title: "Economic Sustainability",
-        paragraph:"We believe Fair prices for coffee producers are crucial for economic viability. Market instability can severely impact farmers livelihoods so we offer long-term contracts as well as stable prices."
+        title: "Sustainability",
+        paragraph:"We ensure fair prices and long-term contracts for coffee producers to promote economic stability while using agroforestry to enhance biodiversity and soil health. Our investments in coffee-growing communities support infrastructure, health services and education for lasting sustainability."
     },
-    {
-        title: "Environmental Sustainability",
-        paragraph:"We understand climate change has impacts on coffee farming affecting output and quality. So we use agroforestry a sustainable practice combining coffee with other crops to enhance biodiversity and soil health."
-    },
-    {
-        title:"Social Sustainability",
-        paragraph:"We believe investing in coffee-growing communities fosters long-term sustainability through infrastructure development health services and education ensuring the well-being of the local communities."
-        
-        
-        
-    }
-
+   
 ];

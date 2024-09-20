@@ -9,7 +9,13 @@
   margin: 0 auto;
   width: 100%; 
 }
-
+.blogsd button{
+  color: #686868;
+  background: none;
+}
+.blogsd button:hover {
+  background: none;
+}
 .blog-detail-container .titles {
  align-items: first baseline;
   text-align: left; /* Align text to the left */
@@ -26,7 +32,7 @@
   overflow: hidden; /* Prevent overflow */
   width: 75%; /* Full width for blog details */
   padding: 50px; /* Add padding */
-  text-align: center; /* Center text */
+  text-align: justify; /* Center text */
   margin-bottom: 20px; /* Space below blog detail */
 }
 

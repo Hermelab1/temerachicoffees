@@ -74,9 +74,25 @@
     bottom: 10px; /* Space from bottom */
     right: 10px; /* Space from right */
     display: flex; /* Use flexbox to align items */
-    gap: 10px; /* Space between icons */
-    font-size: 1.5rem;
-    color: rgb(215, 215, 215);
+    gap: 5px; /* Space between icons */
+    font-size: 0.8rem;
+
+}
+.likes button {
+    background: none;
+    color: #686868;
+
+}
+.likes button:hover {
+    background: none;
+
+
+}
+.fa-heart {
+    color: brown;
+}
+.fa-share {
+    color:#0888b3;
 }
 
 /* Media Queries */

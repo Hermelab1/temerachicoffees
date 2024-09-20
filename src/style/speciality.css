@@ -1,97 +1,100 @@
 .special {
-/* Use shorthand for background */
-
-    background-size: cover; /* Ensure the background image covers the entire container */
-    position: relative;
-    height: auto;
-    max-width: 100%; /* Optional: Set a max width */
+    background-color: #f8f9fa; 
     overflow: hidden; /* Prevent overflow from child elements */
-    margin-bottom: 3%;
+    display: flex; 
+    align-items: center;/* Added display flex to center children */
+    justify-content: center; /* Center children horizontally */
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto; /* Ensure children are stacked vertically */
+    position: relative;
+    z-index: 1;
 }
-
-.special .heading h1{
+.special .heading h1 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
-
-@keyframes downtoup {
-    from {
-        bottom: -100px; /* Adjust starting position */
-        opacity: 0; /* Optionally start with no opacity */
-    }
-    to {
-        bottom: 0;
-        opacity: 1; /* Fully visible at the end */
-    }
-}
-.special h2{
+.special h2 {
     font-size: 1.3rem;
     text-align: center;
-    margin-bottom: 10px;
-}
-
-.special .heading h1,
-.special .heading p {
-  color: #3e1c08;
-  border: none;
-  text-align: center;
-  margin-bottom: 0px;
 }
 
 .special .container {
-    margin-left: 10%;
-    padding: 10px 50px;
+    padding: 0px 50px;
     position: relative;
-    width: 40%;
-    animation: movedown 1s linear forwards; /* Maintain existing move down animation */
-    opacity: 0; /* Start element as invisible */
+    width: 40%; /* Width of each container */
+    opacity: 0; /* Initially hidden */
+    display: flex; /* Added display flex for inner content centering */
+    flex-direction: column; /* Stack child elements */
+    align-items: center; /* Center child elements */
+    margin-bottom: 20px;
 }
-.special .container p{
-    font-size: 1.1rem;
-    line-height: 30px;
+
+.left-container,
+.right-container {
+    position: relative; /* Ensure relative positioning */
 }
-@keyframes movedown {
+
+/* Animation for left container */
+.left-container {
+    left: -20%;
+    animation: moveLeft 1s linear forwards; /* Animate from left */
+    animation-delay: 2s; /* Delay before starting animation */
+}
+
+/* Animation for right container */
+.right-container {
+    right: -20%;
+    animation: moveRight 1s linear forwards; /* Animate from right */
+    animation-delay: 2s; /* Delay before starting animation */
+}
+
+.special .container p {
+    line-height: 25px;
+}
+
+@keyframes moveLeft {
     0% {
         opacity: 0; /* Start as invisible */
-        transform: translateY(-30px); /* Suddenly move down */
+        transform: translateX(-100%); /* Start off-screen to the left */
     }
     100% {
-        opacity: 1; /* Fully visible at the end */
-        transform: translateY(0); /* Positioning correct */
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* End at its position */
     }
 }
 
-.special .container:nth-child(2) { animation-delay: 1s; }
-.special .container:nth-child(3) { animation-delay: 2s; }
-.special .container:nth-child(4) { animation-delay: 4s; }
-.special .container:nth-child(5) { animation-delay: 7s; }
-.special .container:nth-child(6) { animation-delay: 9.5s; }
-.special .container:nth-child(7) { animation-delay: 12s; }
-.special .container:nth-child(8) { animation-delay: 15s; }
+@keyframes moveRight {
+    0% {
+        opacity: 0; /* Start as invisible */
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* End at its position */
+    }
+}
+
+.special .container:nth-child(2) {
+    animation-delay: 1s; /* For the second container */
+}
+.special .container:nth-child(3) {
+    animation-delay: 2.5s; /* For the third container */
+}
+.special .container:nth-child(4) {
+    animation-delay: 4.5s; /* For the fourth container */
+}
+.special .container:nth-child(5) {
+    animation-delay: 6s; /* For the fifth container */
+}
 
 .special .text-box {
-    padding: 20px 30px;
+    padding: 8px 10px;
     background: hsla(0, 0%, 100%, 0.4); /* Semi-transparent background */
     border: 2px solid #176756; /* Added border width for clarity */
     position: relative;
     border-radius: 8px;
-    font-size: 15px;
-    color: #176756;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow with offset, blur, and color */
-}
-
-
-.left-container, .right-container {
-    position: relative; /* Ensure relative positioning */
-}
-
-.left-container {
-    left: 0%;
-}
-
-.right-container {
-    left: 40%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Shadow with offset, blur, and color */
 }
 
 .special .container i {
@@ -99,19 +102,19 @@
     background-color: #ffffff;
     text-align: center;
     border: #176756 solid;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    right: -30px;
+    right: -25px;
     top: 32px;
     z-index: 10;
     color: #176756; /* Ensure icons are above the background */
 }
 
 .right-container i {
-    left: -30px;
+    left: -25px;
 }
 
 .special::after {
@@ -120,27 +123,32 @@
     width: 6px;
     height: 85%;
     background: #176756;
-    top: 12%;
+    top: 22%;
     left: 50%;
     margin-left: -3px;
-    z-index: -1; /* Ensure line stays behind other elements */
-    animation: moveline 12s linear forwards;
+    z-index: -1; /* Ensure line stays behind other elements without negative value */
+    animation: moveline 7s linear forwards;
 }
 
 @keyframes moveline {
-    0% { height: 0; }
-    100% { height: 75%; }
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
 }
 
 .text-box h2 {
     font-weight: 600;
 }
 
-.left-container-arrow, .right-container-arrow {
+.left-container-arrow,
+.right-container-arrow {
     height: 0;
     width: 0;
     position: absolute;
-    top: 30px;
+    top: 42px;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
@@ -159,37 +167,44 @@
 /* Corrected media query */
 @media screen and (max-width: 760px) {
     .special .container {
-        left: 3%;
+        left: auto; /* Remove left positioning */
+        right: auto; /* Remove right positioning */
         width: 85%;
         padding: 10px; /* Adjust padding for better fit on small screens */
         animation: movedown 1s linear forwards;
-        opacity: 1; 
+        opacity: 1;
     }
 
-    .special::after {    
-        left: 8.5%; 
-        top: 8%;      
+    .special::after {
+        left: 8.5%;
+        top: 8%;
     }
+
     @keyframes moveline {
-        0% { height: 0; }
-        100% { height: 80%; }
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 80%;
+        }
     }
+
     .special .container i {
         padding-top: 5px;
         font-size: 1.7rem;
         width: 40px;
         height: 40px;
     }
-    .special .container p{
+
+    .special .container p {
         font-size: 0.9rem;
         line-height: 25px;
     }
-    
-
 
     .left-container,
     .right-container {
-        left: 8%; /* Adjusted to align better on small screens */
+        left: auto; /* Use auto instead of fixed positions */
+        right: auto; /* Use auto too */
     }
 
     .left-container i,

@@ -114,8 +114,8 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       <motion.div
         id="ourhistory"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.about ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        animate={visibleSections.about ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        transition={{ duration: 0.5 }}
         className="ourhistory"
       >
         <div className='about-text'>
@@ -132,8 +132,8 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       <motion.div
         id="leders"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.leders ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        animate={visibleSections.leders ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        transition={{ duration: 0.5 }}
         className='leders'
       >
         <Heading title="Founders" subtitle="Visionary Creators" />
@@ -154,8 +154,8 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       <motion.div
         id="teammembers"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.teamMembers ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        animate={visibleSections.teamMembers ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        transition={{ duration: 0.5 }}
         className="teammembers"
       >
         <Heading title="Meet Our Team" subtitle="The Faces Behind the Excellence"/>
@@ -175,8 +175,8 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       <motion.div
         id="contactus"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.contact ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        animate={visibleSections.contact ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        transition={{ duration: 0.5 }}
         className="contactus"
       >
         <Contactus />

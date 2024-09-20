@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Hero from './hero';
 import Ourstory from '../Ourstory/ourstory';
-import Gallay from '../Gallarys/gallary';
+
 import Speciality from '../Ourspaciality/spaciality';
 import Contact from '../contact/contact';
 import Footage from '../footage/footage';
@@ -12,15 +12,14 @@ import Coworkerslist from '../coworkers/coworkerslist';
 const sections = [
   { component: Hero, key: 1 },
   { component: Ourstory, key: 2 },
-  { component: Gallay, key: 3 },
-  { component: Speciality, key: 4 },
-  { component: Coworkerslist, key: 5 },
+  { component: Speciality, key: 3 },
+  { component: Coworkerslist, key: 4 },
   { component: () => (
       <>
         <Contact />
         <Footage />
       </>
-    ), key: 6 
+    ), key: 5 
   }
 ];
 
@@ -57,8 +56,8 @@ const Home = () => {
             id={`section-${section.key}`}
             key={section.key}
             initial={{ opacity: 0, y: 200 }}
-            animate={visibleSections[index] ? { opacity: 2, y: 0 } : { opacity: 0, y: 100 }} // Apply animation based on visibility
-            transition={{ duration: 1 }}
+            animate={visibleSections[index] ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+            transition={{ duration: 0.5 }}
           >
             <Component />
           </motion.div>

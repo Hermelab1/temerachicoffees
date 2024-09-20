@@ -1,140 +1,88 @@
 /* contact.css */
 .contact .container {
-    background-color: #efefef;
-    display: flex;      
-    align-items: center;
+    background-color: #f8f9fa;
     width: 100%;
-    margin: 0;
-}
-
-.contact-info {
-    margin-left: 0;
-    width: 100%;
-    height: 100%;
-}
-.contact-info .map {
-    margin: 0;
-    width: 40%;
-    height: 100vh; /* Make height responsive */
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.address {
-
-    text-align: center;
-    width: 50%; /* Full width for smaller screens */
-}
-.address p{
-    line-height: 25px;
-}
-.address h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.icons-p {
-    margin-bottom: 1rem;
-    display: flex;
-}
-.icons-p p {
-    font-size: 1rem;
-    color: #12523a;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-}
-.icons-p i {
-    color: #085334;
-    margin-right: 0.5rem;
-}
-.contact .button {
-    display: flex;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 60px;
 }
-.contact .btn1 {
-    background-color: #0c5e2b;
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.contact .contactusform{
+    background: none;
 }
-.contact .btn1:hover {
-    background-color: #0a4a20;
+.contact .icons-p p{
+    font-size: 0.8rem;
+    line-height: 25px;
+    text-align: center;
 }
+.contact .links,
+.conatctA .links{
+    display:block;
+    justify-content: center;
+    text-align: center;
 
-/* Media Queries for Responsive Design */
-
-@media (max-width: 1200px) {
-    .contact .container {
-        padding: 0 1rem; /* Adjust padding for smaller screens */
-    }
-
-    .address h3 {
-        font-size: 1.25rem; /* Smaller font size on medium screens */
-    }
-
-    .icons-p p {
-        font-size: 0.9rem; /* Slightly smaller font size for icons */
-    }
 }
+.titles h3{
 
-@media (max-width: 768px) {
-    .contact {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        height: auto; /* Allow height to adjust automatically */
-    }
-
-    .contact-info {
-        max-width: 100%; /* Utilize full width */
-    }
-
-    .icons-p {
-        flex-direction: column; /* Stack icons vertically */
-        align-items: center; /* Center align for smaller screens */
-    }
-
-    .contact .btn1 {
-        width: 100%; /* Make the button full width */
-        padding: 1rem; /* Increase padding for touch targets */
-        font-size: 1.1rem; /* Slightly larger font size for readability */
-    }
+    font-size: 1.3rem;
+    font-weight: 250;
+}
+.conatctA .links i,
+.contact .links i{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color:#1E5A41 ;
+    padding: 5px;
+    
 }
 
+.conatctA .links a,
+.contact .links a{
+    color: white;
+    margin: 5px;
+}
+
+.contact .divider {
+    width: 1px; /* Adjust the width of the line */
+    background-color: #c7c5c5; /* Change this color as needed */
+    height: 250px; /* Adjust the height as needed */
+    margin: 0 20px; /* Space around the line */
+    display: inline-block; /* Aligns with the other content */
+  }
+  /* Contact Form Styles */
+.contact .contactusform { /* Fixed the class name */
+    padding: 1rem;
+    max-width: 350px; /* Max width for the form */
+    background-color: none; /* Ensure the form background is white */
+}
+
+.contact .contactusform .form-group {
+    margin-bottom: 0rem; 
+}
+
+.contact .contactusform input,
+.contact .contactusform textarea {
+    font-family: "Poppins", sans-serif;
+    background: none;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 0.5rem; /* Increased padding for inputs */
+    font-size: 0.8rem; /* Consistent font size */
+}
+.contact .contactusform button {
+    padding: 0.5rem 1rem; /* Button padding */
+    background-color: #1E5A41; /* Button color */
+}
+
+.contact .contactusform button:hover {
+    background-color: none; /* Darken button on hover */
+}
+  
 @media (max-width: 480px) {
-
-    .contact .container {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
+    .contact .divider {
+        display: none;
     }
-    .address {
-        text-align: center;
-        width: 100%; /* Full width for smaller screens */
-    }
-    .contact .btn1 {
-        padding: 0.5rem; /* Reduce padding for small devices */
-        font-size: 0.9rem; /* Smaller font size */
-    }
-    .address {
-
-        text-align: center;
-        width: 100%; /* Full width for smaller screens */
-    }
-
-    .address h3 {
-        font-size: 1.1rem; /* Further reduce size on mobile */
-    }
-
-    .icons-p p {
-        font-size: 0.8rem; /* Smaller text for mobile */
-    }
+    
 }

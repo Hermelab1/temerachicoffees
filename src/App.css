@@ -10,9 +10,9 @@
 }
 body{
  /*font-family: "Poppins", sans-serif;*/
- font-family: "Cardo", serif;
+  font-family: "Cardo", serif;
   background-color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   color: #176756;
 }
@@ -45,13 +45,14 @@ button {
   color: #edefee;
   cursor: pointer;
   font-weight: bold;
-  font-size: 1rem;  
+  font-size: 0.8rem;  
 }
 p{
   font-Family: poppins-extralight, poppins, sans-serif;
   text-align: justify;
   line-height: 35px;
   font-weight: 200;
+  font-size: 1rem;
 
 }
 button a{
@@ -93,7 +94,8 @@ button:hover{
 .gallery .heading h1,
 .gallary .heading h1,
 .ourstorydetail .leders .heading h1,
-.ourstorydetail .teammembers .heading h1 
+.ourstorydetail .teammembers .heading h1 ,
+.farm-container .heading h1
 { 
   font-family: "Cardo", serif;
   color: #3e1c08;
@@ -102,7 +104,21 @@ button:hover{
   margin-top: 4%;
   line-height: 30px;
 }
-
+.special .heading h1,
+.special .heading p {
+    color: #3e1c08;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.leders .heading p,
+.teammembers .heading p {
+    color: #3e1c08;
+    border: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
 .heading p{
   text-align: center;
   margin-bottom: 15px;

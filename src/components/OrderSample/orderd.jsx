@@ -10,7 +10,7 @@ const countryCodes = ContryCode;
 
 const Orderd = () => {
   const location = useLocation();
-  const { image, code, cname, avaliblity, description } = location.state || {};
+  const { image, code, cname, description } = location.state || {};
 
   const [formData, setFormData] = useState({
     name: '',
@@ -28,7 +28,7 @@ const Orderd = () => {
 
   const [loading, setLoading] = useState(false);
   const [termsAgreed, setTermsAgreed] = useState(false);
-  const [hasCompany, setHasCompany] = useState(false);
+
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
 
@@ -99,9 +99,7 @@ const Orderd = () => {
     setTermsAgreed(e.target.checked);
   };
 
-  const handleCompanyCheckboxChange = (e) => {
-    setHasCompany(e.target.checked);
-  };
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -146,7 +144,7 @@ const Orderd = () => {
       coffeeCategory: ''
     });
     setTermsAgreed(false);
-    setHasCompany(false);
+
   };
 
   if (!location.state) {
@@ -173,23 +171,18 @@ const Orderd = () => {
       <div className="details">
         <h3>{cname || 'Title Not Available'}</h3>
         <p>Product Code: {code || 'Code Not Available'}</p>
-        <p>Availability: {avaliblity || 'Availability Not Available'}</p>
         <p>Price: {formData.price || 'Select Coffee Grade first'}</p>
         
         <form onSubmit={handleSubmit}>
-          <div className='infors'>
+          <div>
             <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="Name" />
-            <input type="checkbox" name="hasCompany" checked={hasCompany} onChange={handleCompanyCheckboxChange} />
-            <label htmlFor="hasCompany">It's a company order</label>
           </div>
-
-          {hasCompany && (
-            <div className='comanyinfos'>
-              <input type="text" name="user_companyname" value={formData.user_companyname} onChange={handleChange} placeholder="Company Name" />
-              <input type="text" name="user_website" value={formData.user_website} onChange={handleChange} placeholder="Website" />
-            </div>
-          )}
-
+          <div>
+            <input type="text" name="user_companyname" value={formData.user_companyname} onChange={handleChange} required placeholder="Company Name" />
+          </div>
+          <div>
+            <input type="text" name="user_website" value={formData.user_companyname} onChange={handleChange} required placeholder="Website" />
+          </div>
           <div>
             <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required placeholder="Email" />
           </div>
@@ -202,8 +195,11 @@ const Orderd = () => {
                 </option>
               ))}
             </select>
-            <div className="separator">-</div>
+          <div className="separator">-</div>
             <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" />
+          </div>
+          <div>
+            <input type="text" name="deliveryaddress" value={formData.user_companyname} onChange={handleChange} required placeholder="Delivery Address" />
           </div>
 
           {/* Render radio buttons for coffee categories */}
@@ -219,7 +215,6 @@ const Orderd = () => {
                   onChange={handleChange}
                 />
                 <label htmlFor={`coffeeCategory${index}`}>
-                  <img src={category.imgs} alt={category.titles} style={{ width: '50px', height: '50px', marginRight: '10px' }} />
                   {category.titles}
                 </label>
               </div>

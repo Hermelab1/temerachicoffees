@@ -92,39 +92,12 @@ const ContactUsDetail = () => {
                   </p>
               </div>
               <div className="links">
-                  <a href="/"><i className="fa-solid fa-envelope"></i></a>              
-                  <a href="/"><i className="fa-brands fa-facebook"></i></a>
-                  <a href="/"><i className="fa-brands fa-telegram"></i></a>
-                  <a href="/"><i className="fa-brands fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2FTemerachixoffeeexport"><i className="fa-brands fa-linkedin"></i></a>              
-                  <a href="https://www.tumblr.com/"><i className="fa-brands fa-tumblr"></i></a> 
-                  <a href="https://www.youtube.com/channel/UCaqEvlLmDRwN45ziWAmJdlg"><i className="fa-brands fa-youtube"></i></a>
+              <a href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2FTemerachixoffeeexport"><i className="fa-brands fa-facebook"></i></a>
+          <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="/"><i className="fa-brands fa-instagram"></i></a>
               </div>
           </div>
         </motion.div>
-
-        <motion.div
-          className="mapsc"
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          transition={{ duration: 0.5 }}
-        >
-          <div className='contact-info'>
-            <iframe 
-              className='maps'
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.715384400312!2d38.749434774858365!3d8.998315491061783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8790d04dc671%3A0x230d68b301aa52e3!2zVEVNRVJBQ0hJIENPRkZFRSDhibDhiJjhiKvhjK0g4Ymh4YqT!5e0!3m2!1sam!2set!4v1721947464502!5m2!1sam!2set" 
-              width="700" 
-              height="300" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Maps location of our office">
-            </iframe>
-          </div>
-        </motion.div>
-
         <Footer />
       </section>
     </>
