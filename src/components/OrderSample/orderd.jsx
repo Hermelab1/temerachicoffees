@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import emailjs from 'emailjs-com';
-import { Coffeetype } from '../data/Coffetype';
+import { Coffeetype } from '../data/Coffeetype';
 import { ContryCode } from '../data/contrycode';
 import terms from '../../Files/policyandterms.pdf';
 import '../../style/orderd.css'; // Ensure this CSS file includes the necessary styles

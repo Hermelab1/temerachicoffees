@@ -99,7 +99,6 @@ const Events = () => {
                 </Swiper>
             </div>
 
-            <Contact />
             <Footer />
         </section>
     );

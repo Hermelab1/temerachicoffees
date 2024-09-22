@@ -1,23 +1,21 @@
 .blog-container {
+
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of blog posts for responsiveness */
-    justify-content: left; /* Center blog posts inside the container */
-    align-items: flex-start; /* Align items to the start */
-    width: 80%; /* Full width of the container based on the parent */
-    max-width: 1200px; /* Optional: Set a max-width for better readability */
-    margin: 20px auto; /* Center on the page */
+    justify-content: center; /* Center blog posts inside the container */
+    width: 80%; /* Full width of the container based on the parent */ /* Optional: Set a max-width for better readability */
+    margin: auto; /* Center on the page */
 }
 
 /* Blog details */
 .blog-details {
-
     border: 2px solid rgb(218, 218, 218);
     width: 350px; /* Fixed width for the blog cards */
     height: 500px; /* Fixed height for the blog cards (to ensure they are square) */
     background-color: white; /* Added background color for better contrast */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     overflow: hidden; 
-    margin: 10px; /* Use uniform margin for better spacing */
+    margin: 15px; /* Use uniform margin for better spacing */
     display: flex; /* Enable flexbox for children */
     flex-direction: column; /* Stack child elements vertically */
     position: relative; /* For absolutely positioned children */
@@ -25,7 +23,6 @@
 
 /* Media section */
 .blog-container .media {
-
     width: 100%; /* Full width media container */
     height: 500px; /* Fixed height for media */
     overflow: hidden; /* Hide overflow to maintain aspect ratio */
@@ -104,9 +101,15 @@
 }
 
 @media (max-width: 640px) {
+    .blog-container {
+        width: 90%;
+    }
     .blog-details {
         width: calc(100% - 10px); /* 1 card in a row on mobile devices, adjust for margins */
         height: 450px; /* Maintain square shape */
+    }
+    .blog-details{
+        height: 550px;
     }
 
     .details h3 {

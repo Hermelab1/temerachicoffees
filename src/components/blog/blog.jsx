@@ -149,7 +149,6 @@ const Blog = () => {
         })}
       </div>
 
-      <Contactus />
       <Footer />
     </section>
   );

@@ -4,13 +4,14 @@ import img1 from '../../asset/img/HeadingImages/CompanyPhoto.jpg';
 import img from '../../asset/img/HeadingImages/CompanyPhoto1.jpg';
 import img2 from '../../asset/img/HeadingImages/CompanyPhoto2.jpg';
 import photo1 from '../../asset/img/ManagementImages/bothmanager.png';
-
 import Heading from '../Home/headings';
-import Contactus from '../contact/contact';
 import Footer from '../footage/footage';
 import '../../style/storydetail.css';
 import { management } from '../data/management';
 import { teammembers } from '../data/teammembers';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules'; 
+import 'swiper/swiper-bundle.css';
 
 // Utility function to get element rect safely
 const getElementRect = (id) => {
@@ -37,7 +38,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [visibleSections, setVisibleSections] = useState({
     about: false,
-    leders: false,
+    leaders: false, // Corrected spelling
     teamMembers: false,
     contact: false,
     footer: false,
@@ -58,31 +59,30 @@ const OurStoryDetail = ({ interval = 3000 }) => {
         observer.disconnect();
       }
     });
-    
-    // Store `imgRef.current` in a variable immediately
+
     const currentImgRef = imgRef.current;
 
     if (currentImgRef) {
       observer.observe(currentImgRef);
     }
-    
+
     return () => {
       if (currentImgRef) {
         observer.unobserve(currentImgRef);
       }
     };
-  }, []); // No dependencies to ensure this effect runs only on mount
+  }, []);
 
   const handleScroll = () => {
     const aboutRect = getElementRect('ourhistory');
-    const ledersRect = getElementRect('leders');
+    const leadersRect = getElementRect('leaders'); // Corrected spelling
     const teamMembersRect = getElementRect('teammembers');
     const contactRect = getElementRect('contactus');
     const footerRect = getElementRect('footer');
 
     setVisibleSections({
       about: aboutRect && aboutRect.top < window.innerHeight && aboutRect.bottom >= 0,
-      leders: ledersRect && ledersRect.top < window.innerHeight && ledersRect.bottom >= 0,
+      leaders: leadersRect && leadersRect.top < window.innerHeight && leadersRect.bottom >= 0,
       teamMembers: teamMembersRect && teamMembersRect.top < window.innerHeight && teamMembersRect.bottom >= 0,
       contact: contactRect && contactRect.top < window.innerHeight && contactRect.bottom >= 0,
       footer: footerRect && footerRect.top < window.innerHeight && footerRect.bottom >= 0,
@@ -104,7 +104,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
     <section className='ourstorydetail'>
       <div id="top" className='covers'>
         <div className='imgs' ref={imgRef}>
-          <img src={images[currentIndex]} alt="" />
+          <img src={images[currentIndex]} alt="Slideshow" />
         </div>
         <div className='slogan'>
           <Heading title="Our Journey Our Story" subtitle="Temerachi Coffee Export" />
@@ -114,72 +114,113 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       <motion.div
         id="ourhistory"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.about ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        animate={visibleSections.about ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
         className="ourhistory"
       >
         <div className='about-text'>
           <p>
-            <b className='SizeBig'>F</b>ounded in 2019 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee, a leading Ethiopian coffee exporter, collaborates with smallholder farmers in Yirgacheffe, Gedeb, Sidama, and Guji to ensure quality and traceability in their coffee cherries. This approach drives brand growth and value for both the company and the farming communities we work with. <br />
+            <b className='SizeBig'>F</b>ounded in 2019 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee, a leading Ethiopian coffee exporter, collaborates with smallholder farmers in Yirgacheffe, Gedeb, Sidama, and Guji to ensure quality and traceability in their coffee cherries. This approach drives brand growth and value for both the company and the farming communities we work with. 
+            <br />
             Temerachi's business model prioritizes corporate social responsibility and environmental stewardship, promoting eco-friendly practices among coffee farmers. The company aims to become a recognized specialty coffee brand globally and educate the next generation of professionals to thrive in the dynamic coffee industry.
           </p>
         </div>
-        <div className='images'>
+        <div className='image'>
           <img src={photo1} alt="Company Photos" className={isVisible ? 'slide-in-right' : ''} />
         </div>
       </motion.div>
 
       <motion.div
-        id="leders"
-        initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.leders ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
-        transition={{ duration: 0.5 }}
-        className='leders'
-      >
-        <Heading title="Founders" subtitle="Visionary Creators" />
-        {management.map((founder, index) => (
-          <div className="our" key={index} style={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center', marginBottom: '20px' }}>
-            <div className='imagesF' style={{ flex: '1' }}>
-              <img src={founder.photo} alt={`Founder ${founder.name}`} className={isVisible ? 'fade-in' : 'fade-out'} />
-            </div>
-            <div className='aboutF-text' style={{ flex: '2', padding: '0 20px' }}>
-              <p>{founder.text}</p>
-              <h2>{founder.name}</h2>
-              {/* <h2>{founder.position}</h2> */}
-            </div>
+  id="leaders"
+  initial={{ opacity: 0, y: 200 }}
+  animate={visibleSections.leaders ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+  transition={{ duration: 0.5 }}
+  className='leaders'
+>
+<div className="lead">
+<Swiper
+    modules={[Pagination, Autoplay]} // Ensure these are imported correctly
+
+    loop={true}
+    spaceBetween={0}
+    autoplay={{
+      delay: 6000, // Set your desired autoplay delay
+      disableOnInteraction: false,
+    }}
+    breakpoints={{
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 2 },
+    }}
+  >
+    {management.map((founder, index) => (
+      <SwiperSlide key={`founder-${index}`}>
+        <div className="our">
+          <div className='imagesF'>
+            <img src={founder.photo} alt={`Founder ${founder.name}`} />
           </div>
-        ))}
-      </motion.div>
+          <div className='aboutF-text'>
+            <h2>{founder.name}</h2>
+            <p>{founder.text}</p>
+          </div>
+        </div>
+
+        {/* Icon in the middle */}
+        {index < management.length - 1 && ( // Avoid rendering icon after the last founder
+          <div className="icon-container">
+           <i class="fa-brands fa-d-and-d"></i>
+          </div>
+        )}
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+</motion.div>
 
       <motion.div
         id="teammembers"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.teamMembers ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        animate={visibleSections.teamMembers ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
         className="teammembers"
       >
-        <Heading title="Meet Our Team" subtitle="The Faces Behind the Excellence"/>
-        <div className="card">
-          {teammembers.map((member, index) => (
-            <div className="card1" key={index}>
-              <img src={member.photo} alt={member.name} />
-              <div className="cont">
-                <h2>{member.name}</h2>
-                <p>{member.position}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Heading title="Meet Our Team" subtitle="The Faces Behind the Excellence" />
+        <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            loop={true}
+            spaceBetween={0} // Ensure there's no space between slides
+            autoplay={{
+              delay: interval,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {teammembers.map((member, index) => (
+              <SwiperSlide key={`teammember-${index}`}>
+                <div className="card1">
+                  <img src={member.photo} alt={member.name} />
+                  <div className="cont">
+                    <h2>{member.name}</h2>
+                    <p>{member.position}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
       </motion.div>
 
       <motion.div
         id="contactus"
         initial={{ opacity: 0, y: 200 }}
-        animate={visibleSections.contact ? { opacity: 10, y: 0 } : { opacity: 0, y: 50 }} // Apply animation based on visibility
+        animate={visibleSections.contact ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
         className="contactus"
       >
-        <Contactus />
         <Footer />
       </motion.div>
     </section>
