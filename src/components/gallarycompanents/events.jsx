@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../style/ourfarms.css';
-import Contact from '../contact/contact'; // Ensure the path is correct
 import Footer from '../footage/footage';
 import Heading from '../Home/headings';
 import imagescover from '../../asset/img/CoverImages/Ecover.webp'; // Ensure the path is correct

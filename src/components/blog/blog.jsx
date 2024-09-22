@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { blogs } from '../data/blog';
-import Contactus from '../contact/contact';
 import imagescover from '../../asset/img/CoverImages/Bcover.webp';
 import Footer from '../footage/footage';
 import Heading from '../Home/headings';
