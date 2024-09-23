@@ -3,16 +3,15 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; /* Center cards in the container */
-    width: 70%;
+    width: 80%;
     margin: 20px auto;
 }
 
 .farm-card {
-    border: solid red;
     position: relative; /* Set position to relative */
     border: 2px solid #c2c2c2; /* Dark border */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Added shadow effect */
-    max-height: 400px; /* Set a max height for cards */
+    max-height: 500px; /* Set a max height for cards */
     margin-bottom: 10px;
 }
 

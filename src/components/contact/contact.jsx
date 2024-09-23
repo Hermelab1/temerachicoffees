@@ -1,44 +1,35 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 import '../../style/contact.css';
 import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
   const form = useRef();
-  const [setStatusMessage] = useState("");
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm('service_w6blv2o', 'template_whcj7rk', form.current, 'Puv041KtiA_TZduH2') // Use the correct public key here.
-      .then(
-        () => {
-          setStatusMessage('SUCCESS! Email sent.');
-        },
-        (error) => {
-          console.error('Email send failed:', error);
-          setStatusMessage(`FAILED: ${error.text}`);
-        },
-      );
+
 
     e.target.reset();
   };
   return (
     <section className='contact'>
     <div className='container'>
-      <div className="contactusform">
-        <form ref={form} onSubmit={sendEmail} className='form-group'>
-        <input type="text" name="user_name" placeholder='Full Name' required />
-          <input type="text" name="user_name" placeholder='Company Name' required />
-          <input type="text" name="user_name" placeholder='Website' required />         
-          <input type="email" name="user_email" placeholder='Email' required />
-          <input type="text" name="subject" placeholder='Subject' required />
-          <textarea name="message" cols="10" rows="3" placeholder='Leave your message here' required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        {/*statusMessage && <p>{statusMessage}</p>*/}
-      </div>
+        <div className="contactusform">
+            <form ref={form} onSubmit={sendEmail} className='form-group'>
+              <input type="text" name="user_name" placeholder='Full Name' required />
+              <input type="text" name="user_companyname" placeholder='Company Name' required />
+              <input type="text" name="user_website" placeholder='Website' required /> 
+              <input type="email" name="user_email" placeholder='Email' required />
+              <textarea name="message" id="" cols="20" rows="5" placeholder='Leave your message here' required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+           {/* {statusMessage && <p>{statusMessage}</p>}  Displays success or error messages */}
+        </div>
       
       <div className="divider"></div> {/* Vertical line added here */}
       

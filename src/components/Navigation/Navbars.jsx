@@ -6,7 +6,6 @@ import '../../style/Navbar.css';
 
 const Header = () => {
   const [navlist, setNavList] = useState(false);
-
   const navigate = useNavigate();
 
   const handleScrollToTopAndNavigate = (path) => {
@@ -15,10 +14,14 @@ const Header = () => {
     
     // Wait for a short time to let the scroll effect happen.
     setTimeout(() => {
-        navigate(path);
+      navigate(path);
     }, 500);  // Delay for smooth transition
   };
 
+  const handleNavLinkClick = (path) => {
+    handleScrollToTopAndNavigate(path);
+    setNavList(false); // close the menu after clicking the link
+  };
 
   return (
     <header>
@@ -34,17 +37,13 @@ const Header = () => {
         <div className="nav">
           <ul className={navlist ? "small" : "flex"}>
             {nav.map((list, index) => (
-              <li 
-                key={index}
-
-              >
+              <li key={index}>
                 <Link
                   to={list.path}
-                  onClick={() => handleScrollToTopAndNavigate(list.path)}
+                  onClick={() => handleNavLinkClick(list.path)} // Using the new function
                 >
                   {list.text}
                 </Link>
-
               </li>
             ))}
           </ul>

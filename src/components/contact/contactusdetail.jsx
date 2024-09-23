@@ -1,5 +1,5 @@
 // Import necessary libraries and components
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 import '../../style/detail.css';
 import img from '../../asset/img/CoverImages/Bcover.webp';
 import Heading from '../Home/headings';
@@ -15,22 +15,12 @@ const fadeInUp = {
 
 const ContactUsDetail = () => {
   const form = useRef();
-  const [statusMessage, setStatusMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm('service_w6blv2o', 'template_whcj7rk', form.current, 'Puv041KtiA_TZduH2') // Use the correct public key here.
-      .then(
-        () => {
-          setStatusMessage('SUCCESS! Email sent.');
-        },
-        (error) => {
-          console.error('Email send failed:', error);
-          setStatusMessage(`FAILED: ${error.text}`);
-        },
-      );
 
     e.target.reset();
   };
@@ -63,12 +53,13 @@ const ContactUsDetail = () => {
           <div className="contactusform">
             <form ref={form} onSubmit={sendEmail} className='form-group'>
               <input type="text" name="user_name" placeholder='Full Name' required />
+              <input type="text" name="user_companyname" placeholder='Company Name' required />
+              <input type="text" name="user_website" placeholder='Website' required /> 
               <input type="email" name="user_email" placeholder='Email' required />
-              <input type="text" name="subject" placeholder='Subject' required />
               <textarea name="message" id="" cols="20" rows="10" placeholder='Leave your message here' required></textarea>
               <button type="submit">Send Message</button>
             </form>
-            {statusMessage && <p>{statusMessage}</p>} {/* Displays success or error messages */}
+            {/* {statusMessage && <p>{statusMessage}</p>}  Displays success or error messages */}
           </div>
 
           <div
