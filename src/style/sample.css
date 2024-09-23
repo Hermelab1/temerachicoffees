@@ -1,27 +1,40 @@
-.order-container {  
+/* Apply universal box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+.order-container {
   width: 80%;
-  margin: 20px auto;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
 }
-
 .order-card {
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-
-
-
+  background: none;
+  width: 25%;
+  margin: 20px;
+  position: relative; /* Needed for overlay positioning */
+  overflow: hidden;   /* Ensures overflow is not visible */
+  transition: transform 0.2s; /* Optional: for hover effects */
 }
 
-
+.order-card:hover {
+  transform: scale(1.05); /* Optional: slight zoom on hover */
+}
 
 .order-card img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: auto; /* Changed from fit-content for better responsiveness */
+  object-fit: cover;
+  margin: 0;
+  padding: 0; /* Removes extra space below the image */
 }
 
 .order-overlay {
-  background-color: rgba(73, 0, 0, 0.7);
+  background-color: rgba(73, 0, 0, 0.8); /* Semi-transparent background */
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -29,14 +42,15 @@
 }
 
 .status {
-  text-decoration: none;
-  color: inherit; /* Keep link text color consistent with parent */
-  display: block;
+  display: flex;
+  background: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
   .order-card {
     width: 90%;
-    margin: 0;
+    margin: 5% auto; /* Center the card and add top/bottom margin */
   }
 }

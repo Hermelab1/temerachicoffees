@@ -1,6 +1,7 @@
 /* BlogDetail.css */
 
 .blog-detail-container {
+
   display: flex;
   flex-direction: column; /* Stack the blog detail and other blogs vertically */
   justify-content: center;
@@ -8,6 +9,8 @@
   padding: 20px;
   margin: 0 auto;
   width: 100%; 
+  margin-top: 3%;
+  
 }
 .blogsd button{
   color: #686868;
@@ -94,6 +97,9 @@
 }
 
 @media (max-width: 480px) {
+  .blog-detail-container{
+    margin-top: 15%;
+  }
   .blogsd {
     width: 98%;
   }

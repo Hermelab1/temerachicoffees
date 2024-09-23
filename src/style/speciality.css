@@ -169,15 +169,15 @@
     .special .container {
         left: auto; /* Remove left positioning */
         right: auto; /* Remove right positioning */
-        width: 85%;
+        width: 90%;
         padding: 10px; /* Adjust padding for better fit on small screens */
         animation: movedown 1s linear forwards;
         opacity: 1;
     }
 
     .special::after {
-        left: 8.5%;
-        top: 8%;
+        left: 1%;
+        top: 12%;
     }
 
     @keyframes moveline {
@@ -185,7 +185,7 @@
             height: 0;
         }
         100% {
-            height: 80%;
+            height: 67%;
         }
     }
 

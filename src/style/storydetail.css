@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: auto;   
+    margin: 20px auto;   
 }
 .ourstorydetail .ourhistory .about-text {
     width: 50%;
@@ -56,7 +56,8 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin: 10px; /* Added margin for spacing between items */
+    margin: 10px;
+    padding: 30px; /* Added margin for spacing between items */
 
 }
 .leaders .icon-container{
@@ -106,7 +107,7 @@
 
 .teammembers .card1 {
     background: none;
-    height: 62vh;
+    height: 51vh;
     width: 80%;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
     display: flex; /* Add this if you want to control spacing easily */
@@ -115,7 +116,7 @@
 
 .teammembers .card1 img {
     width: 100%;
-    height: 55vh;
+    height: 45vh;
 
 }
 
@@ -178,11 +179,14 @@
     .leaders .lead{
         width: 90%; /* Responsive width on smaller screens */
     }
-    .lead
+    .leaders .our{
+        padding: 0px;
+    }
   
     .teammembers {
-        width: 90%;
+        width: 80%;
     }
-
-
+    .leaders .icon-container{
+        display: none;
+    }
 }
