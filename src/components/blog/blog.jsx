@@ -6,6 +6,7 @@ import Footer from '../footage/footage';
 import Heading from '../Home/headings';
 import '../../style/blog.css';
 import { motion } from 'framer-motion';
+import Contacts from '../contact/contacts';
 
 const Blog = () => {
   const [visibleSections, setVisibleSections] = useState(new Array(blogs.length).fill(false));
@@ -147,7 +148,7 @@ const Blog = () => {
           );
         })}
       </div>
-
+      <Contacts/>
       <Footer />
     </section>
   );

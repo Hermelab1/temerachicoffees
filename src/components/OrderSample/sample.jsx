@@ -6,6 +6,7 @@ import Footer from '../footage/footage';
 import CoverIma from '../../asset/img/CoverImages/Ocover.webp';
 import '../../style/sample.css';
 import { motion } from 'framer-motion';
+import Contacts from '../contact/contacts';
 
 // Function to import all images from a specific directory
 const importAll = (r) => {
@@ -111,7 +112,7 @@ const SampleOrder = () => {
           );
         })}
       </div>
-
+        <Contacts/>
       <Footer />
     </section>
   );

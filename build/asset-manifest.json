@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a63c7906.css",
-    "main.js": "/static/js/main.e7a95e77.js",
+    "main.css": "/static/css/main.67d0d14c.css",
+    "main.js": "/static/js/main.6c4fc456.js",
     "static/media/1.jpg": "/static/media/1.06a4dd0ca58fe6970f88.jpg",
     "static/media/6.jpg": "/static/media/6.f582fda0ae61f167c074.jpg",
     "static/media/2.jpg": "/static/media/2.f1664d549134708b0f85.jpg",
@@ -14,7 +14,6 @@
     "static/media/Movie.mp4": "/static/media/Movie.2d5dab25dfdc8fe920fb.mp4",
     "static/media/PhotoPeoples.png": "/static/media/PhotoPeoples.489257d878a482233c33.png",
     "static/media/Festival.webp": "/static/media/Festival.25a05a4f71070dfc9c71.webp",
-    "static/media/CoffeeDrawing.png.svg": "/static/media/CoffeeDrawing.png.84032e01f973f7ee6eb3.svg",
     "static/media/policyandterms.pdf": "/static/media/policyandterms.4a93eaf7793261f7f06d.pdf",
     "static/media/farmers.webp": "/static/media/farmers.3bd80469d138584ad2b8.webp",
     "static/media/photo_2024-07-31_12-21-15.jpg": "/static/media/photo_2024-07-31_12-21-15.1e4cf3432ded08235675.jpg",
@@ -59,11 +58,11 @@
     "static/media/bowlingcoffee.webp": "/static/media/bowlingcoffee.5ffd83c67a2b211904da.webp",
     "static/media/germany.png": "/static/media/germany.53925c6a1ac23141d55b.png",
     "index.html": "/index.html",
-    "main.a63c7906.css.map": "/static/css/main.a63c7906.css.map",
-    "main.e7a95e77.js.map": "/static/js/main.e7a95e77.js.map"
+    "main.67d0d14c.css.map": "/static/css/main.67d0d14c.css.map",
+    "main.6c4fc456.js.map": "/static/js/main.6c4fc456.js.map"
   },
   "entrypoints": [
-    "static/css/main.a63c7906.css",
-    "static/js/main.e7a95e77.js"
+    "static/css/main.67d0d14c.css",
+    "static/js/main.6c4fc456.js"
   ]
 }

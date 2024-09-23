@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; 
 import 'swiper/swiper-bundle.css';
+import Contacts from '../contact/contacts';
 
 
 // Function to import all images from a directory
@@ -97,7 +98,7 @@ const Events = () => {
                     ))}
                 </Swiper>
             </div>
-
+            <Contacts/>
             <Footer />
         </section>
     );

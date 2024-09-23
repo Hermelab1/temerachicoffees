@@ -12,6 +12,7 @@ import { teammembers } from '../data/teammembers';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules'; 
 import 'swiper/swiper-bundle.css';
+import Contacts from '../contact/contacts';
 
 // Utility function to get element rect safely
 const getElementRect = (id) => {
@@ -221,6 +222,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
         transition={{ duration: 0.5 }}
         className="contactus"
       >
+        <Contacts/>
         <Footer />
       </motion.div>
     </section>
