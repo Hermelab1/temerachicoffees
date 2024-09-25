@@ -18,5 +18,10 @@ export const teammembers =[
         name:"Mr. Zerihun Hailu",
         position:"Quality Manager",
     },
+    {
+        photo: photo1,
+        name:"Mr. test",
+        position:"Quality Manager",
+    }
 
 ]

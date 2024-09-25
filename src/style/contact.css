@@ -12,8 +12,8 @@
     background: none;
 }
 .contact .icons-p p{
-    font-size: 0.8rem;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 30px;
     text-align: center;
 }
 .contact .links,
@@ -23,6 +23,10 @@
     text-align: center;
     margin-bottom: 20px;
 
+}
+.icons-p{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .titles h3{
 
@@ -70,7 +74,7 @@
     margin-bottom: 5px;
     width: 100%;
     padding: 0.5rem; /* Increased padding for inputs */
-    font-size: 0.8rem; /* Consistent font size */
+    font-size: 1rem; /* Consistent font size */
 }
 .contact .contactusform button {
     padding: 0.5rem 1rem; /* Button padding */

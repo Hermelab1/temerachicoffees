@@ -12,7 +12,6 @@ body{
  /*font-family: "Poppins", sans-serif;*/
   font-family: "Cardo", serif;
   background-color: #fff;
-  font-size: 0.8rem;
   line-height: 1.5rem;
   color: #176756;
 }
@@ -51,7 +50,6 @@ p{
   font-Family: poppins-extralight, poppins, sans-serif;
   text-align: justify;
   line-height: 35px;
-  font-weight: 200;
   font-size: 1rem;
 
 }
@@ -74,12 +72,13 @@ button:hover{
 .heading{
   font-family: playfairdisplay-bold, "playfair display", serif;
   text-align: center;
-  width: 70%;
-  margin: auto;
+  width: 100%;
+
 
 }
 
 .heading h1{
+
   color: #f7fdfc;
   font-weight: 600;
   text-transform: capitalize;

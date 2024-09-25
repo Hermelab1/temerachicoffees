@@ -181,7 +181,7 @@ const Orderd = () => {
             <input type="text" name="user_companyname" value={formData.user_companyname} onChange={handleChange} required placeholder="Company Name" />
           </div>
           <div>
-            <input type="text" name="user_website" value={formData.user_companyname} onChange={handleChange} required placeholder="Website" />
+            <input type="text" name="user_website" value={formData.user_website} onChange={handleChange} required placeholder="Website" />
           </div>
           <div>
             <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required placeholder="Email" />
@@ -199,7 +199,7 @@ const Orderd = () => {
             <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" />
           </div>
           <div>
-            <input type="text" name="deliveryaddress" value={formData.user_companyname} onChange={handleChange} required placeholder="Delivery Address" />
+            <input type="text" name="deliveryaddress" value={formData.deliveryaddress} onChange={handleChange} required placeholder="Delivery Address" />
           </div>
 
           {/* Render radio buttons for coffee categories */}
