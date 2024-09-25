@@ -51,14 +51,15 @@
   height: 60vh; /* Set height to 100% of the parent container */
   object-fit: cover; /* Ensure images cover their container without distortion */
   max-width: 40%;
-  transform: translateX(100%); /* Initial position off the right side */
+  transform: translateX(0); /* Initial position off the right side */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
   animation: rightToLeft 3s ease-in forwards; /* Updated animation name */
 }
 
 @keyframes rightToLeft {
   from {
-    transform: translateX(100%); /* Start from off the right side */
+
+    transform: translateX(0%); /* Start from off the right side */
   }
   to {
     transform: translateX(0px); /* End at the final position */
@@ -70,7 +71,6 @@
 }
 @media (max-width: 1200px) {
   .ourstory .container {
-
     flex-direction: column; /* Stack elements vertically */
     height: auto; /* Allow height to adjust based on content */
   }

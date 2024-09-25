@@ -28,6 +28,9 @@ const CoworkersList = () => {
             {testimonial.map((item, index) => (
               <SwiperSlide key={`testimonial-${index}`}>
                 <div className="test-cards">
+                  <div className="logo-img">
+                    <img src={item.photo} alt="" />
+                  </div>
                   <div className="overlays">
                     <div className='iconp'>
                       <i className="fa-solid fa-quote-left"></i>

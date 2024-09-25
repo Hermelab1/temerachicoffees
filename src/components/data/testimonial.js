@@ -1,6 +1,6 @@
-const img6 = require('../../asset/img/Coworkers/testimoniales/user(1).png');
-const img7 = require('../../asset/img/Coworkers/testimoniales/user(2).png');
-const img8 = require('../../asset/img/Coworkers/testimoniales/user(1).png');
+const img6 = require('../../asset/img/Coworkers/testimoniales/ehab.jpg');
+const img7 = require('../../asset/img/Coworkers/testimoniales/number9.jpg');
+const img8 = require('../../asset/img/Coworkers/testimoniales/ch.jpg');
 
 
 export const testimonial = [

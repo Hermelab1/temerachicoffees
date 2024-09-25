@@ -82,8 +82,8 @@ button:hover{
   color: #f7fdfc;
   font-weight: 600;
   text-transform: capitalize;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 38px;
+  line-height: 40px;
   font-family: "Cardo", serif;
 
 }
@@ -92,7 +92,7 @@ button:hover{
 .special .heading h1,
 .gallery .heading h1,
 .gallary .heading h1,
-.ourstorydetail .leders .heading h1,
+.ourstorydetail .leaders .heading h1,
 .ourstorydetail .teammembers .heading h1 ,
 .farm-container .heading h1
 { 

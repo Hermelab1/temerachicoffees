@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed6645b7.css",
-    "main.js": "/static/js/main.74bdb1bc.js",
+    "main.css": "/static/css/main.8689c5c4.css",
+    "main.js": "/static/js/main.463d7132.js",
     "static/media/1.jpg": "/static/media/1.06a4dd0ca58fe6970f88.jpg",
     "static/media/6.jpg": "/static/media/6.f582fda0ae61f167c074.jpg",
     "static/media/2.jpg": "/static/media/2.f1664d549134708b0f85.jpg",
@@ -9,10 +9,10 @@
     "static/media/4.jpg": "/static/media/4.ecfded9a944d59e886cb.jpg",
     "static/media/5.jpg": "/static/media/5.ec0eeab60e372e3f4943.jpg",
     "static/media/3.jpg": "/static/media/3.ca6473fdd4d9c93226ac.jpg",
-    "static/media/Temeach3.png": "/static/media/Temeach3.bb63264a85b95f6f5ca1.png",
     "static/media/231206_EthiopiaTour_61.jpg": "/static/media/231206_EthiopiaTour_61.dac57b9b42c31697826c.jpg",
+    "static/media/Temeach3.png": "/static/media/Temeach3.be4afef523da51ab79d6.png",
     "static/media/Movie.mp4": "/static/media/Movie.2d5dab25dfdc8fe920fb.mp4",
-    "static/media/PhotoPeoples.png": "/static/media/PhotoPeoples.489257d878a482233c33.png",
+    "static/media/PhotoPeoples.png": "/static/media/PhotoPeoples.06c7df8c32f6986d2b5a.png",
     "static/media/Festival.webp": "/static/media/Festival.25a05a4f71070dfc9c71.webp",
     "static/media/policyandterms.pdf": "/static/media/policyandterms.4a93eaf7793261f7f06d.pdf",
     "static/media/farmers.webp": "/static/media/farmers.3bd80469d138584ad2b8.webp",
@@ -53,16 +53,19 @@
     "static/media/Logos.png": "/static/media/Logos.c1e2196865c54c9b50b6.png",
     "static/media/Ocover.webp": "/static/media/Ocover.fbc83abd909a0be508bf.webp",
     "static/media/chart.webp": "/static/media/chart.f89695f98e74c87cde64.webp",
+    "static/media/ehab.jpg": "/static/media/ehab.bc7100c96a9be51fb56a.jpg",
+    "static/media/number9.jpg": "/static/media/number9.1b95bcac3b768a38afa9.jpg",
     "static/media/Hongkong.png": "/static/media/Hongkong.9ac86bc68351a6067c09.png",
+    "static/media/ch.jpg": "/static/media/ch.1951e1eb9541a6cc5642.jpg",
     "static/media/from.webp": "/static/media/from.35d9a7a625c3857f0593.webp",
     "static/media/bowlingcoffee.webp": "/static/media/bowlingcoffee.5ffd83c67a2b211904da.webp",
     "static/media/germany.png": "/static/media/germany.53925c6a1ac23141d55b.png",
     "index.html": "/index.html",
-    "main.ed6645b7.css.map": "/static/css/main.ed6645b7.css.map",
-    "main.74bdb1bc.js.map": "/static/js/main.74bdb1bc.js.map"
+    "main.8689c5c4.css.map": "/static/css/main.8689c5c4.css.map",
+    "main.463d7132.js.map": "/static/js/main.463d7132.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed6645b7.css",
-    "static/js/main.74bdb1bc.js"
+    "static/css/main.8689c5c4.css",
+    "static/js/main.463d7132.js"
   ]
 }

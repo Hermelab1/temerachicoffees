@@ -132,51 +132,52 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       </motion.div>
 
       <motion.div
-  id="leaders"
-  initial={{ opacity: 0, y: 200 }}
-  animate={visibleSections.leaders ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-  transition={{ duration: 0.5 }}
-  className='leaders'
->
-<div className="lead">
-<Swiper
-    modules={[Pagination, Autoplay]} // Ensure these are imported correctly
+        id="leaders"
+        initial={{ opacity: 0, y: 200 }}
+        animate={visibleSections.leaders ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+        transition={{ duration: 0.5 }}
+        className='leaders'
+      >
+        <Heading title="Founders" subtitle="Visionary Creators" />
+      <div className="lead">
+      <Swiper
+          modules={[Pagination, Autoplay]} // Ensure these are imported correctly
 
-    loop={true}
-    spaceBetween={0}
-    autoplay={{
-      delay: 6000, // Set your desired autoplay delay
-      disableOnInteraction: false,
-    }}
-    breakpoints={{
-      640: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 2 },
-    }}
-  >
-    {management.map((founder, index) => (
-      <SwiperSlide key={`founder-${index}`}>
-        <div className="our">
-          <div className='imagesF'>
-            <img src={founder.photo} alt={`Founder ${founder.name}`} />
-          </div>
-          <div className='aboutF-text'>
-            <h2>{founder.name}</h2>
-            <p>{founder.text}</p>
-          </div>
-        </div>
+          loop={true}
+          spaceBetween={0}
+          autoplay={{
+            delay: 6000, // Set your desired autoplay delay
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 2 },
+          }}
+        >
+          {management.map((founder, index) => (
+            <SwiperSlide key={`founder-${index}`}>
+              <div className="our">
+                <div className='imagesF'>
+                  <img src={founder.photo} alt={`Founder ${founder.name}`} />
+                </div>
+                <div className='aboutF-text'>
+                  <h2>{founder.name}</h2>
+                  <p>{founder.text}</p>
+                </div>
+              </div>
 
-        {/* Icon in the middle */}
-        {index < management.length - 1 && ( // Avoid rendering icon after the last founder
-          <div className="icon-container">
-           <i class="fa-brands fa-d-and-d"></i>
-          </div>
-        )}
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
-</motion.div>
+              {/* Icon in the middle */}
+              {index < management.length - 1 && ( // Avoid rendering icon after the last founder
+                <div className="icon-container">
+                <i class="fa-brands fa-d-and-d"></i>
+                </div>
+              )}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      </motion.div>
 
       <motion.div
         id="teammembers"

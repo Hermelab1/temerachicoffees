@@ -18,6 +18,10 @@
     font-size: 1.3rem;
     text-align: center;
 }
+.special p {
+
+    text-align: justify;
+}
 
 .special .container {
     padding: 0px 50px;
