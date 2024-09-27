@@ -60,9 +60,10 @@
 
 .iconp p {
     margin: 0 10px;
-    line-height: 1.5;
+    line-height: 1.7;
     font-size: 1rem;
     font-style: italic;
+    text-align: center;
 }
 
 .overlays img{
@@ -106,7 +107,8 @@
         width: 80%;
     }
     .test-cards {
-        height: 50vh;
+        height: 48vh;
+        margin-bottom: 60px;
     }
     .wrapper {
         flex-direction: column;

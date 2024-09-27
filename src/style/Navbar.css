@@ -57,16 +57,7 @@ header h4 {
     font-weight: 500;
     margin-right: 20px;
 }
-header button {
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-}
-header button a{
 
-    padding: 0;
-    margin: 0;
-}
 header .toggle {
     display: none; /* Hidden by default */
 }
@@ -94,8 +85,8 @@ header .toggle {
         height: 10vh;
     }
     header img {
-        width: 65%; /* Wider on small screens */
-        margin: 0;
+        width: 70%; /* Wider on small screens */
+        margin-left: 20px;
         padding: 0;
     }
     header .submenu {

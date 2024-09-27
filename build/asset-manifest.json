@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6055410.css",
-    "main.js": "/static/js/main.640814f8.js",
+    "main.css": "/static/css/main.55ba586f.css",
+    "main.js": "/static/js/main.cf974b10.js",
     "static/media/1.jpg": "/static/media/1.06a4dd0ca58fe6970f88.jpg",
     "static/media/6.jpg": "/static/media/6.f582fda0ae61f167c074.jpg",
     "static/media/2.jpg": "/static/media/2.f1664d549134708b0f85.jpg",
@@ -10,9 +10,10 @@
     "static/media/5.jpg": "/static/media/5.ec0eeab60e372e3f4943.jpg",
     "static/media/3.jpg": "/static/media/3.ca6473fdd4d9c93226ac.jpg",
     "static/media/231206_EthiopiaTour_61.jpg": "/static/media/231206_EthiopiaTour_61.dac57b9b42c31697826c.jpg",
-    "static/media/Temeach3.png": "/static/media/Temeach3.be4afef523da51ab79d6.png",
+    "static/media/Temeach3.png": "/static/media/Temeach3.b7afeafc7ecd2ab992ff.png",
+    "static/media/Ocover.jpg": "/static/media/Ocover.04c1a25a6e706bf575bd.jpg",
     "static/media/Movie.mp4": "/static/media/Movie.2d5dab25dfdc8fe920fb.mp4",
-    "static/media/PhotoPeoples.png": "/static/media/PhotoPeoples.06c7df8c32f6986d2b5a.png",
+    "static/media/PhotoPeoples.png": "/static/media/PhotoPeoples.ff757dcbd830b989c0c3.png",
     "static/media/Festival.webp": "/static/media/Festival.25a05a4f71070dfc9c71.webp",
     "static/media/policyandterms.pdf": "/static/media/policyandterms.4a93eaf7793261f7f06d.pdf",
     "static/media/farmers.webp": "/static/media/farmers.3bd80469d138584ad2b8.webp",
@@ -27,13 +28,13 @@
     "static/media/photo_2024-07-31_12-21-40.jpg": "/static/media/photo_2024-07-31_12-21-40.08474993fecc34e9d14c.jpg",
     "static/media/photo_2024-07-31_12-21-30.jpg": "/static/media/photo_2024-07-31_12-21-30.3ea5073a2fdb51f36d2c.jpg",
     "static/media/Japan.png": "/static/media/Japan.32e1d10d786feb011dcc.png",
-    "static/media/DawitPhoto.jpg": "/static/media/DawitPhoto.7fa5d344a48e98851914.jpg",
-    "static/media/CompanyPhoto1.jpg": "/static/media/CompanyPhoto1.04967e2abfae88a13961.jpg",
+    "static/media/DawitPhoto.jpg": "/static/media/DawitPhoto.ff7aa27015e31351d66a.jpg",
+    "static/media/CompanyPhoto1.jpg": "/static/media/CompanyPhoto1.735ffa86467370b5aa36.jpg",
     "static/media/7.webp": "/static/media/7.5fc67f42a89e4c9dff58.webp",
     "static/media/CompanyPhoto2.jpg": "/static/media/CompanyPhoto2.b558a868fe1613f24bd2.jpg",
+    "static/media/CompanyPhoto.jpg": "/static/media/CompanyPhoto.7f0f8f20e1077218fb21.jpg",
     "static/media/5.webp": "/static/media/5.80cfae096f8b48c3a8ee.webp",
     "static/media/8.webp": "/static/media/8.03bf551fa84a440162fd.webp",
-    "static/media/CompanyPhoto.jpg": "/static/media/CompanyPhoto.c9a4914c40a98f3f1c43.jpg",
     "static/media/Products - Copy (2).webp": "/static/media/Products - Copy (2).5fd828bafd3734761e76.webp",
     "static/media/Products - Copy (3).webp": "/static/media/Products - Copy (3).5fd828bafd3734761e76.webp",
     "static/media/Products - Copy (4).webp": "/static/media/Products - Copy (4).5fd828bafd3734761e76.webp",
@@ -51,7 +52,6 @@
     "static/media/photo_2024-07-28_18-10-06.webp": "/static/media/photo_2024-07-28_18-10-06.41039f940faff5f395d5.webp",
     "static/media/3.webp": "/static/media/3.6b0194c156ccbf310af1.webp",
     "static/media/Logos.png": "/static/media/Logos.c1e2196865c54c9b50b6.png",
-    "static/media/Ocover.webp": "/static/media/Ocover.fbc83abd909a0be508bf.webp",
     "static/media/chart.webp": "/static/media/chart.f89695f98e74c87cde64.webp",
     "static/media/ehab.jpg": "/static/media/ehab.bc7100c96a9be51fb56a.jpg",
     "static/media/number9.jpg": "/static/media/number9.1b95bcac3b768a38afa9.jpg",
@@ -61,11 +61,11 @@
     "static/media/bowlingcoffee.webp": "/static/media/bowlingcoffee.5ffd83c67a2b211904da.webp",
     "static/media/germany.png": "/static/media/germany.53925c6a1ac23141d55b.png",
     "index.html": "/index.html",
-    "main.a6055410.css.map": "/static/css/main.a6055410.css.map",
-    "main.640814f8.js.map": "/static/js/main.640814f8.js.map"
+    "main.55ba586f.css.map": "/static/css/main.55ba586f.css.map",
+    "main.cf974b10.js.map": "/static/js/main.cf974b10.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6055410.css",
-    "static/js/main.640814f8.js"
+    "static/css/main.55ba586f.css",
+    "static/js/main.cf974b10.js"
   ]
 }

@@ -1,4 +1,5 @@
 .ourstory {
+  overflow: hidden; /* Prevent overflow from child elements */
   height: 90vh;
   width: 80%;
   display: flex;
@@ -9,7 +10,7 @@
 }
 .ourstory .container {
   display: flex;
-  width: 100%;   
+  width: 90%;   
   height: 70vh;
 }
 .ourstory .heading p{
@@ -18,10 +19,13 @@
   padding: 0;
 }
 .about-text {
+
   padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
   color: #176756;
   margin: 0 auto; 
-  width: 35%; /* Adjusted width */
+  width: 50%; /* Adjusted width */
   text-align: justify; /* Justify text */
 }
 .about-text p{
@@ -40,8 +44,8 @@
 .images {
   display: flex;
   flex-direction:row; /* Display images side by side */
-  gap: 15px; /* Space between images */
-  width: 50%;
+  gap: 20px; /* Space between images */
+  width: 60%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -49,8 +53,8 @@
 
 .images img {
   height: 60vh; /* Set height to 100% of the parent container */
-  object-fit: cover; /* Ensure images cover their container without distortion */
-  max-width: 40%;
+  object-fit: fill; /* Ensure images cover their container without distortion */
+  max-width: 45%;
   transform: translateX(0); /* Initial position off the right side */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
   animation: rightToLeft 3s ease-in forwards; /* Updated animation name */
@@ -119,15 +123,17 @@
     height: auto;
     width: 100%;
   }
+  .ourstory .container {
+    width: 100%;
+  }
   .about-text {
-    padding: 0;
-    margin-bottom: 20px;
+    padding: 10px;
   }
   .images {
     display: flex;
     flex-direction:row; /* Display images side by side */
     gap: 15px; /* Space between images */
-    width: 100%;
+    width: 90%;
   }
   
   .images img {

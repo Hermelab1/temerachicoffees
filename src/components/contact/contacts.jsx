@@ -21,9 +21,6 @@ const Contacts = () => {
           Japan<br />
         </p>
       </div>
-      
-
-      
       <div className="links">
         <div className="titles">
           <h3>Reach us</h3>

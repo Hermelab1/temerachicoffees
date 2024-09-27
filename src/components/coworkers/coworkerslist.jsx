@@ -15,6 +15,7 @@ const CoworkersList = () => {
       <div className="test-containers">
         {totalItems > 0 ? (
           <Swiper
+            className="custom-swiper"
             modules={[Navigation, Pagination, Autoplay]}
             pagination={{ clickable: true }}
             spaceBetween={30}

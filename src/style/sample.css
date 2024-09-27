@@ -1,51 +1,45 @@
-/* Apply universal box-sizing */
-* {
-  box-sizing: border-box;
-}
-
 .order-container {
-  width: 80%;
+  border: solid red;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
+  flex-wrap: wrap; /* Allow wrapping of blog posts for responsiveness */
+  justify-content: center; /* Center blog posts inside the container */
+  width: 80%; /* Full width of the container based on the parent */
+  margin: auto; /* Center on the page */
 }
+
 .order-card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  background: none;
-  width: 25%;
-  margin: 20px;
-  position: relative; /* Needed for overlay positioning */
-  overflow: hidden;   /* Ensures overflow is not visible */
-  transition: transform 0.2s; /* Optional: for hover effects */
+  border: 2px solid rgb(232, 232, 232);
+  width: 350px; /* Fixed width for the blog cards */
+  height: 450px; /* Fixed height for the blog cards */
+  background-color: white; /* Added background color for better contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; 
+  margin: 15px; /* Use uniform margin for better spacing */
+  display: flex; /* Enable flexbox for children */
+  flex-direction: column; /* Stack child elements vertically */
+  position: relative; /* For absolutely positioned children */
 }
-
-.order-card:hover {
-  transform: scale(1.05); /* Optional: slight zoom on hover */
-}
-
-.order-card img {
-  width: 100%;
-  height: auto; /* Changed from fit-content for better responsiveness */
-  object-fit: cover;
+.order-card .status{
+  height: 100%;
   margin: 0;
-  padding: 0; /* Removes extra space below the image */
+  padding: 0;
+}
+.order-card img {
+  height: 100%; /* Make image fill the card */
+  width: 100%; /* Ensure the width covers the entire card */
+  object-fit: cover;
 }
 
 .order-overlay {
-  background-color: rgba(73, 0, 0, 0.8); /* Semi-transparent background */
-  color: #fff;
+  background-color: rgba(62, 28, 8, 0.8); /* Semi-transparent background */
+  color: white; /* Text color */
   text-align: center;
-  padding: 10px;
-
-}
-
-.status {
-  display: flex;
-  background: none;
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove default margin */
+  padding: 15px; /* Optional: Add some padding */
+  position: absolute; /* Positioning the content at the bottom */
+  bottom: 0; /* Align to the bottom of the card */
+  left: 0; /* Align to the left of the card */
+  width: 100%; /* Make sure it spans the entire card width */
 }
 
 @media (max-width: 768px) {

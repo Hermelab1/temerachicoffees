@@ -4,20 +4,20 @@
     flex-wrap: wrap; 
     justify-content: center; /* Center cards in the container */
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .farm-card {
     position: relative; /* Set position to relative */
     border: 2px solid #c2c2c2; /* Dark border */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Added shadow effect */
-    max-height: 500px; /* Set a max height for cards */
+    height: 350px; /* Set a max height for cards */
     margin-bottom: 10px;
 }
 
 .farm-card img {
     width: 100%; /* Make images responsive to card width */
-    height: 400px; /* Fixed height for images */
+    height: 100%; /* Fixed height for images */
     object-fit: cover; /* Cover the area, preserving aspect ratio */
 }
 

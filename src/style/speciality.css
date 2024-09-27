@@ -7,7 +7,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto; /* Ensure children are stacked vertically */
-    position: relative;
     z-index: 1;
 }
 .special .heading h1 {
@@ -22,6 +21,7 @@
     text-align: justify;
 }
 .special .container {
+
     padding: 0px 50px;
     position: relative;
     width: 40%; /* Width of each container */
@@ -29,7 +29,7 @@
     display: flex; /* Added display flex for inner content centering */
     flex-direction: column; /* Stack child elements */
     align-items: center; /* Center child elements */
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .left-container,
 .right-container {
@@ -179,8 +179,8 @@
     .special .container {
         left: auto; /* Remove left positioning */
         right: auto; /* Remove right positioning */
-        width: 70%;
-        padding: 10px; /* Adjust padding for better fit on small screens */
+        width: 80%;
+        padding: 5px; /* Adjust padding for better fit on small screens */
         animation: moveRight 1s linear forwards; /* Animate from right */
         animation-delay: 2s; /* Delay before starting animation */
     }

@@ -3,7 +3,7 @@ const photo2 = require('../../asset/img/ManagementImages/PhotoPeoples.png');
 export const management=[
     {
         photo: photo1,
-        text:"The journey started with a single step. Growing up in a farming household has contributed to his increased interest in the coffee industry. His excellent bond with the Japanese people has made it easier for him to embark on this adventure. The trip was difficult and tested his devotion. However, by conquering all of those obstacles, He has now reached the position where he and his teammates can ship coffee to any location in the world.",
+        text:"The journey started with a single step. Growing up in a farming household has contributed to his increased interest in the coffee industry. His excellent bond with the Japanese people has made it easier for him to embark on this adventure. The trip was difficult and tested his devotion.",
         name:"Mr. Dawit Girma",
         position:"CEO & General Manager",
     },

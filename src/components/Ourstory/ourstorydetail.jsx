@@ -141,8 +141,9 @@ const OurStoryDetail = ({ interval = 3000 }) => {
         <Heading title="Founders" subtitle="Visionary Creators" />
       <div className="lead">
       <Swiper
+          className="custom-swiper"
           modules={[Pagination, Autoplay]} // Ensure these are imported correctly
-
+          pagination={{ clickable: true }}
           loop={true}
           spaceBetween={50}
           autoplay={{
@@ -188,6 +189,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       >
         <Heading title="Meet Our Team" subtitle="The Faces Behind the Excellence" />
         <Swiper
+            className="custom-swiper"
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
             loop={true}

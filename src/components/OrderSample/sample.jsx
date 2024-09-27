@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Coffeetype } from '../data/Coffeetype';
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
-import CoverIma from '../../asset/img/CoverImages/Ocover.webp';
+import CoverIma from '../../asset/img/CoverImages/Ocover.jpg';
 import '../../style/sample.css';
 import { motion } from 'framer-motion';
 import Contacts from '../contact/contacts';
@@ -63,8 +63,7 @@ const SampleOrder = () => {
           <Heading title="Quick Orders Quality Promised" subtitle="" />
         </div>
       </div>
-
-      <div className="order-container">
+      <div className="blog-container">
         {Array.from({ length: totalItems }, (_, index) => {
           const coffeeItem = Coffeetype[index];
           const imageKey = Object.keys(images)[index];
@@ -79,7 +78,8 @@ const SampleOrder = () => {
               animate={visibleSections[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5 }}
             >
-                              <Link to="/orderd"
+
+                <Link to="/orderd"
                   onClick={handleScrollToTop}
                   state={{ 
                     image: imageUrl,

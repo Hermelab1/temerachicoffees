@@ -49,7 +49,7 @@ const Events = () => {
                     breakpoints={{
                         640: { slidesPerView: 1 },
                         768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
+                        1024: { slidesPerView: 4 },
                     }}
                 >
                     {Array.from({ length: totalItemsE }, (_, index) => (
@@ -79,7 +79,7 @@ const Events = () => {
                     breakpoints={{
                         640: { slidesPerView: 1 },
                         768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
+                        1024: { slidesPerView: 4 },
                     }}
                 >
                     {Array.from({ length: totalItemsO }, (_, index) => (
