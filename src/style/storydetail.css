@@ -62,7 +62,7 @@
 
 }
 .leaders .icon-container{
-    display: flex;
+    display: none;
     position: absolute;
     font-size: 3rem;
     top: 150px;
@@ -71,15 +71,11 @@
 
 .leaders .our .imagesF {
     text-align: center;
-    width: 100%;
-   
+    width: 100%;  
 }
-
-
 .leaders .our .imagesF img {
     width: 45%;
     max-height: 35vh; /* Added max-height to limit the image height */
-
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 .aboutF-text{

@@ -1,5 +1,4 @@
 .blog-container {
-
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of blog posts for responsiveness */
     justify-content: center; /* Center blog posts inside the container */
@@ -94,10 +93,35 @@
 
 /* Media Queries */
 @media (max-width: 1024px) {
-    .blog-details {
-        width: calc(50% - 20px); /* 2 cards in a row on tablets, adjust for margins */
-        height: 300px; /* Maintain square shape */
+    .blog-container {
+        /* Center blog posts inside the container */
+        width: 100%; 
+        margin: 30px auto;/* Full width of the container based on the parent */ /* Optional: Set a max-width for better readability */ 
     }
+
+    .blog-details {
+        width: 400px; /* Fixed width for the blog cards */
+        height: 550px; /* Fixed height for the blog cards (to ensure they are square) */
+        overflow: hidden; 
+        margin: 15px; /* Use uniform margin for better spacing */
+    }
+}
+
+@media (max-width: 950px) {
+    .blog-container {
+        /* Center blog posts inside the container */
+        width: 100%; 
+        margin: 30px auto;/* Full width of the container based on the parent */ /* Optional: Set a max-width for better readability */ 
+    }
+
+    .blog-details {
+        width: 350px; /* Fixed width for the blog cards */
+        height: 550px; /* Fixed height for the blog cards (to ensure they are square) */
+        overflow: hidden; 
+        margin: 15px; /* Use uniform margin for better spacing */
+    }
+    
+
 }
 
 @media (max-width: 640px) {

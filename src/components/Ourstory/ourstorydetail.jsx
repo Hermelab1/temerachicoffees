@@ -144,7 +144,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
           modules={[Pagination, Autoplay]} // Ensure these are imported correctly
 
           loop={true}
-          spaceBetween={0}
+          spaceBetween={50}
           autoplay={{
             delay: 6000, // Set your desired autoplay delay
             disableOnInteraction: false,
@@ -191,7 +191,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
             loop={true}
-            spaceBetween={0} // Ensure there's no space between slides
+            spaceBetween={30} // Ensure there's no space between slides
             autoplay={{
               delay: interval,
               disableOnInteraction: false,

@@ -81,16 +81,33 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-    .item {
-        flex: 1 1 45%; /* Adjust width for tablets */
+    .gallery {
+        border: solid black;
+        width: 100%;
+    }
+    .test-cards {
+
+        height: 41vh;
     }
 }
-
+@media (max-width: 950px) and (min-width: 650px) {
+    .gallery {
+        width: 100%;
+    }
+    .test-cards {
+        height: 42vh;
+    }
+}
 @media (max-width: 640px) {
     .item {
         flex: 1 1 100%; /* Full width for mobile */
     }
-
+    .gallary {
+        width: 80%;
+    }
+    .test-cards {
+        height: 50vh;
+    }
     .wrapper {
         flex-direction: column;
         align-items: center;

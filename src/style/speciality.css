@@ -19,10 +19,8 @@
     text-align: center;
 }
 .special p {
-
     text-align: justify;
 }
-
 .special .container {
     padding: 0px 50px;
     position: relative;
@@ -33,7 +31,6 @@
     align-items: center; /* Center child elements */
     margin-bottom: 20px;
 }
-
 .left-container,
 .right-container {
     position: relative; /* Ensure relative positioning */
@@ -168,6 +165,15 @@
     left: -14px; /* Adjusted for positioning */
 }
 
+@media (max-width: 950px) {
+    .special .container {
+        width: 60%; /* Width of each container */
+    }
+    .special::after {
+        display: none;
+    }
+    
+  }
 /* Corrected media query */
 @media screen and (max-width: 760px) {
     .special .container {

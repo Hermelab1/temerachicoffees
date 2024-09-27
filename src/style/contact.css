@@ -42,13 +42,11 @@
     padding: 5px;
     
 }
-
 .conatctA .links a,
 .contact .links a{
     color: white;
     margin: 5px;
 }
-
 .contact .divider {
     width: 1px; /* Adjust the width of the line */
     background-color: #c7c5c5; /* Change this color as needed */
@@ -62,11 +60,9 @@
     max-width: 350px; /* Max width for the form */
     background-color: none; /* Ensure the form background is white */
 }
-
 .contact .contactusform .form-group {
     margin-bottom: 0rem; 
 }
-
 .contact .contactusform input,
 .contact .contactusform textarea {
     font-family: "Poppins", sans-serif;
@@ -83,6 +79,16 @@
 
 .contact .contactusform button:hover {
     background-color: none; /* Darken button on hover */
+}
+@media (max-width: 1024px) {
+    .contact .divider {
+        display: none;
+    }
+}
+@media (max-width: 950px){
+    .contact .divider {
+        display: none;
+    }
 }
   
 @media (max-width: 480px) {
