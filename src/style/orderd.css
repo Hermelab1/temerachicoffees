@@ -182,4 +182,7 @@ label{
     width: 100%;
     
   }
+  .orderd-containers .details h3{
+    width: 100%;  
+  }
 }

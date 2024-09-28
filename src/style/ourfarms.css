@@ -27,7 +27,12 @@
 .farm-container .heading p{
     color: brown;
 }
-
+@media (max-width: 640px)  {
+    .farm-card {
+        height: 450px;
+    }
+    
+}
 
 
 

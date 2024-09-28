@@ -1,7 +1,6 @@
 /* BlogDetail.css */
 
 .blog-detail-container {
-
   display: flex;
   flex-direction: column; /* Stack the blog detail and other blogs vertically */
   justify-content: center;
@@ -20,7 +19,7 @@
   background: none;
 }
 .blog-detail-container .titles {
- align-items: first baseline;
+  align-items: first baseline;
   text-align: left; /* Align text to the left */
 }
 
@@ -46,6 +45,7 @@
 .blog-detail-container h2 {
   font-family: "Cardo", serif; /* Use the Google font */
   font-size: 2em; /* Larger font for titles */
+  line-height: 2.5rem;
   margin: 10px 0; /* Margin above and below */
 }
 
