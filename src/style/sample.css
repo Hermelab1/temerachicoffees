@@ -1,16 +1,16 @@
 .order-container {
-  border: solid red;
+  border: solid black;
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of blog posts for responsiveness */
-  justify-content: center; /* Center blog posts inside the container */
+  justify-content: center;
   width: 80%; /* Full width of the container based on the parent */
   margin: auto; /* Center on the page */
 }
 
 .order-card {
-  border: 2px solid rgb(232, 232, 232);
-  width: 350px; /* Fixed width for the blog cards */
-  height: 450px; /* Fixed height for the blog cards */
+  border: 2px solid rgb(231, 231, 231);
+  width: 300px; /* Fixed width for the blog cards */
+  height: 400px; /* Fixed height for the blog cards */
   background-color: white; /* Added background color for better contrast */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   overflow: hidden; 
@@ -34,12 +34,16 @@
   background-color: rgba(62, 28, 8, 0.8); /* Semi-transparent background */
   color: white; /* Text color */
   text-align: center;
+
   margin: 0; /* Remove default margin */
   padding: 15px; /* Optional: Add some padding */
   position: absolute; /* Positioning the content at the bottom */
   bottom: 0; /* Align to the bottom of the card */
   left: 0; /* Align to the left of the card */
   width: 100%; /* Make sure it spans the entire card width */
+}
+.order-overlay h2{
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {

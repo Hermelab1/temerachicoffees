@@ -45,6 +45,8 @@
 .details h3 {
     font-size: 1.2em; /* Adjust heading size */
     margin-bottom: 5px; /* Spacing below heading */
+    line-height: 1.5rem;
+   /* color: #3e1c08;*/
 }
 
 .details p {
@@ -126,15 +128,13 @@
 
 @media (max-width: 640px) {
     .blog-container {
-        width: 90%;
+        width: 95%;
     }
     .blog-details {
-        width: calc(100% - 10px); /* 1 card in a row on mobile devices, adjust for margins */
-        height: 450px; /* Maintain square shape */
+
+        height: 550px; /* Maintain square shape */
     }
-    .blog-details{
-        height: 550px;
-    }
+  
 
     .details h3 {
         font-size: 1.1em; /* Adjust heading size for mobile */

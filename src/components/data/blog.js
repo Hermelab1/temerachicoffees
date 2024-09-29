@@ -1,9 +1,10 @@
-const img1 = require('../../asset/img/Blog/photo_2024-07-28_18-10-06.webp');
-const img2 = require('../../asset/img/Blog/bowlingcoffee.webp');
-const img3 = require('../../asset/img/Blog/from.webp');
-const img4 = require('../../asset/img/Blog/chart.webp')
-const img5 = require('../../asset/img/Blog/Festival.webp')
-const img6 = require('../../asset/img/Blog/farmers.webp')
+const img1 = require('../../asset/img/Blog/Beyond.webp');
+const img2 = require('../../asset/img/Blog/The_science.webp');
+const img3 = require('../../asset/img/Blog/The _health.webp');
+const img4 = require('../../asset/img/Blog/Commerce.webp')
+const img5 = require('../../asset/img/Blog/culture_and_coffee.webp')
+const img6 = require('../../asset/img/Blog/meet_the.webp')
+const img7 = require('../../asset/img/Blog/The_future.webp')
 
 export const blogs = [
     {
@@ -115,7 +116,7 @@ Each cup of Ethiopian coffee reveals an intricate narrative of commitment, cultu
             date: "Aug-30-2020",
     },
     {
-        mediaSrc: img6,
+        mediaSrc: img7,
         mediaType: "image",
         title: "The Future of Coffee Exporting: Trends and Predictions for the Next Decade",
         detail: `Coffee is among the most sold commodities globally thus it holds a central position to the international economy by linking thousands of manufacturers’ exporters and buyers in different markets. The complex supply chain of coffee and changes in pricing are likely to lead to various predicting trends on future coffee exports. 

@@ -10,10 +10,20 @@ const Contacts = () => {
           Kirkos Sub City Woreda 11 House No. 195/A<br />
           Addis Ababa, Ethiopia<br />
           Tell: +251911245503<br />
+    
+        </p>
+      </div>
+      <div className='icons-p'>
+        <p>
           <b>Warehouse:</b><br />
           Hirut Processing Factory<br />
           Alem Gena, Sheger Oromia, ETHIOPIA<br />
           Email: info@temerachicoffeeexport.com<br />
+    
+        </p>
+      </div>
+      <div className='icons-p'>
+        <p>
           <b>Business Partner</b><br />
           Asia/Japan<br />
           Selam Store Trading LLC<br />

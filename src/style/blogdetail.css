@@ -5,7 +5,7 @@
   flex-direction: column; /* Stack the blog detail and other blogs vertically */
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   margin: 0 auto;
   width: 100%; 
   margin-top: 3%;
@@ -47,6 +47,7 @@
   font-size: 2em; /* Larger font for titles */
   line-height: 2.5rem;
   margin: 10px 0; /* Margin above and below */
+
 }
 
 .media video,
@@ -98,7 +99,7 @@
 
 @media (max-width: 480px) {
   .blog-detail-container{
-    margin-top: 15%;
+    margin-top: 20%;
   }
   .blogsd {
     width: 98%;

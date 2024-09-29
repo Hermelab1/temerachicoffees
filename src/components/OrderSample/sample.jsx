@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Coffeetype } from '../data/Coffeetype';
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
-import CoverIma from '../../asset/img/CoverImages/Ocover.jpg';
+import CoverIma from '../../asset/img/CoverImages/Ocover.webp';
 import '../../style/sample.css';
 import { motion } from 'framer-motion';
 import Contacts from '../contact/contacts';
@@ -60,7 +60,7 @@ const SampleOrder = () => {
           <img src={CoverIma} alt="Cover" />
         </div>
         <div className='slogan'>
-          <Heading title="Quick Orders Quality Promised" subtitle="" />
+          <Heading title="Reliable Quality" subtitle="Temerachi Coffee Export" />
         </div>
       </div>
       <div className="blog-container">

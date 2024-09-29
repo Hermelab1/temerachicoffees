@@ -21,7 +21,6 @@
     text-align: justify;
 }
 .special .container {
-
     padding: 0px 50px;
     position: relative;
     width: 40%; /* Width of each container */
@@ -29,7 +28,7 @@
     display: flex; /* Added display flex for inner content centering */
     flex-direction: column; /* Stack child elements */
     align-items: center; /* Center child elements */
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 .left-container,
 .right-container {
@@ -111,6 +110,7 @@
     right: -25px;
     top: 32px;
     z-index: 10;
+
     color: #176756; /* Ensure icons are above the background */
 }
 
@@ -177,18 +177,19 @@
 /* Corrected media query */
 @media screen and (max-width: 760px) {
     .special .container {
-        left: auto; /* Remove left positioning */
-        right: auto; /* Remove right positioning */
-        width: 70%;
-        padding: 5px; /* Adjust padding for better fit on small screens */
+        left: 20px; /* Remove left positioning */
+        width: 80%;
+        padding: 10px; /* Adjust padding for better fit on small screens */
         animation: moveRight 1s linear forwards; /* Animate from right */
         animation-delay: 2s; /* Delay before starting animation */
+        margin-bottom: 15px;
     }
 
     .special::after {
         left: 12%;
         top: 14%;
     }
+
 
     @keyframes moveline {
         0% {
@@ -221,6 +222,7 @@
     .right-container i {
         left: -5%; /* Centered icon for small screens */
         transform: translateX(-50%); /* Centering correction */
+
     }
 
     .left-container-arrow,
