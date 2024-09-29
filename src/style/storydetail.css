@@ -10,7 +10,7 @@
 .ourstorydetail .ourhistory .about-text {
     width: 50%;
     padding: 30px 50px;
-    box-sizing: border-box; /* Ensure padding is included in width */
+
 }
 .ourstorydetail .ourhistory .about-text p::first-letter {
     font-family: "Gupter", serif;
@@ -174,12 +174,27 @@
         width: 100%; 
     }
 }
+@media (max-width: 950px) {
+    .ourstorydetail .ourhistory .about-text {
 
-@media (max-width: 768px) {
+        width: 90%;
+        padding: 30px 30px;
+}
+
+    
+  }
+
+@media (max-width: 490px) {
     .ourstorydetail .ourhistory {
         width: 90%;
         height: auto; 
     }
+    .ourstorydetail .ourhistory .about-text {
+        width: 90%;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
 
     .ourstorydetail .ourhistory p {
         margin-top: 20px;
@@ -198,13 +213,15 @@
         width: 90%; /* Responsive width on smaller screens */
     }
     .leaders .our{
+
         padding: 0px;
     }
     .leaders .our .imagesF img {
         width: 70%;}
-  .leaders .our .about-text{
-    margin-bottom: 25px;
-  }    .teammembers {
+    .leaders .our .aboutF-text{
+        margin-bottom: 20px;
+    }
+    .teammembers {
         width: 80%;
     }
     .leaders .icon-container{

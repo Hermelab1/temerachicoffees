@@ -25,7 +25,7 @@ const Pages = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/ourStory" element={<About />} />
-                        <Route path="/events" element={<Events />} />
+                        <Route path="/gallery" element={<Events />} />
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/blogdetail" element={<Blogdetail />} />
                         <Route path="/contact" element={<Contact />} />

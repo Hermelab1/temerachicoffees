@@ -5,7 +5,7 @@ export const nav = [
     },
     {
         text: "Gallery",
-        path:"/events",
+        path:"/gallery",
         
     },
     {

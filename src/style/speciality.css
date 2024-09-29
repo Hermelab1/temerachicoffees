@@ -6,7 +6,7 @@
     justify-content: center; /* Center children horizontally */
     flex-direction: column;
     flex-wrap: wrap;
-    margin: auto; /* Ensure children are stacked vertically */
+    margin: 20px auto; /* Ensure children are stacked vertically */
     z-index: 1;
 }
 .special .heading h1 {
@@ -179,7 +179,7 @@
     .special .container {
         left: auto; /* Remove left positioning */
         right: auto; /* Remove right positioning */
-        width: 80%;
+        width: 70%;
         padding: 5px; /* Adjust padding for better fit on small screens */
         animation: moveRight 1s linear forwards; /* Animate from right */
         animation-delay: 2s; /* Delay before starting animation */

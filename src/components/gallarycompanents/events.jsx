@@ -48,7 +48,7 @@ const Events = () => {
                     autoplay={{ delay: 5000 }} // Fixed to lowercase
                     breakpoints={{
                         640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
+                        768: { slidesPerView: 3 },
                         1024: { slidesPerView: 4 },
                     }}
                 >
@@ -78,7 +78,7 @@ const Events = () => {
                     autoplay={{ delay: 6000 }} // Fixed to lowercase
                     breakpoints={{
                         640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
+                        768: { slidesPerView: 3 },
                         1024: { slidesPerView: 4 },
                     }}
                 >

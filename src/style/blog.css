@@ -116,7 +116,7 @@
 
     .blog-details {
         width: 350px; /* Fixed width for the blog cards */
-        height: 550px; /* Fixed height for the blog cards (to ensure they are square) */
+        height: 425px; /* Fixed height for the blog cards (to ensure they are square) */
         overflow: hidden; 
         margin: 15px; /* Use uniform margin for better spacing */
     }
