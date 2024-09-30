@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { Coffeetype } from '../data/Coffeetype';
+import { Coffeetype } from '../data/Coffeetype'; // Make sure Coffeetype is an array
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
 import CoverIma from '../../asset/img/CoverImages/Ocover.webp';
@@ -8,26 +8,12 @@ import '../../style/sample.css';
 import { motion } from 'framer-motion';
 import Contacts from '../contact/contacts';
 
-// Function to import all images from a specific directory
-const importAll = (r) => {
-  let images = {};
-  r.keys().forEach((item) => {
-    images[item.replace('./', '')] = r(item);
-  });
-  return images;
-};
 
-const images = importAll(require.context('../../asset/img/CoffeType', false, /\.(webp|jpg|jpeg|png)$/));
 
 const SampleOrder = () => {
-  const totalItems = Math.min(Coffeetype.length, Object.keys(images).length);
-  const [visibleSections, setVisibleSections] = useState(Array(totalItems).fill(false));
-
-  const handleScrollToTop = () => {
-    setTimeout(() => {
-      window.scrollTo({ top: 0 });
-    }, 0);
-  };
+  const [visibleSections, setVisibleSections] = useState([]);
+  const totalItems = Coffeetype.length; // Assuming Coffeetype is an array of coffee items
+  const coffeeItems = Coffeetype; // Make sure this is the correct reference to your coffee items
 
   const handleScroll = useCallback(() => {
     requestAnimationFrame(() => {
@@ -51,7 +37,11 @@ const SampleOrder = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [handleScroll, totalItems]);
+  }, [handleScroll]);
+
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0); // Function to scroll to the top of the page
+  };
 
   return (
     <section className='gallery-events'>
@@ -64,55 +54,46 @@ const SampleOrder = () => {
         </div>
       </div>
       <div className="blog-container">
-        {Array.from({ length: totalItems }, (_, index) => {
-          const coffeeItem = Coffeetype[index];
-          const imageKey = Object.keys(images)[index];
-          const imageUrl = images[imageKey] || ''; // Handle potential missing images
-
-          return (
-            <motion.div
-              id={`order-card-${index}`}
-              className="order-card"
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              animate={visibleSections[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{ duration: 0.5 }}
+        {coffeeItems.map((coffeeItem, index) => (
+          <motion.div
+            key={index}
+            id={`order-card-${index}`}
+            className="order-card"
+            initial={{ opacity: 0, y: 50 }}
+            animate={visibleSections[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Link to="/orderd"
+              onClick={handleScrollToTop}
+              state={{
+                image: coffeeItem.imgs,
+                cname: coffeeItem.cname,
+                code: coffeeItem.code,
+                availability: coffeeItem.avalablity,
+                description: coffeeItem.description,
+                category: coffeeItem.catagory.map(c => ({
+                  titles: c.titles,
+                  grades: c.grades.map(g => ({
+                    gname: g.gname || 'Grade Not Available',
+                    price: g.price
+                  }))
+                })),
+                titles: coffeeItem.catagory?.[0]?.titles || 'Title Not Available',
+                grades: coffeeItem.catagory?.[0]?.grades.map(g => g.gname) || ['Grade Not Available'],
+                price: coffeeItem.catagory?.[0]?.grades?.[0]?.price || 'Price Not Available'
+              }}
+              className='status'
             >
+              <img src={coffeeItem.imgs} alt={`Coffee Type: ${coffeeItem?.name || 'Not Available'}`} />
+            </Link>
 
-                <Link to="/orderd"
-                  onClick={handleScrollToTop}
-                  state={{ 
-                    image: imageUrl,
-                    cname: coffeeItem.cname, 
-                    code: coffeeItem.code,
-                    availability: coffeeItem.avalablity, 
-                    description: coffeeItem.description, 
-                    category: coffeeItem.catagory.map(c => ({
-                      imgs: c.imgs,
-                      titles: c.titles,
-                      grades: c.grades.map(g => ({
-                        gname: g.gname || 'Grade Not Available', 
-                        price: g.price
-                      }))
-                    })),
-                    titles: coffeeItem.catagory?.[0]?.titles || 'Title Not Available',
-                    grades: coffeeItem.catagory?.[0]?.grades?.map(g => g.gname) || ['Grade Not Available'],
-                    price: coffeeItem.catagory?.[0]?.grades?.[0]?.price || 'Price Not Available'
-                  }}
-                  className='status'
-                >
-              {imageUrl && <img src={imageUrl} alt={`Coffee Type: ${coffeeItem?.name || 'Not Available'}`} />}
-                </Link>
-
-              <div className="order-overlay">
-                <h2>{coffeeItem?.cname || 'Title Not Available'}</h2>
-              </div>
-
-            </motion.div>
-          );
-        })}
+            <div className="order-overlay">
+              <h2>{coffeeItem?.cname || 'Title Not Available'}</h2>
+            </div>
+          </motion.div>
+        ))}
       </div>
-        <Contacts/>
+      <Contacts />
       <Footer />
     </section>
   );

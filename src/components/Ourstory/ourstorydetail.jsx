@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import img1 from '../../asset/img/HeadingImages/CompanyPhoto.jpg';
-import img from '../../asset/img/HeadingImages/CompanyPhoto1.jpg';
-import img2 from '../../asset/img/HeadingImages/CompanyPhoto2.jpg';
-import photo1 from '../../asset/img/ManagementImages/bothmanager.png';
+import img1 from '../../asset/img/HeadingImages/CompanyPhoto.webp';
+import img from '../../asset/img/HeadingImages/CompanyPhoto1.webp';
+import img2 from '../../asset/img/HeadingImages/CompanyPhoto2.webp';
+import photo1 from '../../asset/img/ManagementImages/bothmanager.webp';
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
 import '../../style/storydetail.css';
@@ -108,7 +108,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
           <img src={images[currentIndex]} alt="Slideshow" />
         </div>
         <div className='slogan'>
-          <Heading title="Our Journey Our Story" subtitle="Temerachi Coffee Export" />
+          <Heading title="Our Journey" subtitle="Temerachi Coffee Export" />
         </div>
       </div>
 

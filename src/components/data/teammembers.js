@@ -1,6 +1,6 @@
-const photo1 = require('../../asset/img/ManagementImages/Temeach3.png');
-const photo3 = require('../../asset/img/ManagementImages/DawitPhoto.jpg');
-const photo4 = require('../../asset/img/ManagementImages/PhotoPeoples.png');
+const photo1 = require('../../asset/img/ManagementImages/Temeach3.webp');
+const photo3 = require('../../asset/img/ManagementImages/DawitPhoto.webp');
+const photo4 = require('../../asset/img/ManagementImages/PhotoPeoples.webp');
 
 export const teammembers =[
     {

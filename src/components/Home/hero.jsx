@@ -13,7 +13,7 @@ const hero = () => {
             <video src={videobg} autoPlay loop muted></video>
           </div>
           <div className='slogan'>
-            <Headings title="Every beans tells story" subtitle="Temerachi Coffee Export"/>
+            <Headings title="Every beans tells a story" subtitle="Temerachi Coffee Export"/>
 
           </div>
 

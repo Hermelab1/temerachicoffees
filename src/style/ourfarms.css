@@ -24,9 +24,7 @@
 .farm-card img:hover {
     transform: scale(1.05); /* Scale up the image slightly on hover */
 }
-.farm-container .heading p{
-    color: brown;
-}
+
 @media (max-width: 640px)  {
     .farm-card {
         height: 450px;

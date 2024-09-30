@@ -9,10 +9,7 @@
     margin: 20px auto; /* Ensure children are stacked vertically */
     z-index: 1;
 }
-.special .heading h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
+
 .special h2 {
     font-size: 1.3rem;
     text-align: center;
@@ -110,7 +107,6 @@
     right: -25px;
     top: 32px;
     z-index: 10;
-
     color: #176756; /* Ensure icons are above the background */
 }
 

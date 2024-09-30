@@ -1,38 +1,52 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import '../../style/contact.css';
 const Contacts = () => {
+  const navigate = useNavigate();
+
+  const handleScrollToTopAndNavigate = (path) => {
+    window.scrollTo({ top: 0});
+    
+    setTimeout(() => {
+      navigate(path);
+    }, 500);  // Delay for smooth transition
+  };
+  
   return (
     <section className='contact'>
-    <div className='container'>    
+    <div className='container'>
+    <div className="pages">
+
+          <Link onClick={() => handleScrollToTopAndNavigate('/')}>Home</Link>
+          <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')}>Our Story</Link>
+          <Link onClick={() => handleScrollToTopAndNavigate('/blog')}>Blog</Link>
+          <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')}>Order Sample</Link>
+        </div>
+
+        <div className="divider"></div> {/* Vertical line */}    
+
       <div className='icons-p'>
         <p>
           <b>HEAD OFFICE:</b><br />
           Kirkos Sub City Woreda 11 House No. 195/A<br />
           Addis Ababa, Ethiopia<br />
           Tell: +251911245503<br />
-    
-        </p>
-      </div>
-      <div className='icons-p'>
-        <p>
           <b>Warehouse:</b><br />
           Hirut Processing Factory<br />
           Alem Gena, Sheger Oromia, ETHIOPIA<br />
           Email: info@temerachicoffeeexport.com<br />
-    
+
         </p>
       </div>
-      <div className='icons-p'>
-        <p>
-          <b>Business Partner</b><br />
+      <div className="divider"></div> {/* Vertical line */}    
+      <div className="links">
+        
+        <p><b>Business Partner</b><br />
           Asia/Japan<br />
           Selam Store Trading LLC<br />
           4-32-4 Asakusa, Taito-ku Tokyo<br />
-          Japan<br />
-        </p>
-      </div>
-      <div className="links">
-        <div className="titles">
+          Japan<br /></p>
+          <div className="titles">
           <h3>Reach us</h3>
         </div>
         <div className="link">             

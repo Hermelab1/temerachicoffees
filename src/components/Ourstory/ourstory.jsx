@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import '../../style/ahout.css';
-import photo1 from '../../asset/img/HeadingImages/CompanyPhoto.jpg';
-import photo2 from '../../asset/img/HeadingImages/CompanyPhoto1.jpg';
+import photo1 from '../../asset/img/HeadingImages/CompanyPhoto.webp';
+import photo2 from '../../asset/img/HeadingImages/CompanyPhoto1.webp';
 import Heading from '../Home/headings';
 import { useNavigate } from 'react-router-dom';
 

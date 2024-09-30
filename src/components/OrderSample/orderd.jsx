@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import { Coffeetype } from '../data/Coffeetype';
 import { ContryCode } from '../data/contrycode';
-import terms from '../../Files/policyandterms.pdf';
 import '../../style/orderd.css'; // Ensure this CSS file includes the necessary styles
 
 const countryCodes = ContryCode;
@@ -17,7 +16,7 @@ const Orderd = () => {
     user_email: '',
     user_phone: '',
     country_code: '+1', // Default country code
-    coffeeType: cname || '', // Set initial coffeeType to cname from location state
+    coffeeType: cname, // Set initial coffeeType to cname from location state
     coffeeGrade: '',
     quantity: '',
     user_companyname: '',
@@ -27,7 +26,7 @@ const Orderd = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [termsAgreed, setTermsAgreed] = useState(false);
+ 
 
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -95,19 +94,8 @@ const Orderd = () => {
     }
   };
 
-  const handleTermsChange = (e) => {
-    setTermsAgreed(e.target.checked);
-  };
-
- 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!termsAgreed) {
-      alert('You must agree to the terms and conditions.');
-      return;
-    }
-
     setLoading(true);
 
     emailjs.send('service_w6blv2o', 'template_ys7e7mk', {
@@ -143,8 +131,6 @@ const Orderd = () => {
       price: '',
       coffeeCategory: ''
     });
-    setTermsAgreed(false);
-
   };
 
   if (!location.state) {
@@ -199,7 +185,7 @@ const Orderd = () => {
             <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" />
           </div>
           <div>
-            <input type="text" name="deliveryaddress" value={formData.deliveryaddress} onChange={handleChange} required placeholder="Delivery Address" />
+            <input type="text" name="delivery_address" value={formData.deliveryaddress} onChange={handleChange} required placeholder="Delivery Address" />
           </div>
 
           {/* Render radio buttons for coffee categories */}
@@ -235,12 +221,7 @@ const Orderd = () => {
           <div>
             <input type="number" name="quantity" value={formData.quantity} onChange={handleChange} min="1" max="10" required placeholder="Quantity" />
           </div>
-          <div>
-            <input type="checkbox" name="termsAgreed" checked={termsAgreed} onChange={handleTermsChange} required id="termsAgreed" />
-            <label htmlFor="termsAgreed">
-              I agree with the <a href={terms} target="_blank" rel="noopener noreferrer">terms and conditions</a>.
-            </label>
-          </div>
+
           <button type="submit" disabled={loading}>
             {loading ? 'Ordering...' : 'Send Request'}
           </button>
