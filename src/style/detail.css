@@ -59,6 +59,10 @@
     .conatctA { /* Fixed class name */
         gap: 20px; /* Reduced gap between sections on smaller screens */
     }
+    .contactusform input,
+.contactusform textarea {
+    width: 100%;
+}
     .address{
         text-align: center;
     }
