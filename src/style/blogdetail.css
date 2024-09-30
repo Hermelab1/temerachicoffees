@@ -1,6 +1,7 @@
 /* BlogDetail.css */
 
 .blog-detail-container {
+  
   display: flex;
   flex-direction: column; /* Stack the blog detail and other blogs vertically */
   justify-content: center;
@@ -32,7 +33,7 @@
   border: 2px solid rgb(224, 222, 222);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   overflow: hidden; /* Prevent overflow */
-  width: 75%; /* Full width for blog details */
+  width: 80%; /* Full width for blog details */
   padding: 50px; /* Add padding */
   text-align: justify; /* Center text */
   margin-bottom: 20px; /* Space below blog detail */
@@ -51,14 +52,16 @@
   width: 100%;
   height: 55vh; /* Set maximum height for your container */
   margin-bottom: 20px;
-  text-align: center;
-
+  text-align: left;
+  overflow: hidden; /* Ensure that overflowing content is hidden */
 }
 
 .media img {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  object-fit: fill; /* Use 'contain' to fit the entire image */
+  object-fit: cover; /* Use 'cover' to fill the container */
+  object-position: top; /* Focus on the top part of the image */
+
 }
 .blog-date {
   color: #888; /* Slightly grey color for the date */
