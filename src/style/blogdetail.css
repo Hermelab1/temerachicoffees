@@ -33,7 +33,7 @@
   border: 2px solid rgb(224, 222, 222);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   overflow: hidden; /* Prevent overflow */
-  width: 80%; /* Full width for blog details */
+  width:60%; /* Full width for blog details */
   padding: 50px; /* Add padding */
   text-align: justify; /* Center text */
   margin-bottom: 20px; /* Space below blog detail */
@@ -111,7 +111,7 @@
     width: 98%;
   }
   h3 {
-      font-size: 1.3em; /* Smaller headlines for mobile */
+      font-size: 1.2em; /* Smaller headlines for mobile */
   }
 
   p {
