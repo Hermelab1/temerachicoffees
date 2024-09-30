@@ -38,24 +38,27 @@
   margin-bottom: 20px; /* Space below blog detail */
 }
 
-.media {
-  margin-bottom: 20px; /* Space below media */
-}
+
 
 .blog-detail-container h2 {
   font-family: "Cardo", serif; /* Use the Google font */
   font-size: 2em; /* Larger font for titles */
   line-height: 2.5rem;
   margin: 10px 0; /* Margin above and below */
+  font-weight: 500;
+}
+.media {
+  width: 100%;
+  height: 55vh; /* Set maximum height for your container */
+  margin-bottom: 20px;
+  text-align: center;
 
 }
 
-.media video,
 .media img {
-  width: 100%; /* Responsive width */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 50vh; /* Maintain maximum height */
-  object-fit: cover;
+  width: 90%;
+  height: 100%;
+  object-fit: fill; /* Use 'contain' to fit the entire image */
 }
 .blog-date {
   color: #888; /* Slightly grey color for the date */

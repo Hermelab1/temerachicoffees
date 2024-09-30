@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import { Coffeetype } from '../data/Coffeetype';
 import { ContryCode } from '../data/contrycode';
-import '../../style/orderd.css'; // Ensure this CSS file includes the necessary styles
+import '../../style/orderd.css';
 
 const countryCodes = ContryCode;
 
@@ -15,30 +15,29 @@ const Orderd = () => {
     name: '',
     user_email: '',
     user_phone: '',
-    country_code: '+1', // Default country code
-    coffeeType: cname, // Set initial coffeeType to cname from location state
+    country_code: '+1',
+    coffeeType: cname || '', 
+    coffeeCategory: '',
     coffeeGrade: '',
     quantity: '',
     user_companyname: '',
     user_website: '',
-    price: '', // Initialize price as an empty string
-    coffeeCategory: '' // Track selected coffee category
+    delivery_address: '',
+    price: '',
   });
 
   const [loading, setLoading] = useState(false);
- 
-
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
 
   const handleImageLoad = () => {
-    setImageLoaded(true); // Update state when image loads successfully
-    setImageError(false); // Reset any image error state if it was previously set
+    setImageLoaded(true);
+    setImageError(false);
   };
 
   const handleImageError = () => {
-    setImageError(true); // Update state if there is an error loading the image
-    setImageLoaded(false); // Ensure loaded state is reset
+    setImageError(true);
+    setImageLoaded(false);
   };
 
   const handleChange = (e) => {
@@ -51,7 +50,7 @@ const Orderd = () => {
         coffeeType: value,
         coffeeGrade: '',
         price: '',
-        coffeeCategory: '' // Reset the selected category when coffee type changes
+        coffeeCategory: ''
       }));
       return;
     }
@@ -85,7 +84,6 @@ const Orderd = () => {
           price: selectedGrade.price,
         }));
       } else {
-        // Reset price if no valid grade selected
         setFormData(prev => ({
           ...prev,
           price: '',
@@ -100,7 +98,7 @@ const Orderd = () => {
 
     emailjs.send('service_w6blv2o', 'template_ys7e7mk', {
       ...formData,
-      coffeeType: formData.coffeeType,
+      coffeeType: cname,
       coffeeGrade: formData.coffeeGrade,
     }, 'Puv041KtiA_TZduH2')
       .then(response => {
@@ -128,6 +126,7 @@ const Orderd = () => {
       quantity: '',
       user_companyname: '',
       user_website: '',
+      delivery_address: '',
       price: '',
       coffeeCategory: ''
     });
@@ -155,7 +154,7 @@ const Orderd = () => {
         )}
       </div>
       <div className="details">
-        <h3>{cname || 'Title Not Available'}</h3>
+        <h3 name='cname'>{cname || 'Title Not Available'}</h3>
         <p>Product Code: {code || 'Code Not Available'}</p>
         <p>Price: {formData.price || 'Select Coffee Grade first'}</p>
         
@@ -185,7 +184,7 @@ const Orderd = () => {
             <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" />
           </div>
           <div>
-            <input type="text" name="delivery_address" value={formData.deliveryaddress} onChange={handleChange} required placeholder="Delivery Address" />
+            <input type="text" name="delivery_address" value={formData.delivery_address} onChange={handleChange} required placeholder="Delivery Address" />
           </div>
 
           {/* Render radio buttons for coffee categories */}
