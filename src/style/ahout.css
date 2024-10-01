@@ -76,6 +76,27 @@
 .photo2 {
   margin-top: 7%;
 }
+@media (max-width: 1200px) {
+  .ourstory .container {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .about-text {
+    margin-left: 5%; /* Reduce margin on smaller screens */
+    width: 90%; /* Increase width on smaller screens */
+  }
+
+  .images {
+    width: 100%; /* Make images section full width */
+    flex-direction: column; /* Stack images vertically */
+  }
+
+  .images img {
+    max-width: 80%; /* Constrain image sizes */
+    height: auto; /* Keep aspect ratio */
+  }
+}
 
 @media (max-width: 950px) {
   .ourstory {
