@@ -30,16 +30,13 @@
   color: #b9b9b9; /* Optional: Change text color */
 }
 .blogsd {
-  border: 2px solid rgb(224, 222, 222);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgb(224, 222, 222);
   overflow: hidden; /* Prevent overflow */
-  width:60%; /* Full width for blog details */
-  padding: 50px; /* Add padding */
+  width:55%; /* Full width for blog details */
+  padding: 40px; /* Add padding */
   text-align: justify; /* Center text */
   margin-bottom: 20px; /* Space below blog detail */
 }
-
-
 
 .blog-detail-container h2 {
   font-family: "Cardo", serif; /* Use the Google font */
@@ -85,21 +82,9 @@
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .blog-detail-container {
-      padding: 15px; /* Less padding on smaller screens */
-  }
-
+@media (max-width: 950px)  {
   .blogsd {
-      padding: 15px; /* Less padding in content area */
-  }
-
-  h2 {
-      font-size: 1.8em; /* Slightly smaller title */
-  }
-
-  h3 {
-      font-size: 1.5em; /* Slightly smaller headlines */
+    width: 80%;
   }
 }
 

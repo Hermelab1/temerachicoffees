@@ -19,6 +19,11 @@
     font-size: 0.8rem;
     line-height: 20px;
   }
-  
+  @media (max-width: 950px) {
+    .footage{
+      height: 10vh;
+    }
+  }
+
 
   

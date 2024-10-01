@@ -163,10 +163,19 @@
 
 @media (max-width: 950px) {
     .special .container {
-        width: 60%; /* Width of each container */
+        width: 53%; /* Width of each container */
+        margin: 0px;
     }
     .special::after {
         display: none;
+    }
+    .left-container {
+        left: -26%;
+    }
+    
+    /* Animation for right container */
+    .right-container {
+        right: -26.5%;
     }
     
   }

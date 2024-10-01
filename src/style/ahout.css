@@ -73,48 +73,34 @@
 .photo2 {
   margin-top: 7%;
 }
-@media (max-width: 1200px) {
-  .ourstory .container {
-    flex-direction: column; /* Stack elements vertically */
-    height: auto; /* Allow height to adjust based on content */
-  }
 
-  .about-text {
-    margin-left: 5%; /* Reduce margin on smaller screens */
-    width: 90%; /* Increase width on smaller screens */
-  }
-
-  .images {
-    width: 100%; /* Make images section full width */
-    flex-direction: column; /* Stack images vertically */
-  }
-
-  .images img {
-    max-width: 80%; /* Constrain image sizes */
-    height: auto; /* Keep aspect ratio */
-  }
-}
 
 @media (max-width: 950px) {
   .ourstory {
     height: auto;
-    width: 80%;
+    width: 100%;
+  }
+  .ourstory .container {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
   }
   .about-text {
+    width:45% ;
     padding: 0;
   }
   .images {
     display: flex;
     flex-direction:row; /* Display images side by side */
     gap: 15px; /* Space between images */
-    width: 80%;
+    width: 55%;
     margin: 20px auto;
   }
   
   .images img {
-    height: 50vh; /* Set height to 100% of the parent container */
+    height: 70vh; /* Set height to 100% of the parent container */
     object-fit:fill; /* Ensure images cover their container without distortion */
-    max-width: 40%;
+    max-width: 45%;
   }
 }
 

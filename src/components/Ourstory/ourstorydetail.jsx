@@ -200,7 +200,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
             }}
             breakpoints={{
               640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
             }}
           >
