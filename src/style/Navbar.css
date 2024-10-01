@@ -82,7 +82,7 @@ header .toggle {
     header {
         padding: 0;
         margin: 0; /* Remove padding for mobile */
-        height: 10vh;
+        height: 12vh;
     }
     header img {
         width: 70%; /* Wider on small screens */
@@ -94,7 +94,7 @@ header .toggle {
         background-color: #0b785f;
         left: 60%; /* Centering */
         transform: translateX(-50%); /* Centering positioning */
-        top: 25%; /* Adjust submenu position */
+        top: 28%; /* Adjust submenu position */
         border-radius: 0; /* Full-width submenu */
         padding: 0; /* Less padding */
     }
@@ -133,7 +133,7 @@ header .toggle {
         background-color: #0b785f;
         padding: 10px;
         position: absolute;
-        top: 10vh;
+        top: 12vh;
         left: 0;
     }
     header li a {
