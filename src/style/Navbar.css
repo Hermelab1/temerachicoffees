@@ -78,11 +78,11 @@ header .toggle {
     font-size: 1.8rem;
 }
 /* Media Query for Mobile */
-@media screen and (max-width: 980px) {
+@media (max-width: 980px) {
     header {
         padding: 0;
         margin: 0; /* Remove padding for mobile */
-        height: 12vh;
+        height: 8vh;
     }
     header img {
         width: 70%; /* Wider on small screens */
@@ -133,7 +133,7 @@ header .toggle {
         background-color: #0b785f;
         padding: 10px;
         position: absolute;
-        top: 12vh;
+        top: 8vh;
         left: 0;
     }
     header li a {
@@ -148,7 +148,7 @@ header .toggle {
         line-height:15px;
     }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 480px) {
     header{
         height: 8vh;
     }  

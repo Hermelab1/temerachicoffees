@@ -152,9 +152,14 @@ label{
 .details a:hover {
   color: rgb(28, 87, 189); /* Changed the approach as `darken()` is not valid CSS */
 }
+@media screen and (max-width: 980px) {
+  .orderd-containers {
 
+    margin-top: 8%;
+  }
+}
 /* Media Queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .orderd-containers {
     flex-wrap: wrap;
     margin-top: 20%;

@@ -64,7 +64,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="divider"></div> {/* Another vertical line */}
+        <div className="divider m"></div> {/* Another vertical line */}
         
         <div className="links">
           <p>            <b>Business Partner</b><br />

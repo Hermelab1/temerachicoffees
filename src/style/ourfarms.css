@@ -25,7 +25,7 @@
     transform: scale(1.05); /* Scale up the image slightly on hover */
 }
 
-@media (max-width: 640px)  {
+@media (max-width: 480px) {
     .farm-card {
         height: 450px;
     }

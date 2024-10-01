@@ -9,7 +9,7 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on small screens */
-    gap: 30px;
+    gap: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -68,9 +68,9 @@
     width: 1px; /* Adjust the width of the line */
     background-color: #c7c5c5; /* Change this color as needed */
     height: 250px; /* Adjust the height as needed */
-    margin: 0 0px; /* Space around the line */
+    margin: 0px; /* Space around the line */
     display: inline-block; /* Aligns with the other content */
-  }
+}
   /* Contact Form Styles */
 .contact .contactusform { /* Fixed the class name */
     padding: 1rem;
@@ -103,9 +103,22 @@
     }
 }
 @media (max-width: 950px){
+    .contact .container {
+        gap: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .contact .divider {
+        width: 1px; /* Adjust the width of the line */
+        background-color: #c7c5c5; /* Change this color as needed */
+        height: 250px; /* Adjust the height as needed */
+        margin: 0px; /* Space around the line */
+        display: inline-block; /* Aligns with the other content */
+    }
+    .contact .m{
         display: none;
     }
+
 }
   
 @media (max-width: 480px) {

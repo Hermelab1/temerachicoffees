@@ -23,7 +23,8 @@
     background-color: #fff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    height: 60vh;
+    min-height: 45vh;
+    max-height: 60vh;
   
 }
 .test-cards .logo-img{
@@ -67,7 +68,6 @@
 }
 
 .overlays img{
-
     border: 1px;
     border-radius: 0px;
     width: 35px;
@@ -87,7 +87,7 @@
         width: 100%;
     }
     .test-cards {
-        height: 55vh;
+        height: auto;
     }
 }
 @media (max-width: 950px){
@@ -95,10 +95,11 @@
         width: 100%;
     }
     .test-cards {
-        height: 110vh;
+        min-height: 20vh;
+        max-height: 130vh;     
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 480px){
     .item {
         flex: 1 1 100%; /* Full width for mobile */
     }

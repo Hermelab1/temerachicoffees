@@ -45,8 +45,14 @@
   font-size: 1.2rem;
   font-weight: 400;
 }
+@media (max-width: 950px){
+  .order-card {
+    width: 30%;
+    margin: 1.2% ; /* Center the card and add top/bottom margin */
+  }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 480px){
   .order-card {
     width: 90%;
     margin: 5% auto; /* Center the card and add top/bottom margin */

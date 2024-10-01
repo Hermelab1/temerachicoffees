@@ -164,7 +164,7 @@
 @media (max-width: 950px) {
     .special .container {
         width: 53%; /* Width of each container */
-        margin: 0px;
+        margin-bottom: 15px;
     }
     .special::after {
         display: none;
@@ -180,7 +180,7 @@
     
   }
 /* Corrected media query */
-@media screen and (max-width: 760px) {
+@media (max-width: 480px) {
     .special .container {
         left: 20px; /* Remove left positioning */
         width: 80%;
