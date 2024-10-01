@@ -1,5 +1,4 @@
 .conatctA { /* Fixed the class name */
-
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -7,7 +6,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on small screens */
     margin: 20px auto; /* Center horizontally */
-    gap:90px;
+    gap:50px;
 
 }
 .icons-p p{
@@ -56,8 +55,6 @@
     }
 
 }
-
-
 @media (max-width: 480px) {
     .ourstorydetail .slogan {
         font-size: 1rem; /* Further reduce font-size for very small screens */
@@ -65,7 +62,7 @@
     
     .contactusform { /* Fixed class name */
         padding: 1rem; /* Even further reduced padding */
-        margin: 1em; /* Adjust margin for small devices */
+        margin: 0em; /* Adjust margin for small devices */
     }
     
     .conatctA .address { /* Fixed class name */

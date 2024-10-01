@@ -8,18 +8,20 @@
   justify-content: center;
   margin: 0 auto;
 }
+
 .ourstory .container {
   display: flex;
   width: 90%;   
   height: 70vh;
 }
-.ourstory .heading p{
+
+.ourstory .heading p {
   color: #3e1c08;
   margin: 0;
   padding: 0;
 }
-.about-text {
 
+.about-text {
   padding: 20px;
   padding-left: 70px;
   padding-right: 70px;
@@ -28,12 +30,14 @@
   width: 50%; /* Adjusted width */
   text-align: justify; /* Justify text */
 }
-.about-text p{
+
+.about-text p {
   font-size: 1.1rem;
 }
+
 .ourstory .about-text p::first-letter {
   font-family: "Gupter", serif;
-  color: 176756; /* Color of the first letter */
+  color: #176756; /* Corrected color of the first letter */
   font-weight: 450; /* Make the first letter bold */
   font-size: 150px; /* Large font size for the first letter */
   float: left; /* Float left */
@@ -43,7 +47,7 @@
 
 .images {
   display: flex;
-  flex-direction:row; /* Display images side by side */
+  flex-direction: row; /* Display images side by side */
   gap: 20px; /* Space between images */
   width: 60%;
   justify-content: center;
@@ -62,7 +66,6 @@
 
 @keyframes rightToLeft {
   from {
-
     transform: translateX(0%); /* Start from off the right side */
   }
   to {
@@ -74,24 +77,26 @@
   margin-top: 7%;
 }
 
-
 @media (max-width: 950px) {
   .ourstory {
     height: auto;
     width: 100%;
   }
+  
   .ourstory .container {
     width: 95%;
     height: auto;
     margin: 20px auto;
   }
+  
   .about-text {
-    width:45% ;
+    width: 45%;
     padding: 0;
   }
+  
   .images {
     display: flex;
-    flex-direction:row; /* Display images side by side */
+    flex-direction: row; /* Display images side by side */
     gap: 15px; /* Space between images */
     width: 55%;
     margin: 20px auto;
@@ -99,7 +104,7 @@
   
   .images img {
     height: 70vh; /* Set height to 100% of the parent container */
-    object-fit:fill; /* Ensure images cover their container without distortion */
+    object-fit: fill; /* Ensure images cover their container without distortion */
     max-width: 45%;
   }
 }
@@ -107,25 +112,28 @@
 @media (max-width: 480px) {
   .ourstory {
     height: auto;
-    width: 100%;
   }
+
   .ourstory .container {
+    display: block;
     width: 100%;
   }
+  
   .about-text {
+    width: 90%;
     padding: 10px;
   }
+  
   .images {
     display: flex;
-    flex-direction:row; /* Display images side by side */
+    flex-direction: row; /* Display images side by side */
     gap: 15px; /* Space between images */
     width: 100%;
   }
   
   .images img {
-    height: 30vh; /* Set height to 100% of the parent container */
-    object-fit:fill; /* Ensure images cover their container without distortion */
+    height: 30vh; /* Set height to 50% of the parent container */
+    object-fit: fill; /* Ensure images cover their container without distortion */
     max-width: 45%;
   }
-
 }

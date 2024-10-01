@@ -90,16 +90,12 @@
 
 @media (max-width: 480px) {
   .blog-detail-container{
+ 
     margin-top: 20%;
+    padding: 10px;
   }
   .blogsd {
-    width: 98%;
-  }
-  h3 {
-      font-size: 1.2em; /* Smaller headlines for mobile */
-  }
-
-  p {
-      font-size: 0.9em; /* Smaller text for mobile */
+    width: 100%;
+    padding: 20px;
   }
 }

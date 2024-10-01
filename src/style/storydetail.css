@@ -181,16 +181,14 @@
 
 @media (max-width: 490px) {
     .ourstorydetail .ourhistory {
-        width: 90%;
+        width: 100%;
         height: auto; 
     }
     .ourstorydetail .ourhistory .about-text {
         width: 90%;
-        padding: 0px;
+        padding: 10px;
         margin-bottom: 20px;
     }
-
-
     .ourstorydetail .ourhistory p {
         margin-top: 20px;
         font-size: 1rem;
@@ -211,13 +209,20 @@
 
         padding: 0px;
     }
+    .leaders .our .imagesF{
+        height: 30vh;
+    }
     .leaders .our .imagesF img {
-        width: 70%;}
+        width: 70%;
+    }
     .leaders .our .aboutF-text{
         margin-bottom: 20px;
     }
     .teammembers {
         width: 80%;
+    }
+    .teammembers .card1 {
+        height: 40vh;
     }
     .leaders .icon-container{
         display: none;

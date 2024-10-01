@@ -24,6 +24,11 @@
       height: 10vh;
     }
   }
+  @media (max-width: 480px) {
+    .footage{
+      height: 6vh;
+    }
+  }
 
 
   
