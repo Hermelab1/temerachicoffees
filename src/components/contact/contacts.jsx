@@ -15,16 +15,6 @@ const Contacts = () => {
   return (
     <section className='contact'>
     <div className='container'>
-    <div className="pages">
-
-          <Link onClick={() => handleScrollToTopAndNavigate('/')}>Home</Link>
-          <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')}>Our Story</Link>
-          <Link onClick={() => handleScrollToTopAndNavigate('/blog')}>Blog</Link>
-          <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')}>Order Sample</Link>
-        </div>
-
-        <div className="divider"></div> {/* Vertical line */}    
-
       <div className='icons-p'>
         <p>
           <b>HEAD OFFICE:</b><br />
@@ -32,15 +22,15 @@ const Contacts = () => {
           Addis Ababa, Ethiopia<br />
           Tell: +251911245503<br />
           <b>Warehouse:</b><br />
-          Hirut Processing Factory<br />
-          Alem Gena, Sheger Oromia, ETHIOPIA<br />
+          <b>Warehouse:</b><br />
+          Guji Coffee Export and Processing Factory<br />
+          Furi, Sheger Oromia, ETHIOPIA<br />
           Email: info@temerachicoffeeexport.com<br />
 
         </p>
       </div>
       <div className="divider"></div> {/* Vertical line */}    
       <div className="links">
-        
         <p><b>Business Partner</b><br />
           Asia/Japan<br />
           Selam Store Trading LLC<br />
@@ -56,6 +46,19 @@ const Contacts = () => {
           
         </div>
       </div>
+      <div className="divider"></div> {/* Vertical line */}    
+
+      <div className="pages">
+        <div className="titles">
+            <h3>Navigation</h3>
+        </div>
+        <div className="lin"> 
+            <Link onClick={() => handleScrollToTopAndNavigate('/')}>Home</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')}>Our Story</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/blog')}>Blog</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')}>Order Sample</Link>
+        </div>
+    </div>
     </div>
   </section>
   

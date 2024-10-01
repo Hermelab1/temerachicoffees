@@ -13,12 +13,12 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .contact .pages a {
     display: block;
     font-family: 'Poppins ExtraLight', 'Poppins', sans-serif;
     font-size: 1rem;
-    text-align: center;
-    margin: 10px;
+
 
 }
 
@@ -68,7 +68,7 @@
     width: 1px; /* Adjust the width of the line */
     background-color: #c7c5c5; /* Change this color as needed */
     height: 250px; /* Adjust the height as needed */
-    margin: 0 20px; /* Space around the line */
+    margin: 0 0px; /* Space around the line */
     display: inline-block; /* Aligns with the other content */
   }
   /* Contact Form Styles */
@@ -115,5 +115,24 @@
     .contact .divider {
         display: none;
     }
-    
+    .contact .pages {
+        text-align: center;
+        display:block;
+    }
+    .contact .pages .titles {
+        margin-bottom: 10px; /* Space below the title */
+    }
+    .contact .pages .titles h3 {
+        margin: 0; /* Remove default margin from h3 */
+    }
+    .contact .pages .lin {
+        display: flex; /* Use flex to arrange links in a row */
+    }
+    .contact .pages .lin a {
+        margin: 8px; /* Space between links */
+        text-decoration: none; /* Optional: removes underline */
+    }
+    .contact .pages .lin a:hover {
+        text-decoration: underline; /* Optional: underline on hover */
+    }
 }

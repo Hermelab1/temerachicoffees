@@ -33,16 +33,7 @@ const Contact = () => {
 
   return (
     <section className='contact'>
-      <div className='container'>
-      <div className="pages">
-
-          <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')}>Our Story</Link>
-          <Link onClick={() => handleScrollToTopAndNavigate('/blog')}>Blog</Link>
-          <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')}>Order Sample</Link>
-        </div>
-
-        <div className="divider"></div> {/* Vertical line */}
-
+      <div className='container'> 
         <div className="contactusform">
           <form ref={form} onSubmit={sendEmail} className='form-group'>
             <input type="text" name="user_name" placeholder='Full Name' required />
@@ -66,8 +57,8 @@ const Contact = () => {
             Addis Ababa, Ethiopia<br />
             Tell: +251911245503<br />
             <b>Warehouse:</b><br />
-            Hirut Processing Factory<br />
-            Alem Gena, Sheger Oromia, ETHIOPIA<br />
+            Guji Coffee Export and Processing Factory<br />
+            Furi, Sheger Oromia, ETHIOPIA<br />
             Email: info@temerachicoffeeexport.com<br />
 
           </p>
@@ -96,6 +87,18 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        <div className="divider"></div> {/* Vertical line */}
+        <div className="pages">
+        <div className="titles">
+            <h3>Navigation</h3>
+        </div>
+        <div className="lin"> 
+            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')}>Our Story</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/blog')}>Blog</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')}>Order Sample</Link>
+        </div>
+    </div>
+
       </div>
     </section>
   );
