@@ -1,6 +1,7 @@
 const photo1 = require('../../asset/img/ManagementImages/Temeach3.webp');
 const photo3 = require('../../asset/img/ManagementImages/DawitPhoto.webp');
 const photo4 = require('../../asset/img/ManagementImages/PhotoPeoples.webp');
+const photo5 = require('../../asset/img/ManagementImages/tem4.webp');
 
 export const teammembers =[
     {
@@ -19,9 +20,9 @@ export const teammembers =[
         position:"Quality Manager",
     },
     {
-        photo: photo1,
-        name:"Mr. test",
-        position:"Quality Manager",
+        photo: photo5,
+        name:"Ms. Mahlet Bekele",
+        position:"Documentation Officer",
     }
 
 ]
