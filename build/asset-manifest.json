@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc6c131d.css",
-    "main.js": "/static/js/main.7c4e20bd.js",
+    "main.css": "/static/css/main.50ce80c6.css",
+    "main.js": "/static/js/main.671a8274.js",
     "static/media/1.webp": "/static/media/1.87c903c93dae1d3d9631.webp",
     "static/media/6.webp": "/static/media/6.7fcb44750b69746ef95b.webp",
     "static/media/2.webp": "/static/media/2.f192f312ea3752b52bf7.webp",
@@ -25,13 +25,13 @@
     "static/media/16.webp": "/static/media/16.e35f52d968254ca510a6.webp",
     "static/media/11.webp": "/static/media/11.1cf2d2968f983f63d6ab.webp",
     "static/media/Bcover.webp": "/static/media/Bcover.17ef76bf7a5738f94a96.webp",
+    "static/media/kalid.webp": "/static/media/kalid.385bec838cbf6ea1ecef.webp",
     "static/media/PhotoPeoples.webp": "/static/media/PhotoPeoples.3ed2d5173992131f67a1.webp",
     "static/media/Ecover.webp": "/static/media/Ecover.3e563be8429c0bf4e808.webp",
     "static/media/bothmanager.webp": "/static/media/bothmanager.6b5871cab2ebccc55222.webp",
     "static/media/Products.webp": "/static/media/Products.1d71e409be155c14a612.webp",
     "static/media/meet_the.webp": "/static/media/meet_the.0c424930b7f9d4e6fa01.webp",
     "static/media/CompanyPhoto2.webp": "/static/media/CompanyPhoto2.b7e0d5eca99326467f42.webp",
-    "static/media/Beyond.webp": "/static/media/Beyond.0495bb421909a4d41805.webp",
     "static/media/culture_and_coffee.webp": "/static/media/culture_and_coffee.d6cec9a19245ad5c5bb2.webp",
     "static/media/DawitPhoto.webp": "/static/media/DawitPhoto.26a2a700117f044cc15e.webp",
     "static/media/CompanyPhoto1.webp": "/static/media/CompanyPhoto1.e4e076c5e309d838e2d6.webp",
@@ -39,7 +39,7 @@
     "static/media/The_science.webp": "/static/media/The_science.20252e7914771daabcdc.webp",
     "static/media/CompanyPhoto.webp": "/static/media/CompanyPhoto.65493269035f52ba1fe5.webp",
     "static/media/Logos.png": "/static/media/Logos.c1e2196865c54c9b50b6.png",
-    "static/media/tem4.webp": "/static/media/tem4.2f472006133dc38fe932.webp",
+    "static/media/tem4.webp": "/static/media/tem4.1956967a33d602f77c0b.webp",
     "static/media/The _health.webp": "/static/media/The _health.779d612504aa843bef86.webp",
     "static/media/Japan.webp": "/static/media/Japan.cfe433bcd8e8726226ea.webp",
     "static/media/number9.webp": "/static/media/number9.1730e1dac1bd18d59418.webp",
@@ -48,11 +48,11 @@
     "static/media/ch.webp": "/static/media/ch.3d2986b2966d32703d3e.webp",
     "static/media/ehab.webp": "/static/media/ehab.18103f9ddf0967450e5c.webp",
     "index.html": "/index.html",
-    "main.cc6c131d.css.map": "/static/css/main.cc6c131d.css.map",
-    "main.7c4e20bd.js.map": "/static/js/main.7c4e20bd.js.map"
+    "main.50ce80c6.css.map": "/static/css/main.50ce80c6.css.map",
+    "main.671a8274.js.map": "/static/js/main.671a8274.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc6c131d.css",
-    "static/js/main.7c4e20bd.js"
+    "static/css/main.50ce80c6.css",
+    "static/js/main.671a8274.js"
   ]
 }
