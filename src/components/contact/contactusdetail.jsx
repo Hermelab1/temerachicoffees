@@ -72,8 +72,8 @@ const ContactUsDetail = () => {
                       Addis Ababa, Ethiopia<br />
                       Tell: +251911245503<br />
                       <b>Warehouse:</b><br />
-                      Hirut Processing Factory<br />
-                      Alem Gena, Sheger Oromia, ETHIOPIA<br />
+                      Guji Coffee Export and Processing Factory<br />
+                      Furi, Sheger Oromia, ETHIOPIA<br />
                       Email: info@temerachicoffeeexport.com<br />
                       <b>Business Partner</b><br />
                       Asia/Japan<br />
