@@ -264,9 +264,10 @@
     .ourstorydetail .ourhistory {
         width: 100%;
         height: auto; 
+        
     }
     .ourstorydetail .ourhistory .about-text {
-        width: 90%;
+        width: 100%;
         padding: 20px;
         margin-bottom: 10px;
     }
@@ -302,7 +303,7 @@
         width: 80%;
     }
     .teammembers .card1 {
-        height: 45vh;
+        height: 46vh;
     }
     .leaders .icon-container{
         display: none;

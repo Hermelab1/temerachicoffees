@@ -1,4 +1,4 @@
-const img1 = require('../../asset/img/Blog/Beyond.webp');
+const img1 = require('../../asset/img/Blog/kalid.webp');
 const img2 = require('../../asset/img/Blog/The_science.webp');
 const img3 = require('../../asset/img/Blog/The _health.webp');
 const img4 = require('../../asset/img/Blog/Commerce.webp')
@@ -11,15 +11,57 @@ export const blogs = [
         mediaSrc: img1,
         mediaType: "image",
         title: "Beyond the Cup: Coffee in History",
-        detail: `While it is considered just a drink taken every morning, coffee actually has quite a long history beyond its simple appearance. Born many centuries ago when Europe was Enlightening and America was emerging, the story of coffee is deeply intertwined with major historical events and transformations.<br>
-In the 17th and 18th centuries, coffeehouses, mainly in European towns like London, Paris, and Vienna, served as major sites for intellectual exchange. Unlike elitist salons and other places of entertainment, such as the taverns, the coffeehouses did not have admissions barriers to any rank of people, thereby becoming lively centers for ideas and public debate. Figures like Voltaire and Rousseau used such spaces in debating revolutionary ideas that supplied the Enlightenment and the French Revolution. By democratizing access to knowledge and allowing free and open discussion, the coffee houses did much to create an atmosphere in which change radical social change could take place.
-<h3>Colonialism and trade</h3>
-The spread of coffee became intrinsically linked with the principals of colonialism and trade. First discovered in Ethiopia, coffee spread via complex trade routes to the Arabian Peninsula and thence into the European colonies. The Dutch and the French established plantations in their colonies, thereby making coffee shift from just being a luxury item to a global commodity. These plantations, mainly based on slave labor, further established themselves in the Caribbean, Latin America, and Southeast Asia—thereby locking the coffee industry into exploitation and environmental injury. While profits from coffee were seen by colonial powers and the owners of the plantations themselves, very little was passed to laborers. That is to say, to this day, many coffee-growing regions bear the legacy of such a colonial history in terms of both economic and social challenges. That is why establishing historical consciousness is important toward fair trade and sustainability.
-<h3> World War II</h3>
-In the 19th century, coffee became emblematic of the temperance movement. It was described as a safer, more productive alternative to alcohol and hence aligned with social behavioral and public health reform. The coffee houses, once centers of intellectual discourse, now held temperance campaigns and public lectures advocating abstinence from liquor. It was thus that coffee firmed up both personal health and wide-reaching social reform.
-The role, which coffee has played in wars and diplomacy, is rarely brought to light. In World War II, coffee rationing made it a symbol of domestic resilience, while the Allied nations were having enough supplies, marking it as a sign of privilege. Coffee was scarce in the occupied regions. On the diplomatic front, it is the influence of coffee on global trade policies through its trade agreements and international organizations dealing with coffee that has made it an important global commodity.
-<h3>Conclusion</h3>
-From the past, coffee has done a hell of a lot more than one would ever have thought. It runs from shaping Enlightenment thought to being directly linked to colonial exploitation, through initiating campaigns of social reform and artistic revolutions. In relation to coffee, this deeper historical perspective underlines the weight it carries in the process of shaping societies and cultures. Building awareness of this complex legacy underlies then its conscious approach toward global coffee issues such as fair trade and sustainability. As you sip your coffee this morning, just consider how the simple beverage has been at the very center of arranging societies, building economies, and enriching cultures the world over.
+        detail: `While it is considered just a drink taken every morning, coffee actually has quite a long
+history beyond its simple appearance. It was born many centuries ago in Ethiopia and
+spread to Europe and the rest of the world.The story of coffee is deeply intertwined
+with major historical events and transformations.
+<h3>The Origins of Coffee: Kaldi’s Tale from the Hills of Ethiopia</h3>
+During the 4th Century the Aksumite Kingdom was an influential trading empire in
+East African history. Knowing how to utilize its geographical position, trade was
+carried out with regions across the Red Sea and furthermore leading to a well
+developed economy and its interaction among cultures. Axum territory included
+present day Eritrea and northern parts of Ethiopia, easternmost Sudan and even
+extended to Yemen & southern regions of Saudi Arabia.
+So the amazing coffee history started after the 7th century following the downfall of
+the axumite kingdom. Once upon a time, in the 8th century there was a boy named
+Kaldi who lived in a small village in the Kaffa region of Ethiopia. He was smart and he
+loved his goats. One day, while Kaldi was tending to his goats, he noticed that
+something was not quite right. Well, his goats were very personable in general. They
+have had some red berries of some bush because they were virtually bouncing with
+energy. Like any inquisitive soul, Kaldi wanted to taste the berries. What had followed
+was quite astonishing a surge of energy as never before much to his surprise. As it
+were, such berries snack has a reviving impact. This idea was totally alien to him and
+so Kaldi scurried back to his village with what he had discovered.
+
+The only thing missing was the local monastery and soon Kaldi's tale caught the
+attention of the monks there. Curious, about the tale they heard about the berries and
+their effects on enhanced their focus and clarity of mind. After preparing a beverage
+using the berries, as ingredients and consuming it during their prayer sessions they
+found that it helped them stay awake and also improved their concentration and
+mental focus.
+The monks were pleasantly surprised by the effects of this drink as it helped them stay
+awake and focused during the night hours at the monastery.They were cautious at first
+about the berries potential to divert their attention from their tasks. Found the idea of
+consuming something so invigorating conflicting with their devout
+lifestyles.Eventually deciding to throw the berries into the flames resulted in aroma
+permeating the atmosphere and capturing the interest of neighboring villagers. The
+pleasant aroma caught their attention. Drew a crowd of onlookers eager to discover its
+origin.
+<h3>Yemen: The Spread of Coffee</h3>
+From Ethiopia, coffee eventually made its way to Yemen in the 15th century, where it
+began to be cultivated more systematically. Yemeni coffee, particularly from the Mocha
+region, became renowned for its unique flavors. The port city of Mocha became a vital
+hub for coffee trade, leading to the drink's spread throughout the Arabian Peninsula
+and beyond.
+In Yemen Sufi priests much like the Ethiopian monks, used coffee to keep awake
+attuning their prayers all night long. It did not take long before this drink became
+famous and coffeehouses (qahveh khaneh) were established in cities like Aden and
+Sana’a, which served as socializing, debating and cultural centers.
+
+By the 16th century coffee was already patronized in the regions of Persia and Turkey
+and North Africa and later on became a fashionable drink in Europe. Understanding
+the significance of Ethiopian and Yemeni coffee helps relate to the evolution of the
+drink from its source region to being the drink of the world.
 `,
         date: "Aug-30-2021",
     },
