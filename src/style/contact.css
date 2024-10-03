@@ -98,9 +98,7 @@
     background-color: none; /* Darken button on hover */
 }
 @media (max-width: 1024px) {
-    .contact .divider {
-        display: none;
-    }
+  
 }
 @media (max-width: 950px){
     .contact .container {
@@ -119,6 +117,12 @@
         display: none;
     }
 
+}
+@media (max-width: 800px) {
+    .dividerp{
+        display: none;
+    }
+    
 }
   
 @media (max-width: 480px) {

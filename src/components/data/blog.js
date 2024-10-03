@@ -32,7 +32,7 @@ energy. Like any inquisitive soul, Kaldi wanted to taste the berries. What had f
 was quite astonishing a surge of energy as never before much to his surprise. As it
 were, such berries snack has a reviving impact. This idea was totally alien to him and
 so Kaldi scurried back to his village with what he had discovered.
-
+<br/>
 The only thing missing was the local monastery and soon Kaldi's tale caught the
 attention of the monks there. Curious, about the tale they heard about the berries and
 their effects on enhanced their focus and clarity of mind. After preparing a beverage

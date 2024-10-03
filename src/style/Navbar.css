@@ -82,7 +82,7 @@ header .toggle {
     header {
         padding: 0;
         margin: 0; /* Remove padding for mobile */
-        height: 8vh;
+        height: 10vh;
     }
     header img {
         width: 70%; /* Wider on small screens */
@@ -133,7 +133,7 @@ header .toggle {
         background-color: #0b785f;
         padding: 10px;
         position: absolute;
-        top: 8vh;
+        top: 10vh;
         left: 0;
     }
     header li a {
@@ -146,6 +146,14 @@ header .toggle {
         margin: 10px;
         padding: 10px;
         line-height:15px;
+    }
+}
+@media (max-width: 850px) {
+    header {
+        height: 8vh;
+    }
+    header .small {
+        top: 8vh;
     }
 }
 @media (max-width: 480px) {

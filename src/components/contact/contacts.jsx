@@ -44,7 +44,7 @@ const Contacts = () => {
           
         </div>
       </div>
-      <div className="divider"></div> {/* Vertical line */}    
+      <div className="dividerp"></div> {/* Vertical line */}    
 
       <div className="pages">
         <div className="titles">
