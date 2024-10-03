@@ -14,19 +14,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
 
                 ]
@@ -36,19 +36,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
 
@@ -69,23 +69,23 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 5",
-                        price: "$160",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             },
@@ -95,23 +95,23 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 5",
-                        price: "$160",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             }
@@ -130,19 +130,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             },
@@ -152,19 +152,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             }
@@ -184,19 +184,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             },
@@ -206,19 +206,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             }
@@ -238,19 +238,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
             },
@@ -260,19 +260,19 @@ export const Coffeetype = [
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$100",
+                        price: "$",
                     },
                     {
                         gname: "Grade 2",
-                        price: "$2500",
+                        price: "$",
                     },
                     {
                         gname: "Grade 3",
-                        price: "$350",
+                        price: "$",
                     },
                     {
                         gname: "Grade 4",
-                        price: "$500",
+                        price: "$",
                     },
                 ]
 

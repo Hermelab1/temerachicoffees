@@ -87,7 +87,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="divider"></div> {/* Vertical line */}
+        <div className="divider pa"></div> {/* Vertical line */}
         <div className="pages">
         <div className="titles">
             <h3>Navigation</h3>

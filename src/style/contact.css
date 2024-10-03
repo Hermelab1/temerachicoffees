@@ -98,6 +98,12 @@
     background-color: none; /* Darken button on hover */
 }
 @media (max-width: 1024px) {
+    .divider .pa{
+        display: none;
+    }
+    .dividerp{
+        display:flex;
+    }
   
 }
 @media (max-width: 950px){
