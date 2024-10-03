@@ -23,7 +23,7 @@ export const teammembers =[
     {
         photo: photo6,
         name:"Ms. Natsuki Kimura",
-        position:"Managing Directors",
+        position:"Managing Director",
     },
     {
         photo: photo5,
