@@ -82,9 +82,12 @@
 
 /* Responsive Styles */
 @media (max-width:1200px) {
+    .gallary {
+        width: 95%;
+    }
 
     .test-cards {
-        height: 75vh;
+        height: 67vh;
     }
 }
 @media (max-width: 950px){

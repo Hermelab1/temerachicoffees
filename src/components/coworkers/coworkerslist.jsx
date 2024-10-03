@@ -18,7 +18,7 @@ const CoworkersList = () => {
             className="custom-swiper"
             modules={[Navigation, Pagination, Autoplay]}
             pagination={{ clickable: true }}
-            spaceBetween={30}
+            spaceBetween={20}
             autoplay={{ delay: 3000 }}
             breakpoints={{
               640: { slidesPerView: 1 },
