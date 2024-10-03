@@ -1,7 +1,8 @@
 .ourstory {
+  border: solid red;
   overflow: hidden; /* Prevent overflow from child elements */
   height: 90vh;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -10,9 +11,10 @@
 }
 
 .ourstory .container {
+  border: solid black;
   display: flex;
   width: 90%;   
-  height: 70vh;
+
 }
 
 .ourstory .heading p {
@@ -22,9 +24,8 @@
 }
 
 .about-text {
+  border:  solid green;
   padding: 20px;
-  padding-left: 70px;
-  padding-right: 70px;
   color: #176756;
   margin: 0 auto; 
   width: 50%; /* Adjusted width */
@@ -82,8 +83,9 @@
   }
 
   .about-text {
+    border: red solid;
     margin-left: 5%; /* Reduce margin on smaller screens */
-    width: 90%; /* Increase width on smaller screens */
+    width: 40%; /* Increase width on smaller screens */
   }
 }
 

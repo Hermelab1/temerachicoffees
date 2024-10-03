@@ -22,11 +22,9 @@ const Contacts = () => {
           Addis Ababa, Ethiopia<br />
           Tell: +251911245503<br />
           <b>Warehouse:</b><br />
-          <b>Warehouse:</b><br />
           Guji Coffee Export and Processing Factory<br />
           Furi, Sheger Oromia, ETHIOPIA<br />
           Email: info@temerachicoffeeexport.com<br />
-
         </p>
       </div>
       <div className="divider"></div> {/* Vertical line */}    
