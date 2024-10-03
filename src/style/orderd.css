@@ -156,18 +156,7 @@ label{
   .orderd-containers {
     margin-top: 8%;
   }
-  .orderd-containers .details {
-    width: 80%; /* Adjusted width for smaller devices */
 
-  }
-  .orderd-containers .details h3{
-
-    width: 100%;
-  }
-  .orderd-containers .imageso {
-
-    height: 100vh;
-  }
   .phone-input {
     flex-direction: column; /* Stack for mobile */
     width: 100%;
@@ -195,13 +184,7 @@ label{
     margin-top: 12%;
     width: 98%;
   }
-  .orderd-containers .details {
-    width: 100%; /* Adjusted width for smaller devices */
 
-  }
-  .orderd-containers .imageso {
-    height: 70vh;
-  }
   .phone-input {
     flex-direction: column; /* Stack for mobile */
     width: 100%;
