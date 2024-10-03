@@ -22,7 +22,6 @@
 }
 
 .orderd-containers .imageso {
-
   text-align: center;
   display: flex;
   width: 50%;
@@ -158,6 +157,9 @@ label{
   .orderd-containers {
     margin-top: 8%;
   }
+  .orderd-containers .imageso {
+    width: 60%;
+  }
 
   .phone-input {
     flex-direction: column; /* Stack for mobile */
@@ -185,6 +187,9 @@ label{
   .orderd-containers {
     margin-top: 12%;
     width: 98%;
+  }
+  .orderd-containers .imageso {
+    width: 60%;
   }
 
   .phone-input {
