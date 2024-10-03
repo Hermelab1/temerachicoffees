@@ -193,15 +193,16 @@ const OurStoryDetail = ({ interval = 3000 }) => {
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
             loop={true}
-            spaceBetween={30} // Ensure there's no space between slides
+            spaceBetween={20} // Ensure there's no space between slides
             autoplay={{
               delay: interval,
               disableOnInteraction: false,
             }}
             breakpoints={{
               640: { slidesPerView: 1 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1300: { slidesPerView: 5 },
             }}
           >
             {teammembers.map((member, index) => (

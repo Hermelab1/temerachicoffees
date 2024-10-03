@@ -152,10 +152,70 @@ label{
 .details a:hover {
   color: rgb(28, 87, 189); /* Changed the approach as `darken()` is not valid CSS */
 }
+@media (max-width: 1200px) {
+  .orderd-containers {
+    margin-top: 8%;
+  }
+  .orderd-containers .details {
+    width: 80%; /* Adjusted width for smaller devices */
+
+  }
+  .orderd-containers .details h3{
+
+    width: 100%;
+  }
+  .orderd-containers .imageso {
+
+    height: 100vh;
+  }
+  .phone-input {
+    flex-direction: column; /* Stack for mobile */
+    width: 100%;
+  }
+  .orderd-containers .details button[type="submit"] {
+    width: 100%; /* Full width for button */
+  }
+  .orderd-containers .details input[type="text"],
+  .orderd-containers .details input[type="email"],
+  .orderd-containers .details input[type="number"],
+  .orderd-containers .details input[type="tel"],
+  .orderd-containers .details select {
+    width: 100%;
+    
+  }
+}
 @media screen and (max-width: 980px) {
   .orderd-containers {
-
     margin-top: 8%;
+  }
+
+}
+@media (max-width: 850px) {
+  .orderd-containers {
+    margin-top: 12%;
+    width: 98%;
+  }
+  .orderd-containers .details {
+    width: 100%; /* Adjusted width for smaller devices */
+
+  }
+  .orderd-containers .imageso {
+    height: 70vh;
+  }
+  .phone-input {
+    flex-direction: column; /* Stack for mobile */
+    width: 100%;
+  }
+  .orderd-containers .details button[type="submit"] {
+    width: 100%; /* Full width for button */
+  }
+  .orderd-containers .details input[type="text"],
+  .orderd-containers .details input[type="email"],
+  .orderd-containers .details input[type="number"],
+  .orderd-containers .details input[type="tel"],
+  .orderd-containers .details select {
+    width: 100%;
+    
   }
 }
 /* Media Queries for responsiveness */

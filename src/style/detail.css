@@ -55,6 +55,20 @@
     }
 
 }
+@media (max-width: 850px) {
+    .conatctA {
+        gap:0px;
+    }
+    .contactusform { /* Fixed the class name */
+        padding: 1rem;
+        max-width: 400px; /* Max width for the form */   
+    }
+    .contactusform input,
+    .contactusform textarea {
+        width: 100%;
+    }
+
+}
 @media (max-width: 480px) {
     .ourstorydetail .slogan {
         font-size: 1rem; /* Further reduce font-size for very small screens */

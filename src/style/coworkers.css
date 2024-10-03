@@ -23,8 +23,8 @@
     background-color: #fff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    min-height: 45vh;
-    max-height: 60vh;
+    height: 45vh;
+
   
 }
 .test-cards .logo-img{
@@ -81,22 +81,24 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
-    .gallery {
-        border: solid black;
-        width: 100%;
-    }
+@media (max-width:1200px) {
+
     .test-cards {
-        height: auto;
+        height: 75vh;
     }
 }
 @media (max-width: 950px){
-    .gallery {
-        width: 100%;
+
+    .test-cards {
+        height: 105vh;   
+    }
+}
+@media (max-width: 850px){
+    .gallary{
+        width: 95%;
     }
     .test-cards {
-        min-height: 20vh;
-        max-height: 130vh;     
+        height: 45vh;   
     }
 }
 @media (max-width: 480px){

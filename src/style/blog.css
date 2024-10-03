@@ -122,8 +122,6 @@
         overflow: hidden; 
         margin: 15px; /* Use uniform margin for better spacing */
     }
-    
-
 }
 
 @media (max-width: 480px){

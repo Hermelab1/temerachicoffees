@@ -160,6 +160,24 @@
     border-right: 15px solid #176756;
     left: -14px; /* Adjusted for positioning */
 }
+@media (max-width:1200px) {
+    .special .container {
+        width: 50%; /* Width of each container */
+        margin-bottom: 15px;
+    }
+    .special::after {
+        display: none;
+    }
+    .left-container {
+        left: -25%;
+    }
+    
+    /* Animation for right container */
+    .right-container {
+        right: -25%;
+    }
+    
+}
 
 @media (max-width: 950px) {
     .special .container {

@@ -1,7 +1,6 @@
 /* BlogDetail.css */
 
 .blog-detail-container {
-  
   display: flex;
   flex-direction: column; /* Stack the blog detail and other blogs vertically */
   justify-content: center;
@@ -81,28 +80,44 @@
   margin-right: 8px; /* Space between icons */
 }
 
+@media (max-width: 1200px) 
+{
+  .blogsd {
+    margin-top: 40px;
+    width: 98%;
+  }
+
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 950px)  {
-  .blogsd {
-    width: 80%;
-  }
-  .blog-detail-container .blog-details{
-    width: 250px; /* Fixed width for the blog cards */
-    height: 300px; /* Fixed height for the blog cards (to ensure they are square) */
-  }
-  .blog-container .media {
-    width: 100%; /* Full width media container */
-    height: 750px; /* Fixed height for media */}
-  .details p {
-    display: none;
-  }
-  
+  .blog-container {
+    /* Center blog posts inside the container */
+    width: 100%; 
+    margin: 30px auto;/* Full width of the container based on the parent */ /* Optional: Set a max-width for better readability */ 
+}
 
+.blog-details {
+    width: 350px; /* Fixed width for the blog cards */
+    height: 425px; /* Fixed height for the blog cards (to ensure they are square) */
+    overflow: hidden; 
+    margin: 15px; /* Use uniform margin for better spacing */
+}
+}
+@media (max-width: 850px)  {
+  .blog-detail-container .blogsd {
+    margin-top: 40px;
+    width: 98%;
+  }
+  .blog-detail-container .blog-details {
+      width: 320px; /* Fixed width for the blog cards */
+      height: 425px; /* Fixed height for the blog cards (to ensure they are square) */
+      overflow: hidden; 
+      margin: 15px; /* Use uniform margin for better spacing */
+  }
 }
 
 @media (max-width: 480px) {
   .blog-detail-container{
- 
     margin-top: 20%;
     padding: 10px;
   }
