@@ -8,7 +8,7 @@ export const teammembers =[
     {
         photo: photo3,
         name:"Mr. Dawit Girma",
-        position:"CEO & General Manager",
+        position:"CEO",
     },
     {
         photo: photo4,
@@ -23,7 +23,7 @@ export const teammembers =[
     {
         photo: photo6,
         name:"Ms. Natsuki Kimura",
-        position:"Marketing Director",
+        position:"Managing Directors",
     },
     {
         photo: photo5,

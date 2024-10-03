@@ -63,7 +63,7 @@ and North Africa and later on became a fashionable drink in Europe. Understandin
 the significance of Ethiopian and Yemeni coffee helps relate to the evolution of the
 drink from its source region to being the drink of the world.
 `,
-        date: "Aug-30-2021",
+        date: "Sep-28-2024",
     },
     {
         mediaSrc: img2,
