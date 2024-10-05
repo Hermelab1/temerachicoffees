@@ -21,7 +21,8 @@
   }
   @media (max-width: 950px) {
     .footage{
-      height: 6vh;
+      height: 10vh;
+
     }
   }
   @media (max-width: 480px) {

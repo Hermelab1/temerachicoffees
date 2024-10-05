@@ -90,11 +90,17 @@
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 950px)  {
+  .blog-detail-container { 
+    margin-top: 0;
+  }
   .blog-container {
     /* Center blog posts inside the container */
     width: 100%; 
     margin: 30px auto;/* Full width of the container based on the parent */ /* Optional: Set a max-width for better readability */ 
 }
+.blog-detail-container .media {
+
+  height: 70vh; }
 
 .blog-details {
     width: 350px; /* Fixed width for the blog cards */
@@ -103,7 +109,7 @@
     margin: 15px; /* Use uniform margin for better spacing */
 }
 }
-@media (max-width: 850px)  {
+@media (max-width: 820px)  {
   .blog-detail-container .blogsd {
     margin-top: 40px;
     width: 98%;

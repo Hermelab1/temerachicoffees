@@ -213,12 +213,12 @@
         padding: 15px;
     }
     .teammembers .card1 {
-        height: 60vh;
+        height: 85vh;
     }
    
   }
 
-  @media (max-width: 850px){
+  @media (max-width: 820px){
     .ourstorydetail .ourhistory{
         gap: 15px;
     }
