@@ -118,6 +118,18 @@
     max-width: 45%;
   }
 }
+@media (max-width: 844px) {
+  .images {
+
+
+    height: 80vh;
+
+  }
+  .images img {
+    height: 90%;
+    
+  }
+}
 
 @media (max-width: 820px){
   .ourstory .container {

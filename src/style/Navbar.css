@@ -150,10 +150,10 @@ header .toggle {
 }
 @media (max-width: 820px) {
     header {
-        height: 8vh;
+        height: 10vh;
     }
     header .small {
-        top: 8vh;
+        top: 10vh;
     }
 }
 @media (max-width: 480px) {

@@ -21,7 +21,8 @@ const CoworkersList = () => {
             spaceBetween={20}
             autoplay={{ delay: 3000 }}
             breakpoints={{
-              640: { slidesPerView: 1 },
+              480: { slidesPerView: 1 },
+              667: { slidesPerView: 2 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
