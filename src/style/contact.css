@@ -124,13 +124,11 @@
     }
 
 }
-@media (max-width: 800px) {
-    .dividerp{
+@media (max-width: 677px){
+    .contact .divider {
         display: none;
     }
-    
 }
-  
 @media (max-width: 480px) {
     .contact .container {
         gap: 30px;

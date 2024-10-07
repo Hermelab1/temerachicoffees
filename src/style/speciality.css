@@ -178,7 +178,6 @@
     }
     
 }
-
 @media (max-width: 950px) {
     .special .container {
         width: 53%; /* Width of each container */
@@ -197,6 +196,26 @@
     }
     
   }
+
+
+@media (max-width: 677px){
+    .special .container {
+        width: 57%; /* Width of each container */
+
+    }
+    .special::after {
+        display: none;
+    }
+    .left-container {
+        left: -28%;
+    }
+    
+    /* Animation for right container */
+    .right-container {
+        right: -28%;
+    }
+
+  }  
 /* Corrected media query */
 @media (max-width: 480px) {
     .special .container {

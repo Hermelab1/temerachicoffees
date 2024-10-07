@@ -189,7 +189,10 @@ textarea, input{
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 677px) {
+  p{
+    font-size: 0.9rem;
+  }
 .ourstory .heading h1,
 .special .heading h1,
 .gallery .heading h1,

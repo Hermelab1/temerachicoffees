@@ -29,7 +29,7 @@ const Header = () => {
         <div className="logo">
           <img 
             src={logo} 
-            alt="Logo" 
+            alt="Temerachi Coffee" 
             onClick={() => handleScrollToTopAndNavigate("/")} // Use the scroll function on logo click
             style={{ cursor: 'pointer' }} // Optional: add a pointer cursor for a better UX
           />

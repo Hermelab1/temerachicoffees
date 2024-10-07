@@ -145,13 +145,14 @@ const OurStoryDetail = ({ interval = 3000 }) => {
           modules={[Pagination, Autoplay]} // Ensure these are imported correctly
           pagination={{ clickable: true }}
           loop={true}
-          spaceBetween={50}
+          spaceBetween={30}
           autoplay={{
             delay: 6000, // Set your desired autoplay delay
             disableOnInteraction: false,
           }}
           breakpoints={{
-            640: { slidesPerView: 1 },
+            480: { slidesPerView: 1 },
+            667:{slidesPerView:2},
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 2 },
           }}
@@ -199,8 +200,9 @@ const OurStoryDetail = ({ interval = 3000 }) => {
               disableOnInteraction: false,
             }}
             breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
+              480: { slidesPerView: 1 },
+              667:{slidesPerView:3},
+              768: { slidesPerView: 3 },
               1024: { slidesPerView: 3 },
               1300: { slidesPerView: 5 },
             }}
