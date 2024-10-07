@@ -87,7 +87,8 @@
     }
 
     .test-cards {
-        height: 67vh;
+        height: auto;
+        padding: 0;
     }
 }
 @media (max-width: 950px){
@@ -95,8 +96,8 @@
         width:90%;}
 
     .test-cards {
-        height: 105vh;   
-        padding: 20px; 
+        height: auto;   
+        padding: 0px; 
     }
 
 }
@@ -105,13 +106,13 @@
         width: 95%;
     }
     .test-cards {
-        height: 45vh;  
+        height: auto;  
 
     }
 }
 @media (max-width: 677px){
     .test-cards {
-        height: 135vh;  
+        height: auto;
 
     }
 }

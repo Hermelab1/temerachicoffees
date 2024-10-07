@@ -113,22 +113,14 @@
         margin-bottom: 10px;
     }
     .contact .divider {
-        width: 1px; /* Adjust the width of the line */
-        background-color: #c7c5c5; /* Change this color as needed */
-        height: 250px; /* Adjust the height as needed */
-        margin: 0px; /* Space around the line */
-        display: inline-block; /* Aligns with the other content */
+        display: none;
     }
     .contact .m{
         display: none;
     }
 
 }
-@media (max-width: 677px){
-    .contact .divider {
-        display: none;
-    }
-}
+
 @media (max-width: 480px) {
     .contact .container {
         gap: 30px;
