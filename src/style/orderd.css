@@ -231,7 +231,7 @@ label{
   }
   .orders{
     display: block;
-    color: red;
+    
   }
   .phone-input {
     flex-direction: column; /* Stack for mobile */

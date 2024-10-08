@@ -153,11 +153,10 @@ const Orderd = () => {
           />
         )}
         <div className="description">
-          <h4>Description</h4>
           <p>{description || 'Description Not Available'}</p>
         </div>
         <div className="orders">
-          <p>To order fill the form on the bellow</p>
+          <p><b>Fill out the forms below  to submit your order</b></p>
         </div>
       </div>
       <div className="details">
