@@ -72,10 +72,6 @@ export const Coffeetype = [
                         price: "$",
                     },
                     {
-                        gname: "Grade 5",
-                        price: "$",
-                    },
-                    {
                         gname: "Grade 2",
                         price: "$",
                     },
@@ -85,6 +81,10 @@ export const Coffeetype = [
                     },
                     {
                         gname: "Grade 4",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 5",
                         price: "$",
                     },
                 ]

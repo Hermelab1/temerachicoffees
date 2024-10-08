@@ -16,7 +16,7 @@ const Orderd = () => {
     user_email: '',
     user_phone: '',
     country_code: '+1',
-    coffeeType: cname || '', 
+    coffeeType: cname || '',
     coffeeCategory: '',
     coffeeGrade: '',
     quantity: '',
@@ -43,51 +43,49 @@ const Orderd = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Update coffeeType and reset coffeeGrade/price if changed
     if (name === 'coffeeType') {
       setFormData(prev => ({
         ...prev,
         coffeeType: value,
+        coffeeCategory: '',
         coffeeGrade: '',
         price: '',
-        coffeeCategory: ''
       }));
       return;
     }
 
-    // Manage selected categories
     if (name === 'coffeeCategory') {
       setFormData(prev => ({
         ...prev,
         coffeeCategory: value,
-        coffeeGrade: '', // Reset the selected grade when category changes
-        price: '' // Reset price when category changes
+        coffeeGrade: '',
+        price: ''
       }));
       return;
     }
 
-    // Update form data for other inputs
     setFormData(prev => ({
       ...prev,
       [name]: value,
     }));
 
-    // Update price based on coffeeGrade selection
     if (name === 'coffeeGrade') {
       const selectedCoffee = Coffeetype.find(coffee => coffee.cname === formData.coffeeType);
-      const selectedCategory = selectedCoffee?.catagory.find(category => category.titles === formData.coffeeCategory);
-      const selectedGrade = selectedCategory?.grades.find(grade => grade.gname === value);
-      
-      if (selectedGrade) {
-        setFormData(prev => ({
-          ...prev,
-          price: selectedGrade.price,
-        }));
-      } else {
-        setFormData(prev => ({
-          ...prev,
-          price: '',
-        }));
+      if (selectedCoffee) {
+        const selectedCategory = selectedCoffee.catagory?.find(category => category.titles === formData.coffeeCategory);
+        const selectedGrade = selectedCategory?.grades?.find(grade => grade.gname === value);
+        
+        if (selectedGrade) {
+          setFormData(prev => ({
+            ...prev,
+            price: selectedGrade.price,
+          }));
+        } else {
+          setFormData(prev => ({
+            ...prev,
+            price: '',
+          }));
+        }
       }
     }
   };
@@ -95,19 +93,26 @@ const Orderd = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs.send('service_w6blv2o', 'template_ys7e7mk', {
-      ...formData,
-      coffeeType: cname,
+    
+    const emailData = {
+      cname: formData.coffeeType,
+      coffeeCategory: formData.coffeeCategory,
       coffeeGrade: formData.coffeeGrade,
-    }, 'Puv041KtiA_TZduH2')
+      quantity: formData.quantity,
+      name: formData.name,
+      user_email: formData.user_email,
+      user_phone: `${formData.country_code} ${formData.user_phone}`,
+      user_companyname: formData.user_companyname,
+      user_website: formData.user_website,
+      delivery_address: formData.delivery_address,
+    };
+
+    emailjs.send('service_w6blv2o', 'template_ys7e7mk', emailData, 'Puv041KtiA_TZduH2')
       .then(response => {
-        console.log('Email sent successfully!', response.status, response.text);
         alert('Order placed successfully!');
         resetForm();
       })
       .catch(err => {
-        console.error('Failed to send email. Error: ', err);
         alert('Failed to place order, please try again. Error: ' + (err.text || "Unknown error"));
       })
       .finally(() => {
@@ -121,14 +126,14 @@ const Orderd = () => {
       user_email: '',
       user_phone: '',
       country_code: '+1',
-      coffeeType: '',
+      coffeeType: cname || '',
+      coffeeCategory: '',
       coffeeGrade: '',
       quantity: '',
       user_companyname: '',
       user_website: '',
       delivery_address: '',
       price: '',
-      coffeeCategory: ''
     });
   };
 
@@ -156,15 +161,14 @@ const Orderd = () => {
           <p>{description || 'Description Not Available'}</p>
         </div>
         <div className="orders">
-          <p><b>Fill out the forms below  to submit your order</b></p>
+          <p><b>Fill out the forms below to submit your order</b></p>
         </div>
       </div>
       <div className="details">
-        <h3 name='cname'>{cname || 'Title Not Available'}</h3>
-        <p>Product Code: {code || 'Code Not Available'}</p>
-        <p>Price: {formData.price || 'Select Coffee Grade first'}</p>
-        
         <form onSubmit={handleSubmit}>
+          <h3>{formData.coffeeType || 'Title Not Available'}</h3>
+          <p>Product Code: {code || 'Code Not Available'}</p>
+          <p>Price: {formData.price || 'Select Coffee Grade first'}</p>
           <div>
             <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="Name" />
           </div>
@@ -177,16 +181,15 @@ const Orderd = () => {
           <div>
             <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required placeholder="Email" />
           </div>
-
           <div className="phone-input">
-            <select className='country_code'  name="country_code" value={formData.country_code} onChange={handleChange} required>
+            <select className='country_code' name="country_code" value={formData.country_code} onChange={handleChange} required>
               {countryCodes.map((country, index) => (
                 <option key={index} value={country.code}>
                   {country.flag} {country.code}
                 </option>
               ))}
             </select>
-          <div className="separator">-</div>
+            <div className="separator">-</div>
             <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" />
           </div>
           <div>
@@ -194,28 +197,23 @@ const Orderd = () => {
           </div>
 
           {/* Render radio buttons for coffee categories */}
-          <div>
-            {selectedCoffee?.catagory.map((category, index) => (
-              <div key={index}>
-                <input
-                  type="radio"
-                  id={`coffeeCategory${index}`}
-                  name="coffeeCategory"
-                  value={category.titles}
-                  checked={formData.coffeeCategory === category.titles}
-                  onChange={handleChange}
-                />
-                <label htmlFor={`coffeeCategory${index}`}>
-                  {category.titles}
-                </label>
-              </div>
-            ))}
-          </div>
+          {selectedCoffee?.catagory?.map((category, index) => (
+            <div key={index}>
+              <input
+                type="radio"
+                name="coffeeCategory"
+                value={category.titles} // Set the value to category titles
+                checked={formData.coffeeCategory === category.titles} // Check if it matches the current state
+                onChange={handleChange}
+              />
+              {category.titles}
+            </div>
+          ))}
 
           <div>
             <select name="coffeeGrade" value={formData.coffeeGrade} onChange={handleChange} required>
               <option value="">Select Coffee Grade</option>
-              {selectedCoffee?.catagory.find(category => category.titles === formData.coffeeCategory)?.grades.map((grade, index) => (
+              {selectedCoffee?.catagory?.find(category => category.titles === formData.coffeeCategory)?.grades?.map((grade, index) => (
                 <option key={index} value={grade.gname}>
                   {grade.gname}
                 </option>
@@ -231,7 +229,6 @@ const Orderd = () => {
             {loading ? 'Ordering...' : 'Send Request'}
           </button>
         </form>
-        
       </div>
     </div>
   );
