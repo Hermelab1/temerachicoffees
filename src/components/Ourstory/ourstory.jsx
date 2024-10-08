@@ -32,7 +32,7 @@ const OurStory = () => {
       <div className='container'>
         <div className='about-text' ref={aboutTextRef}>
           <p>
-            Founded in 2019 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee has quickly established itself as the leading coffee exporter from the renowned coffee-producing region of Ethiopia. Temerachi Coffee works closely with smallholder farmers across diverse coffee-growing areas like Yirgacheffe, Gedeb, Sidama, and Guji.
+            Founded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee has quickly established itself as the leading coffee exporter from the renowned coffee-producing region of Ethiopia. Temerachi Coffee works closely with smallholder farmers across diverse coffee-growing areas like Yirgacheffe, Gedeb, Sidama, and Guji.
           </p>
           <div className="button flex">
             <button className='btn1' onClick={handleScrollToTop}>

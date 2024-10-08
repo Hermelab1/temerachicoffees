@@ -14,7 +14,7 @@
   display: flex;
   padding: 1rem;
   width: 90%;
-  gap: 25px;
+  gap: 50px;
   max-width: 1000px; /* Max width to constrain on large screens */
   margin: auto; /* Center container with margin */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -23,13 +23,13 @@
 
 .orderd-containers .imageso {
   text-align: center;
-  display: flex;
-  width: 50%;
-  height: 70vh;
+  display: block;
+  width: 100%;
+  height: 50vh;
 }
 .orderd-containers .imageso img {
-  height: 100%;
-  width: 100%;
+
+  width: 50%;
   object-fit: cover;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -50,7 +50,7 @@
   font-weight: 300;
 }
 .orderd-containers .details h3{
-  width: 70%;
+  width: 100%;
   padding: 10px;
   font-family: "Cardo", serif;
   font-size: 1.5rem;
@@ -71,7 +71,7 @@
 .orderd-containers .details input[type="number"],
 .orderd-containers .details input[type="tel"],
 .orderd-containers .details select {
-  width: 70%;
+  width: 100%;
   padding: 8px;
   font-size: 1rem;
   border: 1px solid var(--text-color);
@@ -88,33 +88,38 @@
 }
 
 .phone-input {
-  width: 70%;
+  width: 100%;
   display: flex;
-  gap: 10px;
+  /* Align items vertically centered */
+  gap: 10px;      /* Gap between elements */
 }
 
-.phone-input select,
+.phone-input .country_code {
+  width: 20%;     /* Adjust this based on size preference */
+  padding: 10px;  /* Adjust padding as desired */
+}
+
+.phone-input select {
+  width: 30%;    /* Let the select take full width of its container */
+}
+
 .phone-input input {
-  flex: 1; 
-  padding: 15px;
-}
-
-.phone-input section {
-  width: 10%; /* Consider if this is necessary, as 'section' seems generic */
+        /* Allow input to take the remaining space */
+  padding: 10px;  /* Add padding for better appearance */
 }
 
 
 
 .orderd-containers .details button[type="submit"] {
-  width: 25%;
+  width: 40%;
   background-color: var(--secondary-color);
   color: white;
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px; /* Adjusted for a better look */
+
   transition: background-color 0.3s, transform 0.3s;
-  padding: 10px;
+  padding: 15px;
 }
 
 .orderd-containers .details button[type="submit"]:hover {
@@ -152,6 +157,9 @@ label{
 
 .details a:hover {
   color: rgb(28, 87, 189); /* Changed the approach as `darken()` is not valid CSS */
+}
+.orders{
+  display: none;
 }
 @media (max-width: 1200px) {
   .orderd-containers {
@@ -213,15 +221,17 @@ label{
   .orderd-containers {
     flex-wrap: wrap;
     margin-top: 20%;
+    gap: 10px;
+    
   }
   .orderd-containers .imageso {
-    display: flex;
+    display: block;
     width: 100%;
-    height: 50vh;
+    height: auto;
   }
-  .orderd-containers .details {
-    width: 55%; /* Adjusted width for smaller devices */
-
+  .orders{
+    display: block;
+    color: red;
   }
   .phone-input {
     flex-direction: column; /* Stack for mobile */

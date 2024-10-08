@@ -71,6 +71,15 @@
     margin: 0px; /* Space around the line */
     display: inline-block; /* Aligns with the other content */
 }
+.dividerp{
+    width: 1px; /* Adjust the width of the line */
+    background-color: #c7c5c5; /* Change this color as needed */
+    height: 250px; /* Adjust the height as needed */
+    margin: 0px; /* Space around the line */
+    display: inline-block; /* Aligns with the other content */
+
+}
+
   /* Contact Form Styles */
 .contact .contactusform { /* Fixed the class name */
     padding: 1rem;

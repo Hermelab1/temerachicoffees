@@ -1,10 +1,9 @@
 .order-container {
-  border: solid black;
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of blog posts for responsiveness */
-  justify-content: center;
   width: 80%; /* Full width of the container based on the parent */
-  margin:  auto; /* Center on the page */
+  margin: 20px auto;
+
 }
 
 .order-card {
@@ -14,7 +13,7 @@
   background-color: white; /* Added background color for better contrast */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   overflow: hidden; 
-  margin: 30px; /* Use uniform margin for better spacing */
+  margin: 20px; /* Use uniform margin for better spacing */
   display: flex; /* Enable flexbox for children */
   flex-direction: column; /* Stack child elements vertically */
   position: relative; /* For absolutely positioned children */

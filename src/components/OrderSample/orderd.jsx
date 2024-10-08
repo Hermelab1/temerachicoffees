@@ -152,6 +152,13 @@ const Orderd = () => {
             className={imageLoaded ? 'loaded' : ''}
           />
         )}
+        <div className="description">
+          <h4>Description</h4>
+          <p>{description || 'Description Not Available'}</p>
+        </div>
+        <div className="orders">
+          <p>To order fill the form on the bellow</p>
+        </div>
       </div>
       <div className="details">
         <h3 name='cname'>{cname || 'Title Not Available'}</h3>
@@ -173,7 +180,7 @@ const Orderd = () => {
           </div>
 
           <div className="phone-input">
-            <select name="country_code" value={formData.country_code} onChange={handleChange} required>
+            <select className='country_code'  name="country_code" value={formData.country_code} onChange={handleChange} required>
               {countryCodes.map((country, index) => (
                 <option key={index} value={country.code}>
                   {country.flag} {country.code}
@@ -225,10 +232,7 @@ const Orderd = () => {
             {loading ? 'Ordering...' : 'Send Request'}
           </button>
         </form>
-        <div className="description">
-          <h4>Description</h4>
-          <p>{description || 'Description Not Available'}</p>
-        </div>
+        
       </div>
     </div>
   );

@@ -53,7 +53,7 @@ const SampleOrder = () => {
           <Heading title="Reliable Quality" subtitle="Temerachi Coffee Export" />
         </div>
       </div>
-      <div className="blog-container">
+      <div className="order-container">
         {coffeeItems.map((coffeeItem, index) => (
           <motion.div
             key={index}

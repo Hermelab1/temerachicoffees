@@ -121,7 +121,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       >
         <div className='about-text'>
           <p>
-            <b className='SizeBig'>F</b>ounded in 2019 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee, a leading Ethiopian coffee exporter, collaborates with smallholder farmers in Yirgacheffe, Gedeb, Sidama, and Guji to ensure quality and traceability in their coffee cherries. This approach drives brand growth and value for both the company and the farming communities we work with. 
+            <b className='SizeBig'>F</b>ounded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee, a leading Ethiopian coffee exporter, collaborates with smallholder farmers in Yirgacheffe, Gedeb, Sidama, and Guji to ensure quality and traceability in their coffee cherries. This approach drives brand growth and value for both the company and the farming communities we work with. 
             <br />
             Temerachi's business model prioritizes corporate social responsibility and environmental stewardship, promoting eco-friendly practices among coffee farmers. The company aims to become a recognized specialty coffee brand globally and educate the next generation of professionals to thrive in the dynamic coffee industry.
           </p>
@@ -172,7 +172,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
               {/* Icon in the middle */}
               {index < management.length - 1 && ( // Avoid rendering icon after the last founder
                 <div className="icon-container">
-                <i class="fa-brands fa-d-and-d"></i>
+                <i>&</i>
                 </div>
               )}
             </SwiperSlide>

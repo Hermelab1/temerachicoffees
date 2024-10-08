@@ -79,7 +79,7 @@ const Contact = () => {
             <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-x-twitter"></i>
             </a>
             <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer">

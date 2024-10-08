@@ -31,7 +31,7 @@
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .ourstory .about-text p::first-letter {
@@ -151,7 +151,7 @@
     padding: 20px;
   }
   .about-text p {
-    font-size: 0.9rem;
+
     line-height: 27px;
   }
   .images{

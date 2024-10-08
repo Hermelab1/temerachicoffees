@@ -67,9 +67,10 @@
 .leaders .icon-container{
     display: flex;
     position: absolute;
-    font-size: 3rem;
+    font-size: 5rem;
     top: 150px;
     left: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 .leaders .our .imagesF {
@@ -271,10 +272,7 @@
         width: 60%;
         padding-top: 30px;
     }
-    .ourstorydetail .ourhistory .about-text p{
-        font-size: 0.9rem;
-        line-height: 30px;
-    }
+
     .leaders .our {
         width: 95%;
     }
@@ -315,10 +313,6 @@
     .ourstorydetail .ourhistory .about-text {
         width: 65%;
         padding-top: 30px;
-    }
-    .ourstorydetail .ourhistory .about-text p{
-        font-size: 0.9rem;
-        line-height: 30px;
     }
     .leaders .our {
         width: 95%;

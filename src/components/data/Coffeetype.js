@@ -230,7 +230,7 @@ export const Coffeetype = [
         code: "TCE005",
         cname: "Sidama Coffee",
         avalablity:"Yes",
-        description: "Sidamo coffee is another fine type of coffee that is grown in the country of Ethiopia and is identified with the Sidama area in the southern area of Ethiopia. Sidama coffee is famous for its full body, blends mouth filling and prominently flavored coffee. Some of the flavors associated with it are citrus fruits, flower notes, and moderate sweetness. You may also get a sense of berry or even stone fruit tastes, including peach or apricot. The coffee can be quite smooth, balanced and there can even be a gentle aftertaste. The coffee generally has a high acidity level which makes the coffee very versatile in terms of taste. This is generally saved in moderation, in order to yield a clean and refreshing taste without the sharpness of a strongly acidic brew.", // Corrected path to match routes
+        description: "Sidamo coffee is another fine type of coffee that is grown in the country of Ethiopia and is identified with the Sidama area in the southern area of Ethiopia. It is famous for its full body, blended mouth filling and prominently flavored coffee. Some of the flavors associated with it are citrus fruits, flower notes, and moderate sweetness. The coffee can be quite smooth, balanced and there can even be a gentle after taste. The coffee generally has a high acidity level which makes the coffee very versatile in terms of taste.", // Corrected path to match routes
         catagory:[
             {
                 

@@ -7,27 +7,27 @@ const photo6 = require('../../asset/img/ManagementImages/tem5.webp');
 export const teammembers =[
     {
         photo: photo3,
-        name:"Mr. Dawit Girma",
+        name:"Dawit Girma",
         position:"CEO",
     },
     {
         photo: photo4,
-        name:"Mr. Moges Girma",
+        name:"Moges Girma",
         position:"Export Manager",
     },
     {
         photo: photo1,
-        name:"Mr. Zerihun Hailu",
+        name:"Zerihun Hailu",
         position:"Quality Manager",
     },
     {
         photo: photo6,
-        name:"Ms. Natsuki Kimura",
+        name:"Natsuki Kimura",
         position:"Managing Director",
     },
     {
         photo: photo5,
-        name:"Ms. Mahlet Bekele",
+        name:"Mahlet Bekele",
         position:"Documentation Officer",
     }
 
