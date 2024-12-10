@@ -1,12 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import '../../style/contact.css';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
   const navigate = useNavigate();
-  const [statusMessage, setStatusMessage] = useState('');
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,11 +13,9 @@ const Contact = () => {
     emailjs
       .sendForm('service_w6blv2o', 'template_whcj7rk', form.current, 'Puv041KtiA_TZduH2')
       .then((result) => {
-        setStatusMessage('Message sent successfully!');
         e.target.reset();
       })
       .catch((error) => {
-        setStatusMessage('Failed to send message, please try again.');
         console.error('Email sending error:', error);
       });
   };
@@ -32,75 +29,77 @@ const Contact = () => {
   };
 
   return (
-    <section className='contact'>
-      <div className='container'> 
-        <div className="contactusform">
+    <section className="bg-[#f8f9fa] text-center">
+      <div className="container mx-auto text-center flex flex-wrap justify-center items-center 2xl:gap-12  xl:gap-2 lg:gap-4 md:gap-2 sm:gap-4 my-4"> 
+        <div className="xl:w-[23%] lg:w-[25%] w-[80%] ">
           <form ref={form} onSubmit={sendEmail} className='form-group'>
-            <input type="text" name="user_name" placeholder='Full Name' required />
-            <input type="text" name="user_companyname" placeholder='Company Name' required />
-            <input type="text" name="user_website" placeholder='Website' required /> 
-            <input type="email" name="user_email" placeholder='Email' required />
-            <textarea name="message" cols="20" rows="2" placeholder='Leave your message here' required></textarea>
+            <input className='inputs' type="text" name="user_name" placeholder='Full Name' required />
+            <input className='inputs' type="text" name="user_companyname" placeholder='Company Name' required />
+            <input className='inputs' type="text" name="user_website" placeholder='Website' required /> 
+            <input className='inputs' type="email" name="user_email" placeholder='Email' required />
+            <textarea className='inputs' name="message" cols="20" rows="3" placeholder='Leave your message here' required></textarea>
             <button type="submit">Send Message</button>
           </form>
-          {statusMessage && <p>{statusMessage}</p>} {/* Displays success or error messages */}
+          
         </div>
-        
-        <div className="divider"></div> {/* Vertical line */}
-        
-
-        
-        <div className='icons-p'>
-          <p>
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
+        <div className="my-5 mx-5">
+            <p className='text-center leading-[2.8rem] font-light'>
             <b>HEAD OFFICE:</b><br />
             Kirkos Sub City Woreda 11 House No. 195/A<br />
             Addis Ababa, Ethiopia<br />
-            Tell: +251911245503<br />
+            Tel: +251911426480<br />
             <b>Warehouse:</b><br />
             Guji Coffee Export and Processing Factory<br />
             Furi, Sheger Oromia, ETHIOPIA<br />
-            Email: info@temerachicoffeeexport.com<br />
-
-          </p>
+            <b className='font-extrabold'>Email: info@temerachicoffeeexport.com</b><br />
+            </p>
         </div>
-        
-        <div className="divider m"></div> {/* Another vertical line */}
-        
-        <div className="links">
-          <p>            <b>Business Partner</b><br />
+
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
+
+        <div className='mx-6'>
+          <p className='text-center md:leading-[2.8rem] leading-[2.3rem] font-light'>
+            <b>Business Partner</b><br />
             Asia/Japan<br />
             Selam Store Trading LLC<br />
             4-32-4 Asakusa, Taito-ku Tokyo<br />
-            Japan<br /></p>
+            Japan<br />
+          </p>
           <div className="titles">
-            <h3>Reach us</h3>
+            <h3 className="text-2xl font-extralight my-2">Reach us</h3>
           </div>
-          <div className="link">             
-            <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+          <div className="flex justify-center mt-4 mb-4 gap-4">
+            <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-2xl text-white bg-[#105F4E] px-2 py-1">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer" className="text-2xl  bg-[#105F4E] text-white px-2 py-1">
               <i className="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer" className="text-2xl text-white  bg-[#105F4E] px-2 py-1">
               <i className="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
-        <div className="divider pa"></div> {/* Vertical line */}
-        <div className="pages">
-        <div className="titles">
-            <h3>Navigation</h3>
-        </div>
-        <div className="lin"> 
-            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')}>Our Story</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/blog')}>Blog</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')}>Order Sample</Link>
-        </div>
-    </div>
 
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden"></div> {/* Vertical line */}
+
+
+        <div className="pages text-center">
+          <div className="titles">
+            <h3 className="text-2xl font-extralight my-2">Navigation</h3>
+          </div>
+          <div className="flex flex-row  justify-center mt-4"> 
+            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Our Story</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/gallery')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Gallery</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Blog</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Order Sample</Link>
+          </div>
+        </div>
       </div>
     </section>
+
+
   );
 };
 

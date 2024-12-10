@@ -10,7 +10,7 @@ export const Coffeetype = [
         description: "One of the fine Ethiopian coffee variety produced in the Gedeb district that is in the Gedeo Zone, of the Southern Nations, Nationalities and Peoples’ Regional State (SNNPR). Floral notes are also quite distinguished together with lemon or even bergamot and sometimes a touch of tropical fruits. The profile can also refer to tea-like character or flavors or very mild spices depending on the processing type. The general taste of the coffee is active, bright, sharp and the acidity is relatively balanced and contributes to the refreshing taste.", // Corrected path to match routes
         catagory:[
             { 
-                titles:"Natural",
+                coffeeCatagory:"Natural",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -32,7 +32,7 @@ export const Coffeetype = [
                 ]
             },
             {
-                titles:"Washed",
+                coffeeCatagory:"Washed",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -65,7 +65,7 @@ export const Coffeetype = [
         catagory:[
             {
 
-                titles:"Natural",
+                coffeeCatagory:"Natural",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -83,22 +83,14 @@ export const Coffeetype = [
                         gname: "Grade 4",
                         price: "$",
                     },
-                    {
-                        gname: "Grade 5",
-                        price: "$",
-                    },
                 ]
             },
             {
 
-                titles:"Washed",
+                coffeeCatagory:"Washed",
                 grades:[
                     {
                         gname: "Grade 1",
-                        price: "$",
-                    },
-                    {
-                        gname: "Grade 5",
                         price: "$",
                     },
                     {
@@ -126,7 +118,7 @@ export const Coffeetype = [
         catagory:[
             {
 
-                titles:"Natural",
+                coffeeCatagory:"Natural",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -148,7 +140,7 @@ export const Coffeetype = [
             },
             {
 
-                titles:"Washed",
+                coffeeCatagory:"Washed",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -180,7 +172,7 @@ export const Coffeetype = [
         catagory:[
             {
 
-                titles:"Natural",
+                coffeeCatagory:"Natural",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -202,7 +194,7 @@ export const Coffeetype = [
             },
             {
 
-                titles:"Washed",
+                coffeeCatagory:"Washed",
                 grades:[
                     {
                         gname: "Grade 1",
@@ -234,7 +226,7 @@ export const Coffeetype = [
         catagory:[
             {
                 
-                titles:"Natural", 
+                coffeeCatagory:"Natural", 
                 grades:[
                     {
                         gname: "Grade 1",
@@ -256,7 +248,63 @@ export const Coffeetype = [
             },
             {
 
-                titles:"Washed",
+                coffeeCatagory:"Washed",
+                grades:[
+                    {
+                        gname: "Grade 1",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 2",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 3",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 4",
+                        price: "$",
+                    },
+                ]
+
+            }
+        ],
+       
+
+    },
+    {
+        imgs: img1,
+        code: "TCE006",
+        cname: "Jimma coffee",
+        avalablity:"Yes",
+        description: "Jimma coffee, grown in the southwestern Ethiopian region of Jimma, is known for its earthy and spicy flavor profile. It typically features moderate acidity with hints of citrus and herbal notes, complemented by a medium to full body. Grown at high altitudes, Jimma coffee benefits from rich volcanic soil. It is a well-balanced, complex coffee with a smooth finish, reflecting the unique terroir of the region.", // Corrected path to match routes
+        catagory:[
+            {
+                
+                coffeeCatagory:"Natural", 
+                grades:[
+                    {
+                        gname: "Grade 1",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 2",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 3",
+                        price: "$",
+                    },
+                    {
+                        gname: "Grade 4",
+                        price: "$",
+                    },
+                ]
+            },
+            {
+
+                coffeeCatagory:"Washed",
                 grades:[
                     {
                         gname: "Grade 1",

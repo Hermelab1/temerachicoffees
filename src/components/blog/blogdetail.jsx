@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import '../../style/blogdetail.css';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { blogs } from '../data/blog'; // Ensure this path is correct
+import { blogs } from '../data/blog'; // Ensure the path is correct
 
 const BlogDetail = () => {
     const location = useLocation();
@@ -9,40 +8,45 @@ const BlogDetail = () => {
 
     const [currentLikeCount, setCurrentLikeCount] = useState(likeCount || 0);
     const [currentShareCount, setCurrentShareCount] = useState(shareCount || 0);
+    
+    const likeCounts = JSON.parse(localStorage.getItem('likeCounts')) || new Array(blogs.length).fill(0);
+    const shareCounts = JSON.parse(localStorage.getItem('shareCounts')) || new Array(blogs.length).fill(0);
+    
+    useEffect(() => {
+        const blogIndex = blogs.findIndex(blog => blog.title === title);
+        if (blogIndex !== -1) {
+            setCurrentLikeCount(likeCounts[blogIndex]);
+            setCurrentShareCount(shareCounts[blogIndex]);
+        }
+    }, [title, likeCounts, shareCounts]);
 
     const handleLike = () => {
         const newLikeCount = currentLikeCount + 1;
         setCurrentLikeCount(newLikeCount);
         
-        const storedLikes = JSON.parse(localStorage.getItem('likeCounts')) || new Array(blogs.length).fill(0);
-        storedLikes[blogs.findIndex(blog => blog.title === title)] = newLikeCount;
-        localStorage.setItem('likeCounts', JSON.stringify(storedLikes));
+        const blogIndex = blogs.findIndex(blog => blog.title === title);
+        if (blogIndex !== -1) {
+            likeCounts[blogIndex] = newLikeCount;
+            localStorage.setItem('likeCounts', JSON.stringify(likeCounts));
+        }
     };
 
     const handleShare = () => {
         const newShareCount = currentShareCount + 1;
         setCurrentShareCount(newShareCount);
         
-        const storedShares = JSON.parse(localStorage.getItem('shareCounts')) || new Array(blogs.length).fill(0);
-        storedShares[blogs.findIndex(blog => blog.title === title)] = newShareCount;
-        localStorage.setItem('shareCounts', JSON.stringify(storedShares));
+        const blogIndex = blogs.findIndex(blog => blog.title === title);
+        if (blogIndex !== -1) {
+            shareCounts[blogIndex] = newShareCount;
+            localStorage.setItem('shareCounts', JSON.stringify(shareCounts));
+        }
 
         const encodedTitle = encodeURIComponent(title);
         const encodedUrl = encodeURIComponent(window.location.href);
-        
-        const shareUrl = {
-            facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&title=${encodedTitle}`,
-            twitter: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
-            email: `mailto:?subject=${encodedTitle}&body=${encodedUrl}`,
-            telegram: `https://telegram.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
-            instagram: `https://www.instagram.com/?url=${encodedUrl}`,
-        };
 
-        const shareWindow = window.open(shareUrl.facebook, '_blank');
-      
-        if (shareWindow) {
-            shareWindow.focus();
-        }
+        // Opening the share URL directly
+        const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedTitle}`;
+        window.open(shareUrl, '_blank').focus();
     };
 
     const otherBlogs = blogs
@@ -50,83 +54,68 @@ const BlogDetail = () => {
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .slice(0, 3);
 
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0});
-    };
-
     return (
-        <div className="blog-detail-container">
-            <div className="blogsd">
-                <h2>{title || 'Title Not Available'}</h2>
-                <p>{dates || 'Date'}</p>
-                <div className="media">
+        <div className="container mx-auto mt-20 flex flex-col items-center mb-8">
+            <div className="border border-gray-200 shadow overflow-hidden md:w-[60%] w-[90%] p-2 md:p-8 text-justify mb-5 flex flex-col">
+                <h2 className='text-2xl leading-10 mb-2 font-semibold'>{title || 'Title Not Available'}</h2>
+                <p className='text-gray-400 font-light'>{dates || 'Date'}</p>
+                <div className="media w-full h-[55vh] mb-5 overflow-hidden flex justify-center">
                     {mediaType === 'video' ? (
-                        <video src={mediaSrc} controls width="600" height="500" />
+                        <video src={mediaSrc} controls className="object-cover w-full h-full" />
                     ) : (
-                        <img src={mediaSrc} alt={title || 'Blog media'} width="600" height="500" />
+                        <img src={mediaSrc} alt={title || 'Blog media'} className="object-cover w-full h-full" />
                     )}
                 </div>
-
-                <p dangerouslySetInnerHTML={{ __html: detail || 'No detail found' }} />
-
-                <button onClick={handleLike}>
-                    <i className="fa-regular fa-heart"></i> {currentLikeCount}
-                </button>
-                <button onClick={handleShare}>
-                    <i className="fa-solid fa-share"></i> {currentShareCount}
-                </button>
+                <p dangerouslySetInnerHTML={{ __html: detail || 'No detail found' }} className="" />
+                <div className="flex space-x-4 mt-4">
+                    <button className='text-[brown] hover:bg-transparent flex items-center bg-transparent' onClick={handleLike}>
+                        <i className="fa-regular fa-heart"></i> {currentLikeCount}
+                    </button>
+                    <button className='text-blue-500 hover:bg-transparent flex items-center bg-transparent' onClick={handleShare}>
+                        <i className="fa-solid fa-share"></i> {currentShareCount}
+                    </button>
+                </div>
             </div>
-
-            <div className="titles">
-                <h2>Other Blogs</h2>
-            </div>
-            <div className="blog-container">
+            <h2 className='text-gray-400 m-0 text-2xl mb-2'>Other Blogs</h2>
+            <div className="flex flex-wrap justify-center md:h-[60vh] h-auto md:w-[80%] w-[95%]">
                 {otherBlogs.map((blog, index) => {
                     const { mediaSrc, mediaType, date, detail } = blog;
 
                     return (
-                        <div key={index} className="blog-details">
-                            <div className="media">
+                        <div key={index} className="border-2 mb-4 flex flex-col items-center w-[350px] h-full mx-4 overflow-hidden">
+                            <div className="media w-full h-48">
                                 {mediaType === 'video' ? (
-                                    <video src={mediaSrc} controls />
+                                    <video src={mediaSrc} controls className="w-full h-full object-cover" />
                                 ) : (
-                                    <img src={mediaSrc} alt={blog.title || 'Blog media'} />
+                                    <img src={mediaSrc} alt={blog.title || 'Blog media'} className="w-full h-full object-cover" />
                                 )}
                             </div>
-                            <div className="details">
-                                <h3>{blog.title || 'Title Not Available'}</h3>
-                                <p className="blog-date">{date}</p>
+                            <div className="details p-4">
+                                <h3 className='font-semibold'>{blog.title || 'Title Not Available'}</h3>
+                                <p className="text-gray-400 font-light">{date}</p>
                                 <p 
                                     dangerouslySetInnerHTML={{
                                         __html: detail ? detail.substring(0, 100) + ' [...]' : 'Detail not available'
                                     }} 
+                                    className="leading-9" 
                                 />
                                 <div className='blog-status'>
                                     <Link
                                         to="/blogdetail"
-                                        state={{ 
-                                            mediaSrc: mediaSrc,
-                                            mediaType: mediaType,
-                                            title: blog.title, 
-                                            detail: detail,
-                                            dates: date,
-                                            likeCount: 0, 
-                                            shareCount: 0 
+                                        state={{
+                                            mediaSrc: blog.mediaSrc,
+                                            mediaType: blog.mediaType,
+                                            title: blog.title,
+                                            detail: blog.detail,
+                                            dates: blog.date,
+                                            likeCount: likeCounts[index],
+                                            shareCount: shareCounts[index],
                                         }}
-                                        className='status'
-                                        onClick={scrollToTop} // Call scrollToTop when link is clicked
+                                        className='status text-[#007bff] hover:px-2'
+                                        onClick={() => window.scrollTo(0, 0)}
                                     >
-                                        read more
+                                        Read more
                                     </Link>
-                                </div>
-                                <div className="likes">
-                                    {/* Note: handleLike() is not used here because index is not available for other blogs currently */}
-                                    <button onClick={() => handleLike()}>
-                                        <i className="fa-regular fa-heart"></i>
-                                    </button>
-                                    <button onClick={handleShare}>
-                                        <i className="fa-solid fa-share"></i> 
-                                    </button>
                                 </div>
                             </div>
                         </div>

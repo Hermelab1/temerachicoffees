@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../style/ourfarms.css';
 import Footer from '../footage/footage';
 import Heading from '../Home/headings';
 import imagescover from '../../asset/img/CoverImages/Ecover.webp'; // Ensure the path is correct
@@ -8,7 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; 
 import 'swiper/swiper-bundle.css';
 import Contacts from '../contact/contacts';
-
 
 // Function to import all images from a directory
 const importAll = (r) => {
@@ -38,70 +36,81 @@ const Events = () => {
                     <Heading title="Gallery" subtitle="Temerachi Coffee Export" />
                 </div>
             </div>
+            <div className='container mx-auto mb-8'>
+                <div className="flex flex-wrap justify-center">
+                    <Heading title="Events" subtitle="Connect with fellow coffee lovers!"/>
+                    <Swiper
+                        className='mx-12'
+                        modules={[Navigation, Autoplay]}
+                        loop={true}
+                        autoplay={{ delay: 5000 }}
+                        breakpoints={{
+                            480: { slidesPerView: 1 },
+                            667: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                            1250: { slidesPerView: 4 },
+                        }}
+                    >
+                        {Array.from({ length: totalItemsE }, (_, index) => (
+                            <SwiperSlide key={index}>
+                                <motion.div
+                                    id={`training-card-${index}`}
+                                    className="relative border-2 border-gray-400 shadow-blog md:h-[350px] mb-2 md:mx-0 w-[320px] mx-0 gap-0"
+                                    transition={{ duration: 0.2 }}
+                                >
+                                    <img className='w-full h-full object-cover hover:scale-105'
+                                        src={imagesE[Object.keys(imagesE)[index]]} 
+                                        alt={`Event ${index}`}
+                                    />
+                                </motion.div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
 
-            <div className="farm-container">
-                <Heading title="Events" subtitle="Connect with fellow coffee lovers!"/>
-                <Swiper
-                    modules={[Navigation, Autoplay]} // Removed Pagination
-                    spaceBetween={30}
-                    loop={true}
-                    autoplay={{ delay: 5000 }} // Fixed to lowercase
-                    breakpoints={{
-                        480: { slidesPerView: 1 },
-                        667:{slidesPerView:2},
-                        1024: { slidesPerView: 3 },
-                        1250: { slidesPerView: 4 },
-                    }}
-                >
-                    {Array.from({ length: totalItemsE }, (_, index) => (
-                        <SwiperSlide key={index}>
-                            <motion.div
-                                id={`training-card-${index}`}
-                                className="farm-card"
-                                transition={{ duration: 0.2 }}
-                            >
-                                <img 
-                                    src={imagesE[Object.keys(imagesE)[index]]} 
-                                    alt={`Event ${index}`}
-                                />
-                            </motion.div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                <div className="flex flex-wrap justify-center">
+                    <Heading title="Our Farm" subtitle="Discover the Essence of Our Farm"/>
+                    <Swiper
+                        className='mx-12'
+                        modules={[Navigation, Autoplay]}
+                        loop={true}
+                        autoplay={{ delay: 6000 }}
+                        breakpoints={{
+                            480: { slidesPerView: 1 },
+                            667: { slidesPerView: 2 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                            1250: { slidesPerView: 4 },
+                        }}
+                    >
+                        {Array.from({ length: totalItemsO }, (_, index) => (
+                            <SwiperSlide key={index}>
+                                <motion.div
+                                    id={`farm-card-${index}`}
+                                    className="relative border-2 border-gray-400 shadow-blog md:h-[350px] mb-2 md:mx-0 w-[320px] mx-0 gap-0"
+                                    transition={{ duration: 0.2 }}
+                                >
+                                    <img className='w-full h-full object-cover hover:scale-105'
+                                        src={imagesO[Object.keys(imagesO)[index]]} 
+                                        alt={`Farm ${index}`}
+                                    />
+                                </motion.div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
 
-            <div className="farm-container">
-                <Heading title="Our Farm" subtitle="Discover the Essence of Our Farm"/>
-                <Swiper
-                    modules={[Navigation, Autoplay]} // Removed Pagination
-                    spaceBetween={30}
-                    loop={true}
-                    autoplay={{ delay: 6000 }} // Fixed to lowercase
-                    breakpoints={{
-                        480: { slidesPerView: 1 },
-                        667:{slidesPerView:2},
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                        1250: { slidesPerView: 4 },
-                    }}
-                >
-                    {Array.from({ length: totalItemsO }, (_, index) => (
-                        <SwiperSlide key={index}>
-                            <motion.div
-                                id={`training-card-${index}`}
-                                className="farm-card"
-                                transition={{ duration: 0.2 }}
-                            >
-                                <img 
-                                    src={imagesO[Object.keys(imagesO)[index]]} 
-                                    alt={`Farm ${index}`} // Changed alt to reflect the correct context
-                                />
-                            </motion.div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-            <Contacts/>
+            {/* Removed duplicate Contacts and Footer */}
+            <motion.div
+                id="contactus"
+                initial={{ opacity: 0, y: 200 }}
+                animate={{ opacity: 1, y: 0 }} // You need to define your animation logic based on a state or prop
+                transition={{ duration: 0.5 }}
+                className="bg-[#f8f9fa]"
+            >
+                <Contacts />
+            </motion.div>
             <Footer />
         </section>
     );

@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import { Coffeetype } from '../data/Coffeetype';
 import { ContryCode } from '../data/contrycode';
-import '../../style/orderd.css';
 
 const countryCodes = ContryCode;
 
@@ -43,46 +42,34 @@ const Orderd = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === 'coffeeType') {
-      setFormData(prev => ({
-        ...prev,
-        coffeeType: value,
-        coffeeCategory: '',
-        coffeeGrade: '',
-        price: '',
-      }));
-      return;
-    }
-
-    if (name === 'coffeeCategory') {
-      setFormData(prev => ({
-        ...prev,
-        coffeeCategory: value,
-        coffeeGrade: '',
-        price: ''
-      }));
-      return;
-    }
-
-    setFormData(prev => ({
-      ...prev,
+    setFormData(prevState => ({
+      ...prevState,
       [name]: value,
     }));
+
+    if (name === 'coffeeCategory') {
+      setFormData(prevState => ({
+        ...prevState,
+        coffeeCategory: value,
+        coffeeGrade: '', // Reset coffeeGrade when coffeeCategory changes
+        price: '',
+      }));
+    }
 
     if (name === 'coffeeGrade') {
       const selectedCoffee = Coffeetype.find(coffee => coffee.cname === formData.coffeeType);
       if (selectedCoffee) {
-        const selectedCategory = selectedCoffee.catagory?.find(category => category.titles === formData.coffeeCategory);
+        const selectedCategory = selectedCoffee.catagory?.find(category => category.coffeeCatagory === formData.coffeeCategory);
         const selectedGrade = selectedCategory?.grades?.find(grade => grade.gname === value);
-        
+
         if (selectedGrade) {
-          setFormData(prev => ({
-            ...prev,
+          setFormData(prevState => ({
+            ...prevState,
             price: selectedGrade.price,
           }));
         } else {
-          setFormData(prev => ({
-            ...prev,
+          setFormData(prevState => ({
+            ...prevState,
             price: '',
           }));
         }
@@ -94,13 +81,15 @@ const Orderd = () => {
     e.preventDefault();
     setLoading(true);
     
+    // Gather the relevant data for the email
     const emailData = {
       cname: formData.coffeeType,
-      coffeeCategory: formData.coffeeCategory,
-      coffeeGrade: formData.coffeeGrade,
+      coffeeCatagory: formData.coffeeCategory || "N/A",
+      coffeeGrade: formData.coffeeGrade || "N/A",
       quantity: formData.quantity,
       name: formData.name,
       user_email: formData.user_email,
+      country_code: formData.country_code || "N/A",
       user_phone: `${formData.country_code} ${formData.user_phone}`,
       user_companyname: formData.user_companyname,
       user_website: formData.user_website,
@@ -108,7 +97,7 @@ const Orderd = () => {
     };
 
     emailjs.send('service_w6blv2o', 'template_ys7e7mk', emailData, 'Puv041KtiA_TZduH2')
-      .then(response => {
+      .then((response) => {
         alert('Order placed successfully!');
         resetForm();
       })
@@ -144,91 +133,81 @@ const Orderd = () => {
   const selectedCoffee = Coffeetype.find(coffee => coffee.cname === formData.coffeeType);
 
   return (
-    <div className="orderd-containers">
-      <div className="imageso">
-        {imageError ? (
-          <p className="error">Image failed to load</p>
-        ) : (
-          <img
-            src={image}
-            alt={cname || 'Item Image'}
-            onLoad={handleImageLoad}
-            onError={handleImageError}
-            className={imageLoaded ? 'loaded' : ''}
-          />
-        )}
-        <div className="description">
-          <p>{description || 'Description Not Available'}</p>
-        </div>
-        <div className="orders">
-          <p><b>Fill out the forms below to submit your order</b></p>
-        </div>
-      </div>
-      <div className="details">
-        <form onSubmit={handleSubmit}>
-          <h3>{formData.coffeeType || 'Title Not Available'}</h3>
-          <p>Product Code: {code || 'Code Not Available'}</p>
-          <p>Price: {formData.price || 'Select Coffee Grade first'}</p>
-          <div>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="Name" />
-          </div>
-          <div>
-            <input type="text" name="user_companyname" value={formData.user_companyname} onChange={handleChange} required placeholder="Company Name" />
-          </div>
-          <div>
-            <input type="text" name="user_website" value={formData.user_website} onChange={handleChange} required placeholder="Website" />
-          </div>
-          <div>
-            <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required placeholder="Email" />
-          </div>
-          <div className="phone-input">
-            <select className='country_code' name="country_code" value={formData.country_code} onChange={handleChange} required>
-              {countryCodes.map((country, index) => (
-                <option key={index} value={country.code}>
-                  {country.flag} {country.code}
-                </option>
-              ))}
-            </select>
-            <div className="separator">-</div>
-            <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" />
-          </div>
-          <div>
-            <input type="text" name="delivery_address" value={formData.delivery_address} onChange={handleChange} required placeholder="Delivery Address" />
-          </div>
-
-          {/* Render radio buttons for coffee categories */}
-          {selectedCoffee?.catagory?.map((category, index) => (
-            <div key={index}>
-              <input
-                type="radio"
-                name="coffeeCategory"
-                value={category.titles} // Set the value to category titles
-                checked={formData.coffeeCategory === category.titles} // Check if it matches the current state
-                onChange={handleChange}
+    <div className="container mx-auto ">
+      <div className='md:w-[80%] w-[90%]  bg-white p-4 mx-auto shadow-lg mt-20 gap-12 flex flex-col lg:flex-row '>
+        <div className="flex flex-col items-center justify-center w-[100%]">
+          <div className="flex items-center justify-center h-[30vh]">
+            {imageError ? (
+              <p className="text-red-500">Image failed to load</p>
+            ) : (
+              <img
+                src={image}
+                alt={cname || 'Item Image'}
+                onLoad={handleImageLoad}
+                onError={handleImageError}
+                className={`border-2 w-full h-full object-cover shadow-blog transition-transform duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
               />
-              {category.titles}
+            )}
+          </div>
+          <div className="mt-5">
+            <p>{description || 'Description Not Available'}</p>
+          </div>
+        </div>
+        <div className="w-full text-left">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+            <h3 className="text-2xl font-serif py-2 text-[#3e1c08] border-t border-b border-gray-400">
+              {formData.coffeeType || 'Title Not Available'}
+            </h3>
+            <p>Product Code: {code || 'Code Not Available'}</p>
+            <p>Price: {formData.price || 'Select Coffee Grade first'}</p>
+            <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="Name" className="inputs" />
+            <input type="text" name="user_companyname" value={formData.user_companyname} onChange={handleChange} required placeholder="Company Name" className="inputs" />
+            <input type="text" name="user_website" value={formData.user_website} onChange={handleChange} required placeholder="Website" className="inputs" />
+            <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required placeholder="Email" className="inputs" />
+            <div className="flex gap-2">
+              <select className='inputs' name="country_code" value={formData.country_code} onChange={handleChange} required>
+                {countryCodes.map((country, index) => (
+                  <option key={index} value={country.code}>
+                    {country.flag} {country.code}
+                  </option>
+                ))}
+              </select>
+              <div className="flex items-center">-</div>
+              <input type="tel" name="user_phone" value={formData.user_phone} onChange={handleChange} required placeholder="Phone number" className="inputs" />
             </div>
-          ))}
+            <input type="text" name="delivery_address" value={formData.delivery_address} onChange={handleChange} required placeholder="Delivery Address" className="inputs" />
 
-          <div>
-            <select name="coffeeGrade" value={formData.coffeeGrade} onChange={handleChange} required>
+            {/* Render radio buttons for coffee categories */}
+            {selectedCoffee?.catagory?.map((category, index) => (
+              <label key={index} className="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="coffeeCategory"
+                  value={category.coffeeCatagory}
+                  checked={formData.coffeeCategory === category.coffeeCatagory}
+                  onChange={handleChange}
+                  className=""
+                />
+                {category.coffeeCatagory}
+              </label>
+            ))}
+
+            <select name="coffeeGrade" value={formData.coffeeGrade} onChange={handleChange} required className="inputs">
               <option value="">Select Coffee Grade</option>
-              {selectedCoffee?.catagory?.find(category => category.titles === formData.coffeeCategory)?.grades?.map((grade, index) => (
+              {selectedCoffee?.catagory?.find(category => category.coffeeCatagory === formData.coffeeCategory)?.grades?.map((grade, index) => (
                 <option key={index} value={grade.gname}>
                   {grade.gname}
                 </option>
               ))}
             </select>
-          </div>
 
-          <div>
-            <input type="number" name="quantity" value={formData.quantity} onChange={handleChange} min="1" max="10" required placeholder="Quantity" />
-          </div>
+            <input type="number" name="quantity" value={formData.quantity} onChange={handleChange} min="1" max="10" required placeholder="Quantity" className="inputs" />
 
-          <button type="submit" disabled={loading}>
-            {loading ? 'Ordering...' : 'Send Request'}
-          </button>
-        </form>
+            <button type="submit" disabled={loading} className="bg-gray-800 text-white rounded md:w-2/5 sm:w-full p-3 hover:bg-gray-700 transition-all duration-300">
+              {loading ? 'Ordering...' : 'Send Request'}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

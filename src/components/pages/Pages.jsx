@@ -4,15 +4,12 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Navbars from '../Navigation/Navbars';
 import Home from '../Home/home'; 
 import About from '../Ourstory/ourstorydetail';
-
 import Events from '../gallarycompanents/events';
-
 import Blog from '../blog/blog';
 import Blogdetail from '../blog/blogdetail';
 import Contact from '../contact/contactusdetail'; 
 import SampleOrder from '../OrderSample/sample';
 import Orderd from '../OrderSample/orderd';
-import '../../style/pages.css'; // Ensure this path is correct
 
 const Pages = () => {
     return (

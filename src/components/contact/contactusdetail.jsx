@@ -1,6 +1,5 @@
 // Import necessary libraries and components
 import React, { useRef} from 'react';
-import '../../style/detail.css';
 import img from '../../asset/img/CoverImages/Bcover.webp';
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
@@ -27,7 +26,7 @@ const ContactUsDetail = () => {
 
   return (
     <>
-      <section className='ourstorydetail'>
+      <section>
         <motion.div
           className="covers"
           initial="hidden"
@@ -44,19 +43,19 @@ const ContactUsDetail = () => {
         </motion.div>
 
         <motion.div
-          className="conatctA"
+          className="container mx-auto my-8 flex flex-wrap justify-center items-center md:gap-20 gap-8 "
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
         >
-          <div className="contactusform">
-            <form ref={form} onSubmit={sendEmail} className='form-group'>
-              <input type="text" name="user_name" placeholder='Full Name' required />
-              <input type="text" name="user_companyname" placeholder='Company Name' required />
-              <input type="text" name="user_website" placeholder='Website' required /> 
-              <input type="email" name="user_email" placeholder='Email' required />
-              <textarea name="message" id="" cols="20" rows="10" placeholder='Leave your message here' required></textarea>
+          <div className="flex flex-row w-full md:w-1/3 text-center mx-6">
+            <form ref={form} onSubmit={sendEmail}>
+              <input type="text" name="user_name" placeholder='Full Name' className='inputs' required />
+              <input type="text" name="user_companyname" placeholder='Company Name' className='inputs' required />
+              <input type="text" name="user_website" placeholder='Website' className='inputs' required /> 
+              <input type="email" name="user_email" placeholder='Email' className='inputs' required />
+              <textarea name="message" id="" cols="20" rows="10" placeholder='Leave your message here' className='inputs' required></textarea>
               <button type="submit">Send Message</button>
             </form>
             {/* {statusMessage && <p>{statusMessage}</p>}  Displays success or error messages */}
@@ -65,34 +64,41 @@ const ContactUsDetail = () => {
           <div
               className='address'
           >
-              <div className='icons-p'>
-                  <p>
-                      <b>HEAD OFFICE:</b><br />
-                      Kirkos Sub City Woreda 11 House No. 195/A<br />
-                      Addis Ababa, Ethiopia<br />
-                      Tell: +251911245503<br />
-                      <b>Warehouse:</b><br />
-                      Guji Coffee Export and Processing Factory<br />
-                      Furi, Sheger Oromia, ETHIOPIA<br />
-                      Email: info@temerachicoffeeexport.com<br />
-                      <b>Business Partner</b><br />
-                      Asia/Japan<br />
-                      Selam Store Trading LLC<br />
-                      4-32-4 Asakusa, Taito-ku Tokyo<br />
-                      Japan<br />
-                  </p>
-              </div>
-            <div className="links">
-              <div className="titles">
-                <h3>Reach us</h3>
-              </div>
-              <div className="link">             
-                <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
-                <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
-                
-              </div>
-            </div>
+        <div className="my-5 mx-6 ">
+          <p className='text-center leading-[2rem] font-light'>
+            <b>HEAD OFFICE:</b><br />
+            Kirkos Sub City Woreda 11 House No. 195/A<br />
+            Addis Ababa, Ethiopia<br />
+            Tel: +251911426480<br />
+            <b>Warehouse:</b><br />
+            Guji Coffee Export and Processing Factory<br />
+            Furi, Sheger Oromia, ETHIOPIA<br />
+            <b className='font-extrabold'>Email: info@temerachicoffeeexport.com</b><br />
+          </p>
+        </div>
+        <div className='mx-6'>
+          <p className='text-center leading-[2rem] font-light'>
+            <b>Business Partner</b><br />
+            Asia/Japan<br />
+            Selam Store Trading LLC<br />
+            4-32-4 Asakusa, Taito-ku Tokyo<br />
+            Japan<br />
+          </p>
+          <div className="titles">
+            <h3 className="text-2xl text-center font-extralight my-2">Reach us</h3>
+          </div>
+          <div className="flex justify-center mt-4 gap-4">
+            <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-2xl text-white bg-[#105F4E] px-2 py-1">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer" className="text-2xl  bg-[#105F4E] text-white px-2 py-1">
+              <i className="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer" className="text-2xl text-white  bg-[#105F4E] px-2 py-1">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
           </div>
         </motion.div>
         <Footer />

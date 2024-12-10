@@ -1,13 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply lg:text-lg text-base ;
+  font-family: 'Poppins', sans-serif;
+  color: #105F4E;
+}
+section{
+  @apply overflow-hidden h-auto;
+}
+.inputs {
+  @apply mb-2 p-[6px] rounded-sm w-full text-base rounded-md focus:border-gray-500 focus:outline-none text-[#105F4E];
+  border: 2px solid #105F4E; 
+
+}
+.ourstory{
+  @apply h-auto;
+}
+.storyImg {
+  @apply h-[30vh] lg:h-[50vh] max-w-[50%] border border-gray-300 shadow-md animate-[rightToLeft_2s_ease-in_forwards];
+}
+a {
+  @apply font-normal text-[#105f4e];
+  font-family: "Cardo", serif;
+}
+h2{
+  font-family: "Cardo", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  @apply text-[#105f4e] font-normal text-justify md:leading-[2.8rem] leading-[2rem];
+}
+.likes{
+  @apply absolute bottom-2 right-2 flex gap-2 text-sm;
+}
+.likes button{
+  @apply bg-transparent hover:bg-transparent text-gray-400;
+}
+h4 {
+  @apply text-[#286461];
+}
+
+button {
+  @apply p-2 bg-[#105f4e] text-white font-light cursor-pointer hover:bg-[#1fac84];
+}
+
+.covers {
+  @apply relative w-full h-[75vh];
+}
+.blog-details{
+  @apply border w-[400px] h-[500px] bg-white shadow-blog overflow-hidden m-[20px] flex flex-col relative border-2 border-gray-300;
+}
+.bmedia {
+  @apply w-full h-full overflow-hidden flex justify-center items-center;
+}
+.covers .imgs {
+  @apply flex flex-col; /* Ensure images stack vertically */
+}
+
+.covers .imgs img {
+  @apply w-full h-[75vh] object-cover;
+}
+
+.covers::before {
+  @apply content-[''] absolute top-0 left-0 w-full h-[75vh] bg-black/50; /* Overlay with opacity */
+}
+
+.covers .slogan {
+  @apply absolute top-[40%] text-white w-full text-center;
+}
+
+/* Custom styles using Tailwind CSS classes */
+.covers .heading, .hero .heading, .home .heading h1{
+  @apply text-center w-[90%] mx-auto; /* Only apply Tailwind utilities */
+  font-family: 'Playfair Display', serif; /* Use the font-family directly */
+}
+
+.covers .heading h1, .hero .heading h1, .home .heading h1{
+  @apply text-[#f7fdfc] font-semibold capitalize text-[40px] leading-[50px];
+  font-family: "Cardo", serif;
+}
+
+
+.covers .heading p, .hero .heading p, .home .heading p{
+  @apply text-center mb-[15px] text-[#f7fdfc] text-base tracking-[1.5px] text-[18px];
+}
+
+section .heading h1 {
+  @apply text-[#3e1c08] text-[30px] leading-[20px] mt-16 mb-4 text-center;
+  font-family: "Cardo", serif;
+}
+
+section .heading p {
+  @apply text-[#3e1c08] border-none text-center mb-[10px] sm:mb-[20px] border-4;
+  font-family: "Cardo", serif;
+}
+
+textarea,
+input {
+  @apply border-none outline-none bg-transparent;
+}
+
+.custom-swiper .swiper-pagination-bullet {
+  @apply bg-[#105F4E] opacity-70 transition-opacity transition-transform duration-300; /* Custom bullet color */
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  @apply opacity-100 transform scale-110; /* Full opacity for the active bullet */
+}
+
+.custom-swiper .swiper-pagination-bullet:hover {
+  @apply opacity-100 transform scale-110; /* Full opacity on hover */
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 100ms ease-in, transform 100ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 100ms ease-in, transform 100ms ease-in;
 }

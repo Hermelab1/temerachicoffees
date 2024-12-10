@@ -3,6 +3,7 @@ const photo3 = require('../../asset/img/ManagementImages/DawitPhoto.webp');
 const photo4 = require('../../asset/img/ManagementImages/PhotoPeoples.webp');
 const photo5 = require('../../asset/img/ManagementImages/tem4.webp');
 const photo6 = require('../../asset/img/ManagementImages/tem5.webp');
+const photo7 = require('../../asset/img/ManagementImages/Temerach6.webp');
 
 export const teammembers =[
     {
@@ -18,7 +19,7 @@ export const teammembers =[
     {
         photo: photo1,
         name:"Zerihun Hailu",
-        position:"Quality Manager",
+        position:"Logistics officer",
     },
     {
         photo: photo6,
@@ -28,7 +29,12 @@ export const teammembers =[
     {
         photo: photo5,
         name:"Mahlet Bekele",
-        position:"Documentation Officer",
+        position:"Office Administrator",
+    },
+    {
+        photo: photo7,
+        name:"Ashebir Getinet",
+        position:"Production & quality Manager",
     }
 
 ]
