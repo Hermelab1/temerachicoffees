@@ -93,7 +93,7 @@ button {
 
 
 .covers .heading p, .hero .heading p, .home .heading p{
-  @apply  mb-[15px] text-[#f7fdfc] text-base tracking-[1.5px] text-[18px];
+  @apply  mb-[15px] text-[#f7fdfc] text-base tracking-[1.5px] text-[18px] mb-3;
   font-family: 'Poppins', sans-serif;
 }
 
