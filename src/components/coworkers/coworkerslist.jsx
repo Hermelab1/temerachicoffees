@@ -14,9 +14,9 @@ const CoworkersList = () => {
       <div className="container mx-auto flex items-center justify-center mb-6">
         {totalItems > 0 ? (
           <Swiper
-            className="custom-swiper 2xl:mx-16 xl:mx-8 lg:mx-12 md:mx-8 mx-6"
+            className="custom-swiper 2xl:mx-24 xl:mx-8 lg:mx-12 md:mx-8 mx-6"
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={30}
+            spaceBetween={25}
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
             breakpoints={{
@@ -29,7 +29,7 @@ const CoworkersList = () => {
           >
             {testimonial.map((item, index) => (
               <SwiperSlide key={`testimonial-${index}`}>
-                <div className="border border-gray-300 shadow-md p-2 md:p-2 flex flex-col  2xl:h-[45vh] xl:h-[55vh] lg:h-[60vh]  shadow-lg text-center justify-center item-center mx-auto">
+                <div className="border-2 border-gray-200 shadow-custom p-4 md:p-2 flex flex-col  2xl:h-[60vh] xl:h-[55vh] lg:h-[60vh]  shadow-lg text-center justify-center item-center mb-12">
                   <div className="flex justify-center items-center mx-auto">
                     <img 
                       src={item.photo} 
@@ -39,11 +39,11 @@ const CoworkersList = () => {
                   </div>
                   <div className='my-auto'>
                       <i className="fa-solid fa-quote-left text-yellow-500"></i>
-                      <p className="font-light leading-8 italic text-center">{item.paragraph || 'Description Not Available'}</p>
+                      <p className="leading-8 italic text-center px-4">{item.paragraph || 'Description Not Available'}</p>
                       <i className="fa-solid fa-quote-right text-yellow-500"></i>
-                      <h2 className="font-serif font-thin">{item.name} ({item.companyname})</h2>
-                      <div className='flex justify-center items-center gap-2 md:gap-8'>
-                        <img className='w-6 h-4 md:w-8 md:h-6 border' src={item.flag} alt="Flag" />
+                      <h2 className="font-Cardo text-center text-lg mt-4">{item.name} ({item.companyname})</h2>
+                      <div className='flex justify-center items-center gap-2 md:gap-8 p-3'>
+                        <img className='w-7 h-4 md:w-[35px] md:h-6 border' src={item.flag} alt="Flag" />
                       </div>
                   </div>
                 </div>

@@ -110,13 +110,13 @@ const Blog = () => {
                   {mediaType === 'video' ? (
                     <video src={mediaSrc} controls />
                   ) : (
-                    <img src={mediaSrc} alt={title || 'Blog media'} className='w-full h-full rounded-0 object-cover' />
+                    <img src={mediaSrc} alt={title || 'Blog media'} className='w-full h-full top-0' />
                   )}
                 </div>
                 <div className="grow p-[15px]">
                   <h3 className='text-xl mb-1 text-[#105f4e] font-semibold'>{title || 'Title Not Available'}</h3>
                   <p className="text-[#b9b9b9] font-light">{date}</p>
-                  <p className='leading-9'
+                  <p className='leading-7 mb-4'
                     dangerouslySetInnerHTML={{
                       __html: detail ? detail.substring(0, 100) + ' [...]' : 'Detail not available'
                     }}
@@ -143,10 +143,10 @@ const Blog = () => {
                     <button className="bg-transparent hover:bg-transparent text-gray-400" onClick={() => handleLike(index)}>
                       <i className="fa-regular fa-heart text-[brown]"></i> {totalLikesForBlog(index)}
                     </button>
-                    <div>
-                      <button className="bg-transparent hover:bg-transparent text-gray-400" onClick={() => toggleShareButtons(index)}>
+                    <button className="bg-transparent hover:bg-transparent text-gray-400" onClick={() => toggleShareButtons(index)}>
                         <i className="fa-solid fa-share-nodes text-[#0888b3]"></i> {shareCounts[index]}
                       </button>
+                    <div>
                       {isShareVisible[index] && (
                         <div className="share-buttons">
                           <button onClick={() => handleShare(index, title, window.location.href, 'facebook')}>
@@ -180,8 +180,8 @@ const Blog = () => {
                 className="bg-[#f8f9fa]"
             >
                 <Contacts />
-            </motion.div>
-            <Footer />
+      </motion.div>
+      <Footer />
     </section>
   );
 };

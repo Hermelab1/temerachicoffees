@@ -23,12 +23,13 @@ const OurStory = () => {
     <section className="ourstory">
       <Heading title="Our Story" subtitle="A Journey with Beans" />
       <div className="container lg:flex mx-auto justify-center items-center lg:mt-8 lg:mb-12">
-        <div ref={aboutTextRef} className="mx-6 xl:w-4/12 lg:w-1/2 text-justify">
-          <p className='first-letter:text-9xl first-letter:font-semibold first-letter:text-[#105f4e] first-letter:mr-2 first-letter:float-left font-light'>
-            <span style={{ fontFamily: "Cardo, serif" }}>F</span>ounded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee has quickly established itself as the leading coffee exporter from the renowned coffee-producing region of Ethiopia. Temerachi Coffee works closely with smallholder farmers across diverse coffee-growing areas like Yirgacheffe, Gedeb, Sidama, Bonga, Jimma and Guji.
+        <div ref={aboutTextRef} className="mx-6 xl:w-[33%] lg:w-1/2 text-justify">
+          <p className="first-letter:text-[150px] first-letter:font-Cardo first-letter:font-semimudium first-letter:text-[#176756] first-letter:float-left first-letter:leading-[80px]">
+              Founded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee has quickly established itself as the leading coffee exporter from the renowned coffee-producing region of Ethiopia. 
+              Temerachi Coffee works closely with smallholder farmers across diverse coffee-growing areas like Yirgacheffe, Gedeb, Sidama, Bonga, Jimma, and Guji.
           </p>
           <div className="mt-4">
-            <button className="btn1" onClick={handleScrollToTop}>
+            <button className="btn1 p-3" onClick={handleScrollToTop}>
               Learn More
             </button>
           </div>

@@ -39,6 +39,12 @@ module.exports = {
           '100%': { height: '60%' },
         },
       },
+      fontFamily: {
+        'Cardo': ['Cardo', 'serif'],  // Add this line
+      },
+      fontWeight:{
+        'semimudium': '490',
+      }
     },
   },
   plugins: [],

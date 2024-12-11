@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd584531.css",
-    "main.js": "/static/js/main.98fafbaf.js",
+    "main.css": "/static/css/main.a04d86c7.css",
+    "main.js": "/static/js/main.bf6ff482.js",
     "static/media/1.webp": "/static/media/1.87c903c93dae1d3d9631.webp",
     "static/media/6.webp": "/static/media/6.7fcb44750b69746ef95b.webp",
     "static/media/2.webp": "/static/media/2.f192f312ea3752b52bf7.webp",
@@ -37,10 +37,10 @@
     "static/media/CompanyPhoto1.webp": "/static/media/CompanyPhoto1.e4e076c5e309d838e2d6.webp",
     "static/media/The_future.webp": "/static/media/The_future.5e3c0163446ba1be3c3f.webp",
     "static/media/The_science.webp": "/static/media/The_science.20252e7914771daabcdc.webp",
+    "static/media/Temerach6.jpg": "/static/media/Temerach6.7b0b440b842aa467348a.jpg",
     "static/media/CompanyPhoto.webp": "/static/media/CompanyPhoto.65493269035f52ba1fe5.webp",
     "static/media/Logos.png": "/static/media/Logos.c1e2196865c54c9b50b6.png",
     "static/media/tem4.webp": "/static/media/tem4.1956967a33d602f77c0b.webp",
-    "static/media/Temerach6.webp": "/static/media/Temerach6.0cd059ee5493ffd67f7d.webp",
     "static/media/The _health.webp": "/static/media/The _health.779d612504aa843bef86.webp",
     "static/media/Japan.webp": "/static/media/Japan.cfe433bcd8e8726226ea.webp",
     "static/media/number9.webp": "/static/media/number9.1730e1dac1bd18d59418.webp",
@@ -49,11 +49,11 @@
     "static/media/ch.webp": "/static/media/ch.3d2986b2966d32703d3e.webp",
     "static/media/ehab.webp": "/static/media/ehab.18103f9ddf0967450e5c.webp",
     "index.html": "/index.html",
-    "main.fd584531.css.map": "/static/css/main.fd584531.css.map",
-    "main.98fafbaf.js.map": "/static/js/main.98fafbaf.js.map"
+    "main.a04d86c7.css.map": "/static/css/main.a04d86c7.css.map",
+    "main.bf6ff482.js.map": "/static/js/main.bf6ff482.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd584531.css",
-    "static/js/main.98fafbaf.js"
+    "static/css/main.a04d86c7.css",
+    "static/js/main.bf6ff482.js"
   ]
 }

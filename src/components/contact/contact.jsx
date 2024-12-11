@@ -30,8 +30,8 @@ const Contact = () => {
 
   return (
     <section className="bg-[#f8f9fa] text-center">
-      <div className="container mx-auto text-center flex flex-wrap justify-center items-center 2xl:gap-12  xl:gap-2 lg:gap-4 md:gap-2 sm:gap-4 my-4"> 
-        <div className="xl:w-[23%] lg:w-[25%] w-[80%] ">
+      <div className="container mx-auto text-center flex flex-wrap justify-center items-center 2xl:gap-8  xl:gap-2 lg:gap-4 md:gap-2 sm:gap-4 my-4"> 
+        <div className="xl:w-[23%] lg:w-[25%] md:w-[40%] w-[80%] ">
           <form ref={form} onSubmit={sendEmail} className='form-group'>
             <input className='inputs' type="text" name="user_name" placeholder='Full Name' required />
             <input className='inputs' type="text" name="user_companyname" placeholder='Company Name' required />
@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
         <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
         <div className="my-5 mx-5">
-            <p className='text-center leading-[2.8rem] font-light'>
+            <p className='text-center'>
             <b>HEAD OFFICE:</b><br />
             Kirkos Sub City Woreda 11 House No. 195/A<br />
             Addis Ababa, Ethiopia<br />
@@ -52,14 +52,13 @@ const Contact = () => {
             <b>Warehouse:</b><br />
             Guji Coffee Export and Processing Factory<br />
             Furi, Sheger Oromia, ETHIOPIA<br />
-            <b className='font-extrabold'>Email: info@temerachicoffeeexport.com</b><br />
+            <b className='font-semibold'>Email: info@temerachicoffeeexport.com</b><br />
             </p>
         </div>
-
-        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden lg:block "></div> {/* Vertical line */}
 
         <div className='mx-6'>
-          <p className='text-center md:leading-[2.8rem] leading-[2.3rem] font-light'>
+          <p className='text-center'>
             <b>Business Partner</b><br />
             Asia/Japan<br />
             Selam Store Trading LLC<br />
@@ -82,18 +81,17 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden"></div> {/* Vertical line */}
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
 
 
         <div className="pages text-center">
           <div className="titles">
-            <h3 className="text-2xl font-extralight my-2">Navigation</h3>
+            <h3 className="text-2xl font-extralight">Navigation</h3>
           </div>
-          <div className="flex flex-row  justify-center mt-4"> 
-            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Our Story</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/gallery')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Gallery</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Blog</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left">Order Sample</Link>
+          <div className="flex md:flex-col flex-row  justify-center mt-2"> 
+            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Our Story</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Blog</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Order Sample</Link>
           </div>
         </div>
       </div>
