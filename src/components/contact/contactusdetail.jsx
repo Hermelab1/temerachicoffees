@@ -43,7 +43,7 @@ const ContactUsDetail = () => {
         </motion.div>
 
         <motion.div
-          className="container mx-auto flex flex-wrap justify-center items-center xl:gap-20 lg:gap-14 md:gap-0  gap-6"
+          className="container mx-auto my-8 flex flex-wrap justify-center items-center xl:gap-20 lg:gap-14 md:gap-0  gap-6"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
@@ -56,7 +56,7 @@ const ContactUsDetail = () => {
               <input type="text" name="user_website" placeholder='Website' className='inputs' required /> 
               <input type="email" name="user_email" placeholder='Email' className='inputs' required />
               <textarea name="message" id="" cols="20" rows="8" placeholder='Leave your message here' className='inputs' required></textarea>
-              <button type="submit">Send Message</button>
+              <button type="submit p-3">Send Message</button>
             </form>
             {/* {statusMessage && <p>{statusMessage}</p>}  Displays success or error messages */}
           </div>
