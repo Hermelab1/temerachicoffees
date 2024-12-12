@@ -36,8 +36,8 @@ const Events = () => {
                     <Heading title="Gallery" subtitle="Temerachi Coffee Export" />
                 </div>
             </div>
-            <div className='w-[82%] mx-auto justify-center items-center mb-6'>
-                <div className="flex flex-wrap justify-center">
+            <div className='w-[80%] mx-auto justify-center items-center mb-6'>
+                <div className="flex flex-wrap justify-center ">
                     <Heading title="Events" subtitle="Connect with fellow coffee lovers!"/>
                     <Swiper
                         spaceBetween={30}
@@ -47,15 +47,16 @@ const Events = () => {
                         breakpoints={{
                             480: { slidesPerView: 1 },
                             667: { slidesPerView: 2 },
+                            768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
-                            1250: { slidesPerView: 4 },
+                            1280: { slidesPerView: 4 },
                         }}
                     >
                         {Array.from({ length: totalItemsE }, (_, index) => (
                             <SwiperSlide key={index}>
                                 <motion.div
                                     id={`training-card-${index}`}
-                                    className="relative border-2 border-gray-400 shadow-custom h-[400px] mb-2 md:mx-0 w-[320px] mx-0 gap-0"
+                                    className="relative border-2 border-gray-400 shadow-custom w-[320px] h-[400px] 2xl:h-[400px] 2xl:w-[310px] xl:w-[240px] lxlg:h-[330px] lg:w-[250px] lg:h-[340px] gap-0"
                                     transition={{ duration: 0.2 }}
                                 >
                                     <img className='w-full h-full object-cover hover:scale-105'
@@ -87,7 +88,7 @@ const Events = () => {
                             <SwiperSlide key={index}>
                                 <motion.div
                                     id={`farm-card-${index}`}
-                                    className="relative border-2 border-gray-400 shadow-custom h-[400px] mb-2 md:mx-0 w-[320px] mx-0 gap-0"
+                                    className="relative border-2 border-gray-400 shadow-custom w-[320px] h-[400px] 2xl:h-[400px] 2xl:w-[310px] xl:w-[240px] lxlg:h-[330px] lg:w-[250px] lg:h-[340px] gap-0"
                                     transition={{ duration: 0.2 }}
                                 >
                                     <img className='w-full h-full object-cover hover:scale-105'

@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 body {
-  @apply lg:text-lg text-base ;
+  @apply xl:text-lg text-base ;
   font-family: 'Poppins', sans-serif;
   color: #105F4E;
 }
@@ -19,15 +19,15 @@ section{
   font-family: 'Poppins', sans-serif;
 }
 .inputs {
-  @apply mb-2 p-[6px] rounded-sm w-full text-base rounded-md focus:border-gray-500 focus:outline-none text-[#105F4E];
+  @apply mb-3 p-[8px] rounded-sm w-full text-base rounded-md focus:border-gray-500 focus:outline-none text-[#105F4E];
   border: 1px solid #105F4E; 
 
 }
 .ourstory{
-  @apply lg:h-[90vh] h-auto;
+  @apply xl:h-[90vh] h-auto;
 }
 .storyImg {
-  @apply h-[30vh] lg:h-[50vh] max-w-[50%] border border-gray-300 shadow-md animate-[rightToLeft_2s_ease-in_forwards];
+  @apply h-[30vh] lg:h-[50vh] max-w-[50%] border border-gray-300 shadow-custom border border-white animate-[rightToLeft_2s_ease-in_forwards];
 }
 a {
   @apply font-normal text-[#105f4e];
@@ -35,7 +35,7 @@ a {
 }
 
 p {
-  @apply text-[#105f4e] font-normal text-justify md:leading-[2.3rem] leading-[2rem];
+  @apply text-[#105f4e] font-normal text-justify lg:leading-[2.2rem] md:leading-[2.3rem] leading-[1.9rem];
 }
 .likes{
   @apply absolute bottom-2 right-2 flex gap-2 text-sm;
@@ -48,14 +48,14 @@ h4 {
 }
 
 button {
-  @apply p-2 bg-[#105f4e] text-white font-light cursor-pointer hover:bg-[#1fac84];
+  @apply  bg-[#105f4e] text-white font-light cursor-pointer hover:bg-[#1fac84];
 }
 
 .covers {
   @apply relative w-full h-[75vh];
 }
 .blog-details{
-  @apply border w-[380px] h-[550px] bg-white shadow-blog overflow-hidden m-[20px] flex flex-col relative border-2 border-gray-300;
+  @apply border lg:w-[380px] md:w-[350px] h-[550px] bg-white shadow-blog overflow-hidden lg:m-[20px] md:m-[15px] m-[20px] flex flex-col relative border-2 border-gray-300;
 }
 .bmedia {
   @apply w-full h-full overflow-hidden flex justify-center items-center;
@@ -69,41 +69,48 @@ button {
 }
 
 .hero::before{
-  @apply content-[''] absolute top-0 left-0 w-full md:h-[90vh] h-[100vh] bg-black/70; /* Overlay with opacity */
+  @apply content-[''] absolute top-0 left-0 w-full md:h-[90vh] h-[100vh] bg-black/50; /* Overlay with opacity */
 }
 
 .covers::before {
   @apply content-[''] absolute top-0 left-0 w-full h-[75vh] bg-black/50; /* Overlay with opacity */
 }
 
-.covers .slogan, .hero .slogan{
-  @apply absolute top-[30%] text-white w-full text-center;
+.covers .slogan{
+  @apply absolute md:top-[35%] top-[35%] text-white w-full  text-center;
+}
+
+.hero .slogan{
+  @apply absolute md:top-[35%] top-[30%] text-white w-full text-center px-8;
 }
 
 /* Custom styles using Tailwind CSS classes */
 .covers .heading, .hero .heading{
   @apply text-center w-full items-center justify-center; /* Only apply Tailwind utilities */
-  font-family: 'Playfair Display', serif; /* Use the font-family directly */
 }
 
-.covers .heading h1, .hero .heading h1{
-  @apply text-[#f7fdfc] font-semibold capitalize text-[40px] leading-[60px] tracking-wider;
+.covers .heading h1{
+  @apply text-[#f7fdfc] md:text-[37px] text-[34px] capitalize lg:leading-[0px] leading-[35px] tracking-wide;
+  font-family: "Cardo", serif;
+}
+.hero .heading h1{
+  @apply text-[#f7fdfc] md:text-[37px] text-[34px] capitalize lg:leading-[0px] leading-[50px] tracking-widest;
   font-family: "Cardo", serif;
 }
 
 
-.covers .heading p, .hero .heading p, .home .heading p{
-  @apply  mb-[15px] text-[#f7fdfc] text-base tracking-[1.5px] text-[18px] mb-3;
+.covers .heading p, .hero .heading p{
+  @apply  text-white lg:leading-[0px] leading-[0px];
   font-family: 'Poppins', sans-serif;
 }
 
 section .heading h1 {
-  @apply text-[#3e1c08] text-[30px] leading-[20px] mt-20 mb-4 text-center font-bold;
+  @apply text-[#3e1c08] text-[30px] leading-[20px] mt-14 mb-6 text-center font-bold;
   font-family: "Cardo", serif;
 }
 
 section .heading p {
-  @apply text-[#3e1c08] border-none text-center mb-[10px] sm:mb-[20px] border-4 tracking-widest;
+  @apply text-[#3e1c08] border-none text-center mb-[10px] sm:mb-[20px] tracking-widest;
   font-family: 'Poppins', sans-serif;
 }
 

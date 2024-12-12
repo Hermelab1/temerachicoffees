@@ -22,8 +22,8 @@ const OurStory = () => {
   return (
     <section className="ourstory">
       <Heading title="Our Story" subtitle="A Journey with Beans" />
-      <div className="container lg:flex mx-auto justify-center items-center lg:mt-8 lg:mb-12">
-        <div ref={aboutTextRef} className="mx-6 xl:w-[33%] lg:w-1/2 text-justify">
+      <div className="container md:flex mx-auto justify-center items-center lg:my-8">
+        <div ref={aboutTextRef} className="mx-6 my-8 xl:w-[33%] lg:w-[35%] md:w-[80%] text-justify">
           <p className="first-letter:text-[150px] first-letter:font-Cardo first-letter:font-semimudium first-letter:text-[#176756] first-letter:float-left first-letter:leading-[80px]">
               Founded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee has quickly established itself as the leading coffee exporter from the renowned coffee-producing region of Ethiopia. 
               Temerachi Coffee works closely with smallholder farmers across diverse coffee-growing areas like Yirgacheffe, Gedeb, Sidama, Bonga, Jimma, and Guji.
@@ -34,11 +34,11 @@ const OurStory = () => {
             </button>
           </div>
         </div>
-        <div className="flex lg:w-2/5 gap-4 mx-8 items-center justify-center mb-4 animate-rightToLeft overflow-hidden">
+        <div className="flex xl:w-2/5 lg:w-[45%] gap-6 mx-8 items-center justify-center mb-4 px-4 animate-rightToLeft overflow-hidden">
           <img className="storyImg" src={photo1} alt="CompanyPhoto"
           />
           <img
-            className="storyImg mt-8"
+            className="storyImg mt-12"
             src={photo2}
             alt="CompanyPhoto"
           />

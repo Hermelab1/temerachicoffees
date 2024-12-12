@@ -14,7 +14,7 @@ const Contacts = () => {
 
   return (
     <section className='contact'>
-      <div className='container mx-auto text-center flex flex-wrap justify-center items-center lg:gap-12 md:gap-20 sm:gap-12 my-4'>
+      <div className='container mx-auto text-center flex flex-wrap justify-center items-center lg:gap-4 md:gap-4 sm:gap-12 my-4'>
         <div className="my-5 mx-5">
             <p className='text-center'>
             <b>HEAD OFFICE:</b><br />
@@ -54,18 +54,18 @@ const Contacts = () => {
           </div>
         </div>
 
-        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden  md:hidden lg:block"></div> {/* Vertical line */}
 
 
         <div className="pages text-center">
           <div className="titles">
             <h3 className="text-2xl font-extralight">Navigation</h3>
           </div>
-          <div className="flex md:flex-col flex-row  justify-center mt-2"> 
-            <Link onClick={() => handleScrollToTopAndNavigate('/')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Home</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Our Story</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Blog</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Order Sample</Link>
+          <div className="flex lg:flex-col flex-row  justify-center mt-2"> 
+            <Link onClick={() => handleScrollToTopAndNavigate('/')} className="mx-2 text-[105F4E]-600 font-semibold text-base md:text-xl  text-left leading-[2.5rem]">Home</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-semibold text-base md:text-xl text-left leading-[2.5rem]">Our Story</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-semibold text-base md:text-xl text-left leading-[2.5rem]">Blog</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-semibold text-base md:text-xl text-left leading-[2.5rem]">Order Sample</Link>
           </div>
         </div>
       </div>

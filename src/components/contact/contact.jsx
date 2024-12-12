@@ -30,8 +30,8 @@ const Contact = () => {
 
   return (
     <section className="bg-[#f8f9fa] text-center">
-      <div className="container mx-auto text-center flex flex-wrap justify-center items-center 2xl:gap-8  xl:gap-2 lg:gap-4 md:gap-2 sm:gap-4 my-4"> 
-        <div className="xl:w-[23%] lg:w-[25%] md:w-[40%] w-[80%] ">
+      <div className=" container mx-auto text-center flex flex-wrap justify-center my-12 items-center 2xl:gap-8  xl:gap-2 lg:gap-4 md:gap-12 sm:gap-4 my-4"> 
+        <div className="xl:w-[23%] lg:w-[35%] md:w-[40%] w-[80%] mx-6">
           <form ref={form} onSubmit={sendEmail} className='form-group'>
             <input className='inputs' type="text" name="user_name" placeholder='Full Name' required />
             <input className='inputs' type="text" name="user_companyname" placeholder='Company Name' required />
@@ -43,7 +43,7 @@ const Contact = () => {
           
         </div>
         <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
-        <div className="my-5 mx-5">
+        <div className="my-5 mx-5 xl:mx-2">
             <p className='text-center'>
             <b>HEAD OFFICE:</b><br />
             Kirkos Sub City Woreda 11 House No. 195/A<br />
@@ -55,9 +55,9 @@ const Contact = () => {
             <b className='font-semibold'>Email: info@temerachicoffeeexport.com</b><br />
             </p>
         </div>
-        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden lg:block "></div> {/* Vertical line */}
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden xl:block "></div> {/* Vertical line */}
 
-        <div className='mx-6'>
+        <div className='mx-6 xl:mx-2'>
           <p className='text-center'>
             <b>Business Partner</b><br />
             Asia/Japan<br />

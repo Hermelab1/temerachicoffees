@@ -43,62 +43,60 @@ const ContactUsDetail = () => {
         </motion.div>
 
         <motion.div
-          className="container mx-auto my-8 flex flex-wrap justify-center items-center md:gap-20 gap-8 "
+          className="container mx-auto flex flex-wrap justify-center items-center xl:gap-20 lg:gap-14 md:gap-0  gap-6"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-row w-full md:w-1/3 text-center mx-6">
+          <div className="flex flex-row w-full lg:w-[40%] md:w-[43%] text-center mx-8 my-12">
             <form ref={form} onSubmit={sendEmail}>
               <input type="text" name="user_name" placeholder='Full Name' className='inputs' required />
               <input type="text" name="user_companyname" placeholder='Company Name' className='inputs' required />
               <input type="text" name="user_website" placeholder='Website' className='inputs' required /> 
               <input type="email" name="user_email" placeholder='Email' className='inputs' required />
-              <textarea name="message" id="" cols="20" rows="10" placeholder='Leave your message here' className='inputs' required></textarea>
+              <textarea name="message" id="" cols="20" rows="8" placeholder='Leave your message here' className='inputs' required></textarea>
               <button type="submit">Send Message</button>
             </form>
             {/* {statusMessage && <p>{statusMessage}</p>}  Displays success or error messages */}
           </div>
 
-          <div
-              className='address'
-          >
-        <div className="my-5 mx-6 ">
-          <p className='text-center leading-[2rem] font-light'>
-            <b>HEAD OFFICE:</b><br />
-            Kirkos Sub City Woreda 11 House No. 195/A<br />
-            Addis Ababa, Ethiopia<br />
-            Tel: +251911426480<br />
-            <b>Warehouse:</b><br />
-            Guji Coffee Export and Processing Factory<br />
-            Furi, Sheger Oromia, ETHIOPIA<br />
-            <b className='font-extrabold'>Email: info@temerachicoffeeexport.com</b><br />
-          </p>
-        </div>
-        <div className='mx-6'>
-          <p className='text-center leading-[2rem] font-light'>
-            <b>Business Partner</b><br />
-            Asia/Japan<br />
-            Selam Store Trading LLC<br />
-            4-32-4 Asakusa, Taito-ku Tokyo<br />
-            Japan<br />
-          </p>
-          <div className="titles">
-            <h3 className="text-2xl text-center font-extralight my-2">Reach us</h3>
+          <div className=''>
+          <div className="mx-6 ">
+            <p className='text-center leading-[2rem]'>
+              <b>HEAD OFFICE:</b><br />
+              Kirkos Sub City Woreda 11 House No. 195/A<br />
+              Addis Ababa, Ethiopia<br />
+              Tel: +251911426480<br />
+              <b>Warehouse:</b><br />
+              Guji Coffee Export and Processing Factory<br />
+              Furi, Sheger Oromia, ETHIOPIA<br />
+              <b className='font-extrabold'>Email: info@temerachicoffeeexport.com</b><br />
+            </p>
           </div>
-          <div className="flex justify-center mt-4 gap-4">
-            <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-2xl text-white bg-[#105F4E] px-2 py-1">
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer" className="text-2xl  bg-[#105F4E] text-white px-2 py-1">
-              <i className="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer" className="text-2xl text-white  bg-[#105F4E] px-2 py-1">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
+          <div className='mx-6'>
+            <p className='text-center leading-[2rem]'>
+              <b>Business Partner</b><br />
+              Asia/Japan<br />
+              Selam Store Trading LLC<br />
+              4-32-4 Asakusa, Taito-ku Tokyo<br />
+              Japan<br />
+            </p>
+            <div className="titles">
+              <h3 className="text-2xl text-center font-extralight my-2">Reach us</h3>
+            </div>
+            <div className="flex justify-center mt-4 gap-4">
+              <a href="https://www.facebook.com/Temerachixoffeeexport?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-2xl text-white bg-[#105F4E] px-2 py-1">
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://x.com/Dawitgi90612574" target="_blank" rel="noopener noreferrer" className="text-2xl  bg-[#105F4E] text-white px-2 py-1">
+                <i className="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/temerachicoffee?igsh=OTA3aGFocjFmbTVp" target="_blank" rel="noopener noreferrer" className="text-2xl text-white  bg-[#105F4E] px-2 py-1">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div>
-        </div>
           </div>
         </motion.div>
         <Footer />

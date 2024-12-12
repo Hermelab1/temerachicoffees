@@ -111,79 +111,76 @@ const OurStoryDetail = ({ interval = 3000 }) => {
       </section>
       
       <section>
-        <div className="container md:flex mx-auto my-20">
+        <div className="container md:flex mx-auto lg:my-[4%] my-8">
           <motion.div
             id="ourhistory"
             initial={{ opacity: 0, y: 200 }}
             animate={visibleSections.about ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col md:flex-row md:gap-28  gap-4 justify-center items-center mx-8"
+            className="flex flex-col md:flex-row xl:gap-28 lg:gap-16 md:gap-8 gap-4 justify-center items-center"
           >
-            <div className='about-text w-full xl:w-[55%] 2xl:w-[40%] lg:w-[50%] md:w-[45%]'>
-              <p className="first-letter:text-[150px] first-letter:font-Cardo first-letter:font-semimudium first-letter:text-[#176756] first-letter:float-left first-letter:leading-[80px] 2xl:leading-[2.4rem] md:leading-[2rem]">
+            <div className='about-text w-[90%] xl:w-[40%] 2xl:w-[40%] lg:w-[48%] md:w-[85%]'>
+              <p className="first-letter:text-[130px] first-letter:font-Cardo first-letter:font-[450] first-letter:text-[#176756] first-letter:float-left first-letter:leading-[80px] first-letter:top-[-20px]">
                   Founded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee, a leading Ethiopian coffee exporter, collaborates with smallholder farmers in Yirgacheffe, Gedeb, Sidama, Bonga, Jimma and Guji to ensure quality and traceability in their coffee cherries. This approach drives brand growth and value for both the company and the farming communities we work with. 
                   <br />
                   Temerachi's business model prioritizes corporate social responsibility and environmental stewardship, promoting eco-friendly practices among coffee farmers. The company aims to become a recognized specialty coffee brand globally and educate the next generation of professionals to thrive in the dynamic coffee industry.
               </p>
             </div>
-            <div className='w-[80%] xl:w-[22%] xl:h-[60vh] lg:w-2/6 md:h-[95vh] h-[50vh] animate-rightToLeft flex items-center justify-center'>
+            <div className=' w-[60%] xl:w-[22%] xl:h-[60vh] lg:w-[28%] lg:h-[70vh] md:h-[60vh] h-[50vh] animate-rightToLeft flex items-center justify-center'>
               <img src={photo1} alt="Company Manager" className='shadow-custom w-full h-full' />
             </div>
           </motion.div>
         </div>
       </section>
+      <section className='bg-[#f8f9fa] flex justify-center items-center'>
+        <motion.div
+          id="leaders"
+          initial={{ opacity: 0, y: 200 }}
+          animate={visibleSections.leaders ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.5 }}
+          className='container mx-auto text-center mb-8'
+        >
+          <Heading title="Founders" subtitle="Visionary Creators" />
 
-      <section className='bg-[#f8f9fa]'>
-        <div className="container mx-auto mb-8">
-          <motion.div
-            id="leaders"
-            initial={{ opacity: 0, y: 200 }}
-            animate={visibleSections.leaders ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-            transition={{ duration: 0.5 }}
-            className='custom-swiper justify-center items-center relative mx-4 lg-24'
-          >
-            <Heading title="Founders" subtitle="Visionary Creators" />
-
-            <div className="lead">
-              <Swiper
-                modules={[Pagination, Autoplay]}
-                pagination={{ clickable: true }}
-                loop={true}
-                spaceBetween={30}
-                autoplay={{
-                  delay: 6000,
-                  disableOnInteraction: false,
-                }}
-                grabCursor={true}
-                breakpoints={{
-                  480: { slidesPerView: 1 },
-                  667: { slidesPerView: 2 },
-                  768: { slidesPerView: 2 },
-                  1024: { slidesPerView: 2 },
-                }}
-                className="mySwiper "
-              >
-                {management.map((founder, index) => (
-                  <SwiperSlide key={`founder-${index}`} className="flex justify-center">
-                    <div className="w-full md:w-[80%]  mx-auto p-2 md:p-4">
-                      <div className="flex justify-center items-center mx-auto">
-                        <img src={founder.photo} alt={`Founder ${founder.name}`} className="lg:w-[55%] lg:h-[35vh] w-[70%] object-cover border-2 border-gray-200 shadow-custom" />
-                      </div>
-                      <div className='aboutF-text text-center p-2'>
-                        <h2 className="text-2xl font-semibold tracking-wide text-[#105f4e] p-2">{founder.name}</h2>
-                        <p className='mb-4'>{founder.text}</p>
-                      </div>
+          <div className='justify-center items-center xl:w-[80%] lg:w-[90%] mx-auto md:my-12 my-0 px-4 md:p-4'>
+            <Swiper
+              className='custom-swiper'
+              modules={[Pagination, Autoplay]}
+              pagination={{ clickable: true }}
+              loop={true}
+              spaceBetween={30}
+              autoplay={{
+                delay: 6000,
+                disableOnInteraction: false,
+              }}
+              grabCursor={true}
+              breakpoints={{
+                480: { slidesPerView: 1 },
+                667: { slidesPerView: 2 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 2 },
+              }}
+            >
+              {management.map((founder, index) => (
+                <SwiperSlide key={`founder-${index}`} className="flex justify-center items-center">
+                  <div className="w-full lg:w-[85%]">
+                    <div className="flex justify-center items-center md:p-1 p-0">
+                      <img src={founder.photo} alt={`Founder ${founder.name}`} className="lg:w-[55%] lg:h-[35vh] w-[60%] h-[33vh] object-cover border border-white shadow-custom mx-auto" />
                     </div>
-                  </SwiperSlide>
-                ))}
+                    <div className='aboutF-text text-center p-2'>
+                      <h2 className="text-[25px] font-bold tracking-wide text-[#105f4e] p-2 m-2">{founder.name}</h2>
+                      <p className='mb-4'>{founder.text}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
 
-                <div className="absolute top-[20%] left-[50%] transform -translate-x-1/2 hidden md:block">
-                  <img src={andope} alt="and operator" />
-                </div>
-              </Swiper>
-            </div>
-          </motion.div>
-        </div>
+              <div className="absolute top-[10%] left-[50%] transform -translate-x-1/2 hidden md:block">
+                <img src={andope} alt="and operator" />
+              </div>
+            </Swiper>
+          </div>
+        </motion.div>
       </section>
 
       <section>
@@ -193,7 +190,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
             initial={{ opacity: 0, y: 200 }}
             animate={visibleSections.teamMembers ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.5 }}
-            className="custom-swiper text-center mx-8 md:mx-24"
+            className="custom-swiper text-center mx-12 md:mx-24"
           >
             <Heading title="Meet Our Team" subtitle="The Faces Behind the Excellence" />
 

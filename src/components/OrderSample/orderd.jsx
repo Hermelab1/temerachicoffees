@@ -133,10 +133,10 @@ const Orderd = () => {
   const selectedCoffee = Coffeetype.find(coffee => coffee.cname === formData.coffeeType);
 
   return (
-    <div className="container mx-auto ">
-      <div className='md:w-[80%] w-[90%]  bg-white p-4 mx-auto shadow-lg mt-20 gap-12 flex flex-col lg:flex-row '>
-        <div className="flex flex-col items-center justify-center w-[100%]">
-          <div className="flex items-center justify-center h-[30vh]">
+    <div className="container mx-auto items-center justify-center">
+      <div className='xl:w-[80%] lg:w-[90%] w-[95%]  bg-white md:p-6 p-4 mx-auto shadow-xl mt-20 border md:gap-20 gap-2 flex flex-col lg:flex-row '>
+        <div className="flex flex-col w-[100%] py-4">
+          <div className="flex w-[100%] md:h-[35vh] h-[25vh] items-center justify-center">
             {imageError ? (
               <p className="text-red-500">Image failed to load</p>
             ) : (
@@ -145,16 +145,16 @@ const Orderd = () => {
                 alt={cname || 'Item Image'}
                 onLoad={handleImageLoad}
                 onError={handleImageError}
-                className={`border-2 w-full h-full object-cover shadow-blog transition-transform duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`border-2 w-[50%] h-full object-cover shadow-custom transition-transform duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
               />
             )}
           </div>
           <div className="mt-5">
-            <p>{description || 'Description Not Available'}</p>
+            <p className='leading-7'>{description || 'Description Not Available'}</p>
           </div>
         </div>
         <div className="w-full text-left">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-2 py-4">
             <h3 className="text-2xl font-serif py-2 text-[#3e1c08] border-t border-b border-gray-400">
               {formData.coffeeType || 'Title Not Available'}
             </h3>
@@ -203,7 +203,7 @@ const Orderd = () => {
 
             <input type="number" name="quantity" value={formData.quantity} onChange={handleChange} min="1" max="10" required placeholder="Quantity" className="inputs" />
 
-            <button type="submit" disabled={loading} className="bg-gray-800 text-white rounded md:w-2/5 sm:w-full p-3 hover:bg-gray-700 transition-all duration-300">
+            <button type="submit" disabled={loading} className="bg-gray-800 text-white md:w-2/5 sm:w-full p-3 hover:bg-gray-700 transition-all duration-300">
               {loading ? 'Ordering...' : 'Send Request'}
             </button>
           </form>

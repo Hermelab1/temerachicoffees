@@ -94,7 +94,7 @@ const Blog = () => {
         </div>
       </div>
       <section>
-        <div className="container flex flex-wrap m-auto justify-center">
+        <div className="container flex flex-wrap m-auto justify-center my-8">
           {sortedBlogs.map((blog, index) => {
             const { title, detail, mediaType, mediaSrc, date } = blog;
             return (
