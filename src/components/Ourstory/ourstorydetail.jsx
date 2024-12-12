@@ -4,7 +4,6 @@ import img1 from '../../asset/img/HeadingImages/CompanyPhoto.webp';
 import img from '../../asset/img/HeadingImages/CompanyPhoto1.webp';
 import img2 from '../../asset/img/HeadingImages/CompanyPhoto2.webp';
 import photo1 from '../../asset/img/ManagementImages/bothmanager.webp';
-import andope from '../../asset/img/and/and.png'
 import Heading from '../Home/headings';
 import Footer from '../footage/footage';
 import { management } from '../data/management';
@@ -175,8 +174,8 @@ const OurStoryDetail = ({ interval = 3000 }) => {
                 </SwiperSlide>
               ))}
 
-              <div className="absolute top-[10%] left-[50%] transform -translate-x-1/2 hidden md:block">
-                <img src={andope} alt="and operator" />
+              <div className="absolute top-[15%] left-[50%] transform -translate-x-1/2 hidden md:block">
+                <p className='text-[90px] italic'>&</p>
               </div>
             </Swiper>
           </div>
