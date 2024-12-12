@@ -90,11 +90,11 @@ button {
 }
 
 .covers .heading h1{
-  @apply text-[#f7fdfc] md:text-[37px] text-[34px] capitalize lg:leading-[0px] leading-[35px] tracking-wide;
+  @apply text-[#f7fdfc] md:text-[37px] text-[34px] capitalize lg:leading-[40px] leading-[35px] tracking-wide;
   font-family: "Cardo", serif;
 }
 .hero .heading h1{
-  @apply text-[#f7fdfc] md:text-[37px] text-[34px] capitalize lg:leading-[0px] leading-[50px] tracking-widest;
+  @apply text-[#f7fdfc] md:text-[37px] text-[34px] capitalize lg:leading-[40px] leading-[50px] tracking-widest;
   font-family: "Cardo", serif;
 }
 
