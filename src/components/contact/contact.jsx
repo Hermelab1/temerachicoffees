@@ -89,9 +89,9 @@ const Contact = () => {
             <h3 className="text-2xl font-extralight">Navigation</h3>
           </div>
           <div className="flex xl:flex-col md:flex-col lg:flex-row flex-row justify-center mt-2"> 
-            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Our Story</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Blog</Link>
-            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Order Sample</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="md:mx-2 mx-3 text-[105F4E]-600 font-medium md:text-xl text-base text-left leading-[2.5rem]">Our Story</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="md:mx-2 mx-3 text-[105F4E]-600 font-medium md:text-xl text-base text-left leading-[2.5rem]">Blog</Link>
+            <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="md:mx-2 mx-3 text-[105F4E]-600 font-medium md:text-xl text-base text-left leading-[2.5rem]">Order Sample</Link>
           </div>
         </div>
       </div>
