@@ -56,7 +56,7 @@ const Events = () => {
                             <SwiperSlide key={index}>
                                 <motion.div
                                     id={`training-card-${index}`}
-                                    className="relative border-2 border-gray-400 shadow-custom w-[320px] h-[400px] 2xl:h-[400px] 2xl:w-[310px] xl:w-[240px] lxlg:h-[330px] lg:w-[250px] lg:h-[340px] gap-0"
+                                    className="relative border-2 border-gray-400 shadow-custom w-[300px] h-[360px] md:w-[320px] md:h-[400px] 2xl:h-[400px] 2xl:w-[310px] lg:w-[250px] lg:h-[340px] gap-0"
                                     transition={{ duration: 0.2 }}
                                 >
                                     <img className='w-full h-full object-cover hover:scale-105'
@@ -88,7 +88,7 @@ const Events = () => {
                             <SwiperSlide key={index}>
                                 <motion.div
                                     id={`farm-card-${index}`}
-                                    className="relative border-2 border-gray-400 shadow-custom w-[320px] h-[400px] 2xl:h-[400px] 2xl:w-[310px] xl:w-[240px] lxlg:h-[330px] lg:w-[250px] lg:h-[340px] gap-0"
+                                    className="relative border-2 border-gray-400 shadow-custom w-[300px] h-[360px] md:w-[320px] md:h-[400px] 2xl:h-[400px] 2xl:w-[310px] lg:w-[250px] lg:h-[340px] gap-0"
                                     transition={{ duration: 0.2 }}
                                 >
                                     <img className='w-full h-full object-cover hover:scale-105'

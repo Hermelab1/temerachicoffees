@@ -7,12 +7,12 @@
 @tailwind utilities;
 
 body {
-  @apply xl:text-lg text-base ;
+  @apply text-lg text-base ;
   font-family: 'Poppins', sans-serif;
   color: #105F4E;
 }
 section{
-  @apply overflow-hidden h-auto;
+  @apply relative overflow-hidden h-auto;
 }
 
 .pages a{
@@ -25,7 +25,7 @@ section{
 }
 
 .storyImg {
-  @apply md:w-[49%] h-full shadow-custom  animate-[rightToLeft_2s_ease-in_forwards] object-fill;
+  @apply md:w-[49%] h-full shadow-custom w-[45%] animate-[rightToLeft_2s_ease-in_forwards] object-fill;
 }
 a {
   @apply font-normal text-[#105f4e];

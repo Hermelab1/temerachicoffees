@@ -29,7 +29,7 @@ const CoworkersList = () => {
           >
             {testimonial.map((item, index) => (
               <SwiperSlide key={`testimonial-${index}`}>
-                <div className="border-2 border-gray-200 shadow-custom p-6 md:p-4 flex flex-col lg:p-2  2xl:h-[60vh] xl:h-[65vh] lg:h-[80vh] md:h-[45vh] maxm:h-[35vh] slg:h-[35vh] h-[50vh] shadow-lg text-center justify-center item-center mb-12">
+                <div className="border-2 border-gray-200 shadow-custom p-2 lg:p-6 md:p-4 flex flex-col lg:p-2 2xl:h-[60vh] xl:h-[65vh] lg:h-[80vh] md:h-[45vh] maxm:h-[35vh] slg:h-[35vh] h-auto shadow-lg text-center justify-center item-center mb-12">
                   <div className="flex justify-center items-center mx-auto">
                     <img 
                       src={item.photo} 
@@ -39,7 +39,7 @@ const CoworkersList = () => {
                   </div>
                   <div className='my-auto'>
                       <i className="fa-solid fa-quote-left text-yellow-500"></i>
-                      <p className="leading-6 xl:leading-8 italic text-center xl:text-lg lg:text-base px-4 lg:p-1 xl:px-4 ">{item.paragraph || 'Description Not Available'}</p>
+                      <p className="leading-6 xl:leading-8 italic text-center xl:text-lg lg:text-base px-2 md:px-4 lg:p-1 xl:px-4 ">{item.paragraph || 'Description Not Available'}</p>
                       <i className="fa-solid fa-quote-right text-yellow-500"></i>
                       <h2 className="font-Cardo text-center text-lg mt-4">{item.name} ({item.companyname})</h2>
                       <div className='flex justify-center items-center gap-2 md:gap-8 p-3'>
