@@ -30,8 +30,8 @@ const Contact = () => {
 
   return (
     <section className="bg-[#f8f9fa] text-center">
-      <div className=" container mx-auto text-center flex flex-wrap justify-center my-12 items-center 2xl:gap-8  xl:gap-2 lg:gap-4 md:gap-12 sm:gap-4 my-4"> 
-        <div className="xl:w-[23%] lg:w-[35%] md:w-[40%] w-[80%] mx-6">
+      <div className=" container mx-auto text-center flex flex-wrap justify-center my-12 items-center 2xl:gap-8  xl:gap-2 lg:gap-2 md:gap-2 sm:gap-4 my-4"> 
+        <div className="xl:w-[23%] lg:w-[30%] md:w-[15%] maxm:w-[20%] w-[80%] xl:mx-6 lg:mx-4 md:mx-0">
           <form ref={form} onSubmit={sendEmail} className='form-group'>
             <input className='inputs' type="text" name="user_name" placeholder='Full Name' required />
             <input className='inputs' type="text" name="user_companyname" placeholder='Company Name' required />
@@ -43,7 +43,7 @@ const Contact = () => {
           
         </div>
         <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
-        <div className="my-5 mx-5 xl:mx-2">
+        <div className="my-5 mx-5 xl:mx-2 md:mx-0">
             <p className='text-center'>
             <b>HEAD OFFICE:</b><br />
             Kirkos Sub City Woreda 11 House No. 195/A<br />
@@ -52,12 +52,12 @@ const Contact = () => {
             <b>Warehouse:</b><br />
             Guji Coffee Export and Processing Factory<br />
             Furi, Sheger Oromia, ETHIOPIA<br />
-            <b className='font-semibold'>Email: info@temerachicoffeeexport.com</b><br />
+            Email: info@temerachicoffeeexport.com<br />
             </p>
         </div>
-        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden xl:block "></div> {/* Vertical line */}
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block "></div> {/* Vertical line */}
 
-        <div className='mx-6 xl:mx-2'>
+        <div className='mx-6 xl:mx-2 md:mx-0'>
           <p className='text-center'>
             <b>Business Partner</b><br />
             Asia/Japan<br />
@@ -81,14 +81,14 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden md:block"></div> {/* Vertical line */}
+        <div className="w-[1px] bg-[#c7c5c5] h-[250px] inline-block hidden xl:block"></div> {/* Vertical line */}
 
 
         <div className="pages text-center">
           <div className="titles">
             <h3 className="text-2xl font-extralight">Navigation</h3>
           </div>
-          <div className="flex md:flex-col flex-row  justify-center mt-2"> 
+          <div className="flex xl:flex-col flex-row  justify-center mt-2"> 
             <Link onClick={() => handleScrollToTopAndNavigate('/ourstory')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Our Story</Link>
             <Link onClick={() => handleScrollToTopAndNavigate('/blog')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Blog</Link>
             <Link onClick={() => handleScrollToTopAndNavigate('/sampleorder')} className="mx-2 text-[105F4E]-600 font-medium text-xl text-left leading-[2.5rem]">Order Sample</Link>

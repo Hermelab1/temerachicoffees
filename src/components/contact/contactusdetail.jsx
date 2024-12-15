@@ -71,7 +71,7 @@ const ContactUsDetail = () => {
               <b>Warehouse:</b><br />
               Guji Coffee Export and Processing Factory<br />
               Furi, Sheger Oromia, ETHIOPIA<br />
-              <b className='font-extrabold'>Email: info@temerachicoffeeexport.com</b><br />
+              Email: info@temerachicoffeeexport.com<br />
             </p>
           </div>
           <div className='mx-6'>

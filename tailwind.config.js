@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'custom': '0 4px 15px rgba(0, 0, 0, 0.3)',
+        'custom': '0 4px 20px rgba(0, 0, 0, 0.3)',
         'blog': '0 2px 5px rgba(0, 0, 0, 0.1)',
       },
       animation: {
@@ -44,6 +44,11 @@ module.exports = {
       },
       fontWeight:{
         'semimudium': '490',
+      },
+      screens:{
+        'maxm':'820px',
+        'slg': '912px',
+        'tab':'1024px'
       }
     },
   },

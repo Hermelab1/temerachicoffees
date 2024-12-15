@@ -278,7 +278,7 @@ export const Coffeetype = [
         code: "TCE006",
         cname: "Jimma coffee",
         avalablity:"Yes",
-        description: "Jimma coffee, grown in the southwestern Ethiopian region of Jimma, is known for its earthy and spicy flavor profile. It typically features moderate acidity with hints of citrus and herbal notes, complemented by a medium to full body. Grown at high altitudes, Jimma coffee benefits from rich volcanic soil. It is a well-balanced, complex coffee with a smooth finish, reflecting the unique terroir of the region.", // Corrected path to match routes
+        description: "Jimma coffee, grown in the southwestern Ethiopian region of Jimma, is known for its earthy and spicy flavor profile. It typically features moderate acidity with hints of citrus and herbal notes, complemented by a medium to full body. Grown at high altitudes, Jimma coffee benefits from rich volcanic soil. It is a well balanced, complex coffee with a smooth finish, reflecting the unique terroir of the region.", // Corrected path to match routes
         catagory:[
             {
                 

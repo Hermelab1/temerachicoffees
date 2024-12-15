@@ -23,11 +23,9 @@ section{
   border: 1px solid #105F4E; 
 
 }
-.ourstory{
-  @apply xl:h-[90vh] h-auto;
-}
+
 .storyImg {
-  @apply h-[30vh] lg:h-[50vh] max-w-[50%] border border-gray-300 shadow-custom border border-white animate-[rightToLeft_2s_ease-in_forwards];
+  @apply md:w-[49%] h-full shadow-custom  animate-[rightToLeft_2s_ease-in_forwards] object-fill;
 }
 a {
   @apply font-normal text-[#105f4e];
@@ -35,7 +33,7 @@ a {
 }
 
 p {
-  @apply text-[#105f4e] font-normal text-justify lg:leading-[2.2rem] md:leading-[2.3rem] leading-[1.9rem];
+  @apply text-[#105f4e] font-normal text-justify 2xl:leading-[2.4rem] xl:leading-[2.3rem] md:leading-[2.3rem] leading-[1.9rem];
 }
 .likes{
   @apply absolute bottom-2 right-2 flex gap-2 text-sm;
@@ -55,7 +53,7 @@ button {
   @apply relative w-full h-[75vh];
 }
 .blog-details{
-  @apply border lg:w-[380px] md:w-[350px] h-[550px] bg-white shadow-blog overflow-hidden lg:m-[20px] md:m-[15px] m-[20px] flex flex-col relative border-2 border-gray-300;
+  @apply border maxm:w-[380px] slg:w-[400px] slg:h-[600px] lg:w-[380px] md:w-[350px] h-[550px] bg-white shadow-blog overflow-hidden lg:m-[20px] md:m-[15px] m-[20px] flex flex-col relative border-2 border-gray-300;
 }
 .bmedia {
   @apply w-full h-full overflow-hidden flex justify-center items-center;
