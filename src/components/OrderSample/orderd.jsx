@@ -134,9 +134,9 @@ const Orderd = () => {
 
   return (
     <div className="container mx-auto items-center justify-center">
-      <div className='xl:w-[80%] lg:w-[90%] w-[95%]  bg-white md:p-6 p-4 mx-auto shadow-xl mt-20 maxm:mt-[15%] slg:mt-[15%] border  slg:gap-12 md:gap-20 gap-2 flex flex-col md:flex-row '>
+      <div className='xl:w-[80%] lg:w-[90%] w-[95%]  bg-white md:p-6 p-4 mx-auto shadow-xl mt-20 lg:mt-20 maxm:mt-[15%] slg:mt-[15%] border  slg:gap-12 md:gap-20 gap-2 flex flex-col md:flex-row '>
         <div className="flex flex-col w-[100%] py-4">
-          <div className="flex w-[100%] maxm:h-[20vh] slg:h-[20vh] md:h-[35vh] h-[25vh] items-center justify-center">
+          <div className="flex w-[100%] lg:h-[34vh] maxm:h-[20vh] slg:h-[20vh] md:h-[35vh] h-[25vh] items-center justify-center">
             {imageError ? (
               <p className="text-red-500">Image failed to load</p>
             ) : (

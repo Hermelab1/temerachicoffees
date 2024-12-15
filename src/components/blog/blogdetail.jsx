@@ -60,8 +60,8 @@ const BlogDetail = () => {
         .slice(0, 3);
 
     return (
-        <div className="container mx-auto mt-20 maxm:mt-[15%] slg:mt-[15%] flex flex-col items-center mb-8">
-            <div className="border border-gray-200 shadow overflow-hidden md:w-[60%] maxm:w-[95%] slg:w-[85%] w-[90%] text-justify mb-5 flex flex-col md:p-8 p-2">
+        <div className="container mx-auto mt-20 maxm:mt-[15%] slg:mt-[15%] lg:mt-20 flex flex-col items-center mb-8">
+            <div className="border border-gray-200 shadow overflow-hidden lg:w-[60%] md:w-[60%] maxm:w-[95%] slg:w-[85%] w-[90%] text-justify mb-5 flex flex-col md:p-8 p-2">
                 <h2 className='font-Cardo text-[2rem] leading-10 mb-2 font-semibold'>{title || 'Title Not Available'}</h2>
                 <p className='text-gray-400 font-light'>{dates || 'Date Not Available'}</p>
                 <div className="media w-full h-[55vh] mb-5 overflow-hidden flex justify-center">

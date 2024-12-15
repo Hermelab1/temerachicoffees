@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-lg text-base ;
+  @apply md:text-lg text-base ;
   font-family: 'Poppins', sans-serif;
   color: #105F4E;
 }
@@ -53,7 +53,7 @@ button {
   @apply relative w-full h-[75vh];
 }
 .blog-details{
-  @apply border maxm:w-[380px] slg:w-[400px] slg:h-[600px] lg:w-[380px] md:w-[350px] h-[550px] bg-white shadow-blog overflow-hidden lg:m-[20px] md:m-[15px] m-[20px] flex flex-col relative border-2 border-gray-300;
+  @apply border maxm:w-[380px] slg:w-[400px] slg:h-[600px] lg:w-[380px] md:w-[350px] lg:h-[500px] h-[550px] bg-white shadow-blog overflow-hidden lg:m-[20px] md:m-[15px] m-[20px] flex flex-col relative border-2 border-gray-300;
 }
 .bmedia {
   @apply w-full h-full overflow-hidden flex justify-center items-center;

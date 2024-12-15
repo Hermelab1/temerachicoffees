@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-<header className="bg-white 2xl:h-[8vh] xl:h-[8vh] lg:h-[8vh] md:h-[7vh] h-[8vh] shadow-custom absolute w-full top-0 z-[999] opacity-80 flex items-center justify-center text-center">
+<header className="bg-white lg:h-[8vh] md:h-[7vh] h-[8vh] shadow-custom absolute w-full top-0 z-[999] opacity-80 flex items-center justify-center text-center">
   <div className='flex w-full justify-between  md:px-12 px-4'> {/* Add max-width for centering */}
     <div className="lg:w-[13%] md:w-[25%] w-[45%] md:py-2 py-1">
       <img 
