@@ -14,7 +14,7 @@ const Contacts = () => {
 
   return (
     <section className='contact'>
-      <div className='container mx-auto text-center flex flex-wrap justify-center items-center lg:gap-4 md:gap-4 sm:gap-12 my-4'>
+      <div className='container mx-auto text-center flex flex-wrap justify-center items-center lg:gap-4 md:gap-2 sm:gap-12 my-4'>
         <div className="my-5 mx-5">
             <p className='text-center'>
             <b>HEAD OFFICE:</b><br />

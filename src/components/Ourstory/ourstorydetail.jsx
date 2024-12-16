@@ -213,7 +213,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
             >
               {teammembers.map((member, index) => (
                 <SwiperSlide key={`teammember-${index}`}>
-                  <div className="border-2 border-gray-200 shadow-custom relative h-[45vh] 2xl:h-[45vh] xl:h-[40vh] lg:h-[52vh] md:h-[35vh] mb-16">
+                  <div className="border-2 border-gray-200 shadow-custom relative h-[45vh] 2xl:h-[45vh] xl:h-[40vh] lg:h-[52vh]  md:h-[35vh] mb-16">
                     <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
                     <div className="bg-[#391f11] bg-opacity-75 text-white text-center absolute bottom-0 left-0 w-full p-2 ">
                       <h2 className='font-semibold text-[1.2rem]'>{member.name}</h2>

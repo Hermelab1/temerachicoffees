@@ -43,13 +43,13 @@ const ContactUsDetail = () => {
         </motion.div>
 
         <motion.div
-          className="container mx-auto my-8 flex flex-wrap justify-center items-center xl:gap-20 lg:gap-14 md:gap-0  gap-0"
+          className="container mx-auto lg:my-8 md:my-4 my-4 flex flex-wrap justify-center items-center xl:gap-20 lg:gap-14 md:gap-0  gap-0"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-row w-full lg:w-[40%] md:w-[43%] text-center mx-8 my-12">
+          <div className="flex flex-row w-full lg:w-[40%] md:w-[45%] text-center lg:mx-8 md:mx-2 mx-6 lg:my-12  md:my-4 my-4">
             <form ref={form} onSubmit={sendEmail}>
               <input type="text" name="user_name" placeholder='Full Name' className='inputs' required />
               <input type="text" name="user_companyname" placeholder='Company Name' className='inputs' required />
@@ -62,7 +62,7 @@ const ContactUsDetail = () => {
           </div>
 
           <div className=''>
-          <div className="mx-6 ">
+          <div className="lg:mx-6 md:mx-2 ">
             <p className='text-center leading-[2rem]'>
               <b>HEAD OFFICE:</b><br />
               Kirkos Sub City Woreda 11 House No. 195/A<br />

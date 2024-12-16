@@ -48,6 +48,7 @@ module.exports = {
       screens:{
         'maxm':'820px',
         'slg': '912px',
+        'rot': '932px',
         'tab':'1024px'
       }
     },
