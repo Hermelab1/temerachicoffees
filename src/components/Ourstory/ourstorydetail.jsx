@@ -116,9 +116,9 @@ const OurStoryDetail = ({ interval = 3000 }) => {
             initial={{ opacity: 0, y: 200 }}
             animate={visibleSections.about ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col md:flex-row xl:gap-28 lg:gap-16 md:gap-8 gap-4 justify-center items-center"
+            className="flex flex-col md:flex-row xl:gap-24 lg:gap-16 md:gap-8 gap-4 justify-center items-center"
           >
-            <div className='about-text w-[90%] xl:w-[40%] 2xl:w-[40%] lg:w-[48%] md:w-[55%]'>
+            <div className='about-text w-[90%] xl:w-[42%] 2xl:w-[40%] lg:w-[48%] md:w-[55%]'>
               <p className="first-letter:text-[130px] first-letter:font-Cardo first-letter:font-[450] first-letter:text-[#176756] first-letter:float-left first-letter:leading-[80px] first-letter:top-[-20px]">
                   Founded in 2018 by two enterprising brothers who had exposure to coffee cultivation and a decade of expertise in the worldwide coffee business. Temerachi Coffee, a leading Ethiopian coffee exporter, collaborates with smallholder farmers in Yirgacheffe, Gedeb, Sidama, Bonga, Jimma and Guji to ensure quality and traceability in their coffee cherries. This approach drives brand growth and value for both the company and the farming communities we work with. 
                   <br />
@@ -208,7 +208,7 @@ const OurStoryDetail = ({ interval = 3000 }) => {
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
                 1280: { slidesPerView: 4 },
-                1300: { slidesPerView: 5 },
+                1300: { slidesPerView: 4 },
               }}
             >
               {teammembers.map((member, index) => (

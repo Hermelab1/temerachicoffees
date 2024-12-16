@@ -49,7 +49,7 @@ const ContactUsDetail = () => {
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-row w-full lg:w-[40%] md:w-[45%] text-center lg:mx-8 md:mx-2 mx-6 lg:my-12  md:my-4 my-4">
+          <div className="flex flex-row w-full xl:w-[35%] lg:w-[40%] md:w-[45%] text-center lg:mx-8 md:mx-2 mx-6 lg:my-12  md:my-4 my-4">
             <form ref={form} onSubmit={sendEmail}>
               <input type="text" name="user_name" placeholder='Full Name' className='inputs' required />
               <input type="text" name="user_companyname" placeholder='Company Name' className='inputs' required />

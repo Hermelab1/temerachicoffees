@@ -29,7 +29,7 @@ const CoworkersList = () => {
           >
             {testimonial.map((item, index) => (
               <SwiperSlide key={`testimonial-${index}`}>
-                <div className="border-2 border-gray-200 shadow-custom p-2 lg:p-6 md:p-4 flex flex-col lg:p-2 2xl:h-[60vh] xl:h-[65vh] lg:h-[80vh] md:h-[45vh] maxm:h-[35vh] slg:h-[35vh] h-auto shadow-lg text-center justify-center item-center mb-12">
+                <div className="border-2 border-gray-200 shadow-custom p-2 lg:p-6 xl:p-4 md:p-4 flex flex-col lg:p-2 xl:h-[67vh] lg:h-[80vh] md:h-[45vh] maxm:h-[35vh] slg:h-[35vh] h-auto shadow-lg text-center justify-center item-center mb-12">
                   <div className="flex justify-center items-center mx-auto">
                     <img 
                       src={item.photo} 

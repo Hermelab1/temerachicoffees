@@ -49,7 +49,7 @@ const SampleOrder = () => {
           <Heading title="Reliable Quality" subtitle="Temerachi Coffee Export" />
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container m-auto justify-center md:my-6 my-0">
         <div className="flex flex-wrap justify-center">
           {Coffeetype.map((coffeeItem, index) => (
             <motion.div
