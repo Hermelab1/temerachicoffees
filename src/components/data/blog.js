@@ -1,3 +1,5 @@
+import { title } from 'framer-motion/client';
+
 const img1 = require('../../asset/img/Blog/kalid.webp');
 const img2 = require('../../asset/img/Blog/The_science.webp');
 const img3 = require('../../asset/img/Blog/The _health.webp');
@@ -5,6 +7,9 @@ const img4 = require('../../asset/img/Blog/Commerce.webp')
 const img5 = require('../../asset/img/Blog/culture_and_coffee.webp')
 const img6 = require('../../asset/img/Blog/meet_the.webp')
 const img7 = require('../../asset/img/Blog/The_future.webp')
+const img8 = require('../../asset/img/Blog/Ethiopia.webp')
+const img9 = require('../../asset/img/Blog/Haru-suka.webp')
+const img10 = require('../../asset/img/Blog/Why_Long_Term.webp')
 
 export const blogs = [
     {
@@ -177,4 +182,39 @@ A variety of trends and forecasts that display the transforming terrain of globa
 `,
             date: "Aug-30-2020",
     },
+    {
+        mediaSrc: img8,
+        mediaType: "image",
+        title: "Ethiopia’s 2025/26 Coffee Harvest Season: What Happened and what is New",
+        detail: `The 2025/26 coffee harvest season in Ethiopia has been impacted by changing climate conditions, strong global demand and new export regulations. These factors have affected production timelines, market prices and the operations of exporters in the international coffee trade. The harvest season saw a slight delay in many coffee-growing regions mainly because of irregular rainfall and changing weather patterns. In most areas, harvesting started two to three weeks later than normal, with differences based on altitude and region. Southern origins like Guji, Yirgacheffe and Sidama experienced moderate production pressure, while western and southwestern regions enjoyed better growing conditions. Some southern origins, had slight reductions in yield, but western and southwestern areas benefited from favorable weather, better farming practices and expanded farmland. Overall production remained strong, with good cherry density and improved bean size noted in many batches. The quality during the 2025/26 harvest was generally very good, especially for well-managed washed and natural coffees. However, the delayed and extended harvest window required careful cherry selection and processing to maintain consistency and prevent quality loss.<br/>
+The 2025/26 harvest highlights the need for careful planning around regional weather variations, as delayed rains affected southern areas more than the west and southwest. Moving forward, monitoring local climate patterns and adjusting harvesting schedules could help maintain quality and consistency. The slight yield reductions in some southern origins also suggest that targeted support, such as optimizing pruning, fertilization and pest management, may help sustain production in vulnerable regions. Meanwhile, the strong performance in western and southwestern areas shows the benefits of improved farming practices and expanded farmland, indicating that scaling these methods could stabilize national output. Additionally, the season underlines the importance of managing cherry selection and processing during extended harvest periods to prevent quality loss, as well as maintaining close coordination between farmers and exporters to respond to fluctuating market demand and pricing pressures.<br/>
+
+Despite these regional differences, overall national coffee production stayed robust, supported by expanded cultivation, better practices and improved farm management. Cherry prices at the farm level rose significantly compared to the previous season due to higher global coffee prices, local currency shifts and strong buyer competition. Farmers gained from improved incomes, while exporters struggled with tighter margins and higher working capital needs. Global demand for Ethiopian coffee stayed strong throughout the season, particularly for specialty and traceable varieties. Export earnings grew notably early in the fiscal year, reflecting both strong prices and sustained buyer interest. However, logistical challenges and rising operational costs continued to demand careful planning and strong coordination across the supply chain. The 2025/26 season emphasizes Ethiopia’s ongoing importance in the global coffee market. As the industry responds to regulatory changes and evolving market demands, success will rely on quality-focused production, strong cooperation and compliance with international standards. Exporters who invest in transparency, sustainability and long-term relationships will be best positioned for growth in the future.
+`,
+        date: "Dec-20-2025"
+    }, 
+        {
+        mediaSrc: img9,
+        mediaType: "image",
+        title: "Haru suka Site Where Community, Tradition and Nature Meet",
+        detail: `In the heart of Harusuka, the site, in particular, stands out as a hub where the rhythms of daily life meet the echoes of tradition. Here, people gather not only to enjoy the natural beauty of the surroundings but also to take part in the social and cultural life that has defined the village for generations.<br/>
+One of the most significant landmarks of the Harusuka site is the Hagella Shengo tree. Towering and majestic it has long served as the village’s place of judgment, where elders meet under its shade to resolve disputes, offer guidance and ensure that harmony prevails. The tree is more than a natural feature it is a living symbol of justice, wisdom and community values. For generations, villagers have looked to it as a place where fairness and tradition meet, where important decisions are made with care, respect and consideration for the well-being of the community. <br/>
+Alongside the Hagella Shengo tree, our coffee site adds another layer of life to the Harusuka site. It is a space where neighbors, farmers and visitors come together to enjoy locally grown coffee, share stories and build connections. It reminds us that community is not just about tradition it is also about the simple, everyday acts of coming together, listening and supporting one another. <br/>
+The Harusuka coffee site is also set to become a major hub for coffee production in the community. With plans to cultivate and process large quantities of high-quality coffee beans, the site will provide both economic opportunities and a source of pride for local farmers. Every step, from planting and nurturing the coffee trees to harvesting and processing the beans, will be done with care, ensuring the coffee reflects the rich soil and dedication of the people. This initiative aims not only to boost production but also to strengthen the community by creating jobs, encouraging local collaboration and showcasing Harusuka’s potential as a center for excellent coffee. <br/>
+Visiting the Harusuka site is more than just a journey through a village it is an experience of connection and learning. Whether sitting under the Hagella Shengo tree, enjoying a cup of coffee, or simply walking through the site, visitors can feel the pulse of a community that deeply values its roots while embracing the present. The Harusuka site is a place that reminds us of the importance of preserving cultural heritage, nurturing relationships and celebrating the shared spaces that bring people together.
+`,
+        date: "Dec-15-2025"
+    },
+        {
+        mediaSrc: img10,
+        mediaType: "image",
+        title: "Why Long-Term Supply Agreements Matter in Today’s Coffee Export Market",
+        detail: `In today’s rapidly changing coffee export market, stability and trust have become just as important as price. Fluctuating global coffee prices, rising logistics costs, climate uncertainty and evolving regulations have made short-term trading increasingly risky for both exporters and buyers. Long-term supply agreements are emerging as a preferred model for sustainable and successful coffee trade because they provide predictable volumes, planned pricing structures and scheduled shipments. This stability allows buyers to plan their inventory and finances more effectively, while exporters can secure consistent market access and manage working capital with greater confidence.<br/>
+One of the most significant advantages of long-term agreements is the ability to plan quality from the farm level. When exporters know future demand in advance, they can collaborate closely with farmers and washing stations to secure the right volumes, improve cherry selection and apply optimal processing methods. This not only ensures more consistent cup profiles but also allows investments in sustainable farming practices, such as shade-grown coffee, water management and soil conservation. Predictable contracts also enable exporters to support farmers through training programs and fair compensation, improving livelihoods and encouraging ethical sourcing.<br/>
+Long-term partnerships extend beyond transactional buying and selling; they are built on trust, transparency and shared goals. Buyers benefit from reliable supply partners who understand their quality and logistical needs, while exporters gain loyal customers and reduced market risk. These relationships foster open communication and collaborative problem-solving when challenges arise, whether it’s dealing with supply chain disruptions or adjusting to regulatory changes. Furthermore, long-term agreements make it easier for exporters to invest in quality control systems, certified laboratories, traceability tools and sustainability programs, ensuring buyers receive coffee that meets international standards and ethical requirements.<br/>
+Operationally, long-term agreements improve efficiency across the supply chain. Exporters can optimize logistics, reduce storage costs and negotiate better shipping terms, while buyers enjoy reliable delivery timelines and reduced procurement risk. Financially, predictable contracts simplify planning, enabling exporters to secure bank financing or letters of credit more easily and allowing buyers to budget accurately for procurement. By providing stability, quality, sustainability and financial predictability, long-term supply agreements are proving to be a vital strategy for success in the modern coffee export market.
+`,
+        date: "Dec-18-2025"
+    }
+
 ];
