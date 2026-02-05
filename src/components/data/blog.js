@@ -1,5 +1,3 @@
-import { title } from 'framer-motion/client';
-
 const img1 = require('../../asset/img/Blog/kalid.webp');
 const img2 = require('../../asset/img/Blog/The_science.webp');
 const img3 = require('../../asset/img/Blog/The _health.webp');
