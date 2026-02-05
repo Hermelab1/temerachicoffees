@@ -189,7 +189,7 @@ The 2025/26 harvest highlights the need for careful planning around regional wea
 
 Despite these regional differences, overall national coffee production stayed robust, supported by expanded cultivation, better practices and improved farm management. Cherry prices at the farm level rose significantly compared to the previous season due to higher global coffee prices, local currency shifts and strong buyer competition. Farmers gained from improved incomes, while exporters struggled with tighter margins and higher working capital needs. Global demand for Ethiopian coffee stayed strong throughout the season, particularly for specialty and traceable varieties. Export earnings grew notably early in the fiscal year, reflecting both strong prices and sustained buyer interest. However, logistical challenges and rising operational costs continued to demand careful planning and strong coordination across the supply chain. The 2025/26 season emphasizes Ethiopia’s ongoing importance in the global coffee market. As the industry responds to regulatory changes and evolving market demands, success will rely on quality-focused production, strong cooperation and compliance with international standards. Exporters who invest in transparency, sustainability and long-term relationships will be best positioned for growth in the future.
 `,
-        date: "Dec-20-2025"
+        date: "Jan-15-2026"
     }, 
         {
         mediaSrc: img9,
@@ -201,7 +201,7 @@ Alongside the Hagella Shengo tree, our coffee site adds another layer of life to
 The Harusuka coffee site is also set to become a major hub for coffee production in the community. With plans to cultivate and process large quantities of high-quality coffee beans, the site will provide both economic opportunities and a source of pride for local farmers. Every step, from planting and nurturing the coffee trees to harvesting and processing the beans, will be done with care, ensuring the coffee reflects the rich soil and dedication of the people. This initiative aims not only to boost production but also to strengthen the community by creating jobs, encouraging local collaboration and showcasing Harusuka’s potential as a center for excellent coffee. <br/>
 Visiting the Harusuka site is more than just a journey through a village it is an experience of connection and learning. Whether sitting under the Hagella Shengo tree, enjoying a cup of coffee, or simply walking through the site, visitors can feel the pulse of a community that deeply values its roots while embracing the present. The Harusuka site is a place that reminds us of the importance of preserving cultural heritage, nurturing relationships and celebrating the shared spaces that bring people together.
 `,
-        date: "Dec-15-2025"
+        date: "Jan-14-2026"
     },
         {
         mediaSrc: img10,
@@ -212,7 +212,7 @@ One of the most significant advantages of long-term agreements is the ability to
 Long-term partnerships extend beyond transactional buying and selling; they are built on trust, transparency and shared goals. Buyers benefit from reliable supply partners who understand their quality and logistical needs, while exporters gain loyal customers and reduced market risk. These relationships foster open communication and collaborative problem-solving when challenges arise, whether it’s dealing with supply chain disruptions or adjusting to regulatory changes. Furthermore, long-term agreements make it easier for exporters to invest in quality control systems, certified laboratories, traceability tools and sustainability programs, ensuring buyers receive coffee that meets international standards and ethical requirements.<br/>
 Operationally, long-term agreements improve efficiency across the supply chain. Exporters can optimize logistics, reduce storage costs and negotiate better shipping terms, while buyers enjoy reliable delivery timelines and reduced procurement risk. Financially, predictable contracts simplify planning, enabling exporters to secure bank financing or letters of credit more easily and allowing buyers to budget accurately for procurement. By providing stability, quality, sustainability and financial predictability, long-term supply agreements are proving to be a vital strategy for success in the modern coffee export market.
 `,
-        date: "Dec-18-2025"
+        date: "Jan-14-2026"
     }
 
 ];
